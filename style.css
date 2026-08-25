@@ -1,0 +1,552 @@
+/* =========================================================
+   NAYING ZHOU — Personal Academic Site
+   Shared stylesheet for all pages.
+   ---------------------------------------------------------
+   Edit colors below. Changes apply to every page at once.
+   --accent      : link color, nav highlight, CV button
+   --ink         : main text color
+   --bg          : page background
+   ========================================================= */
+:root {
+  --ink: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #1e3a5f;       /* deep academic navy */
+  --accent-dark: #142a47;  /* hover state */
+  --accent-soft: #e8eef5;
+  --bg: #fdfdfb;
+  --rule: #e5e5e0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.7;
+  font-size: 17px;
+}
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 32px 120px; }
+
+/* =========================================================
+   SITE HEADER — appears on every page.
+
+   A single row: name flush left, tabs flush right, no rules and
+   no logo. Both share the body serif and sit on a common baseline.
+   ========================================================= */
+
+.site-header {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(253, 253, 251, 0.86);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  backdrop-filter: saturate(180%) blur(14px);
+  margin-bottom: 14px;
+}
+.header-inner {
+  max-width: 880px; margin: 0 auto; padding: 20px 32px 10px;
+  display: flex; align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap; gap: 10px 32px;
+}
+
+/* ---------- Name (left) ---------- */
+.brand {
+  text-decoration: none;
+  font-size: 1.65rem; font-weight: 500;
+  letter-spacing: -0.015em; line-height: 1.2;
+  color: var(--ink);
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+.brand .post {
+  font-size: 0.74em; font-weight: 400;
+  color: var(--muted);
+}
+.brand:hover { color: var(--accent); }
+
+/* ---------- Tabs (right) ---------- */
+.site-nav {
+  display: flex; flex-wrap: wrap;
+  gap: 8px 26px;
+}
+.site-nav a {
+  position: relative;
+  font-size: 0.95rem;
+  color: var(--muted); text-decoration: none;
+  padding-bottom: 5px;
+  transition: color 0.2s ease;
+}
+/* Underline draws outward from the centre */
+.site-nav a::after {
+  content: ""; position: absolute;
+  left: 0; right: 0; bottom: 0; height: 1px;
+  background: var(--accent);
+  transform: scaleX(0); transform-origin: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav a:hover { color: var(--accent); }
+.site-nav a:hover::after,
+.site-nav a.active::after { transform: scaleX(1); }
+.site-nav a.active { color: var(--accent); }
+
+/* =========================================================
+   LANDING PAGE ONLY — no header bar, so the wrap needs its own
+   top padding and the nav sits below the hero.
+   ========================================================= */
+.wrap.home { padding-top: 52px; }
+
+.home-nav {
+  display: flex; flex-wrap: wrap; gap: 10px 30px;
+  padding-bottom: 18px; margin-bottom: 34px;
+  border-bottom: 1px solid var(--rule);
+}
+.home-nav a {
+  position: relative;
+  font-size: 1rem;
+  color: var(--muted); text-decoration: none;
+  padding-bottom: 5px;
+  transition: color 0.2s ease;
+}
+.home-nav a::after {
+  content: ""; position: absolute;
+  left: 0; right: 0; bottom: 0; height: 1px;
+  background: var(--accent);
+  transform: scaleX(0); transform-origin: center;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.home-nav a:hover { color: var(--accent); }
+.home-nav a:hover::after { transform: scaleX(1); }
+
+/* Career diagram under the About text */
+.about-figure { margin: 30px 0 0; }
+.about-figure img { width: 100%; height: auto; display: block; }
+
+/* =========================================================
+   ABOUT (home page) — photo, name, contact
+   ========================================================= */
+.hero {
+  display: flex; align-items: center; gap: 32px;
+  margin-bottom: 40px; flex-wrap: wrap;
+}
+.headshot {
+  width: 130px; height: 130px; border-radius: 50%;
+  object-fit: cover;
+  background: var(--accent-soft);
+  border: 1px solid var(--rule);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent); font-size: 2.4rem; font-weight: 500;
+  font-family: Georgia, serif;
+  flex-shrink: 0; overflow: hidden;
+}
+.hero-text { flex: 1; min-width: 220px; }
+.hero-text h1 {
+  font-size: 2.2rem; font-weight: 500;
+  letter-spacing: -0.5px; margin-bottom: 6px;
+}
+/* Each line in the hero sits on its own row — no inline separators */
+.hero-text .subtitle {
+  color: var(--accent); font-weight: 500;
+  font-size: 1.3rem; letter-spacing: -0.2px;
+  line-height: 1.35; margin-bottom: 14px;
+}
+.hero-text .affiliation {
+  font-size: 0.95rem; color: var(--ink);
+  line-height: 1.5; margin-bottom: 2px;
+}
+.hero-text .contact-line {
+  font-size: 0.95rem; color: var(--muted);
+  margin-top: 12px; margin-bottom: 18px;
+}
+.hero-text .contact-line a { color: var(--accent); text-decoration: none; }
+.hero-text .contact-line a:hover { text-decoration: underline; }
+
+.cv-button {
+  display: inline-block;
+  padding: 8px 18px; background: var(--accent); color: white;
+  text-decoration: none; border-radius: 4px;
+  font-size: 0.9rem; font-family: -apple-system, sans-serif;
+  letter-spacing: 0.5px;
+  transition: background 0.15s;
+}
+.cv-button:hover { background: var(--accent-dark); }
+.cv-button::before { content: "↓ "; }
+
+/* =========================================================
+   PAGE CONTENT — used on all non-home pages
+   ========================================================= */
+.page-title {
+  font-size: 1.9rem; font-weight: 500;
+  letter-spacing: -0.3px; margin-bottom: 8px;
+}
+.page-intro {
+  color: var(--muted); font-style: italic;
+  font-size: 1.05rem; margin-bottom: 36px;
+  padding-bottom: 24px; border-bottom: 1px solid var(--rule);
+}
+
+section { margin-bottom: 48px; }
+h2 {
+  font-size: 0.92rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 1.8px; margin-bottom: 22px; color: var(--muted);
+}
+h3 {
+  font-size: 1.05rem; font-weight: 600;
+  margin: 28px 0 14px; color: var(--accent);
+  font-family: -apple-system, sans-serif;
+  letter-spacing: 0.3px;
+}
+h3:first-of-type { margin-top: 0; }
+p { margin-bottom: 14px; }
+
+a { color: var(--accent); }
+
+/* Entry blocks — used for publications, courses, etc. */
+.entry {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.entry:last-child { border-bottom: none; }
+.entry-title { font-weight: 600; margin-bottom: 4px; }
+.entry-meta {
+  color: var(--muted); font-size: 0.93rem;
+  font-style: italic;
+}
+.entry-desc {
+  color: var(--ink); font-size: 0.95rem;
+  margin-top: 6px;
+}
+.entry-date {
+  display: inline-block; min-width: 100px;
+  color: var(--accent); font-family: -apple-system, sans-serif;
+  font-size: 0.85rem; font-style: normal;
+  letter-spacing: 0.5px; margin-right: 4px;
+}
+
+/* =========================================================
+   GRANT ENTRY — fuller treatment: facts, aims, source links
+   ========================================================= */
+/* Applies wherever the logo-left layout is used, not just the grant */
+.grant-headline .entry-title {
+  display: block; margin-top: 7px;
+  font-size: 1.05rem; line-height: 1.4;
+}
+/* A linked title keeps the title's weight, gaining only a hover cue */
+.grant-headline .entry-title a {
+  color: inherit; text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: color 0.15s, border-color 0.15s;
+}
+.grant-headline .entry-title a:hover {
+  color: var(--accent); border-bottom-color: var(--accent);
+}
+
+/* Two columns: funder buttons left, title and role right */
+.grant-head {
+  display: grid; grid-template-columns: 232px 1fr;
+  gap: 26px; align-items: stretch;
+}
+
+/* Each button carries its logos and its own label.
+   Button 1 pairs CA.gov with CalHHS and opens the award announcement;
+   button 2 holds CIAPM and opens the program page. */
+/* Boxes stretch to fill the left column, so the stack ends level with
+   the bottom of the content on the right. Applies to every entry using
+   this layout — the grant's three boxes and the CLIC entry's one. */
+.grant-funders {
+  display: flex; flex-direction: column; gap: 12px;
+  height: 100%;
+}
+.funder-btn,
+.grant-links { flex: 1 1 0; }
+.grant-links a {
+  display: flex; align-items: center; justify-content: center;
+  width: 100%;
+}
+
+
+/* Thumbnail card linking to a full diagram page */
+.thumb-btn {
+  display: block; flex: 0 0 auto;
+  padding: 12px 12px 10px;
+  background: #ffffff;
+  border: 1px solid var(--rule); border-radius: 5px;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.thumb-btn:hover {
+  border-color: var(--accent);
+  box-shadow: 0 1px 8px rgba(30, 58, 95, 0.09);
+}
+.thumb-btn img { width: 100%; height: auto; display: block; }
+.thumb-btn span {
+  display: block; margin-top: 9px; text-align: center;
+  font-family: "Public Sans", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.86rem; font-weight: 600; line-height: 1.45;
+  color: var(--accent);
+  transition: color 0.15s;
+}
+.thumb-btn:hover span { color: var(--accent-dark); }
+
+/* Bulleted detail list inside a fold */
+ul.detail-list { margin: 16px 0 0 18px; padding: 0; }
+ul.detail-list li {
+  font-size: 0.95rem; line-height: 1.6; margin-bottom: 8px;
+}
+ul.detail-list li:last-child { margin-bottom: 0; }
+
+/* Logo-only buttons — the accessible name lives on the link's
+   aria-label, since there is no visible caption. */
+.funder-btn {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 2px;
+  padding: 16px 10px;
+  background: #ffffff;
+  border: 1px solid var(--rule); border-radius: 5px;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.funder-btn:hover {
+  border-color: var(--accent);
+  box-shadow: 0 1px 8px rgba(30, 58, 95, 0.09);
+}
+.funder-logos {
+  display: flex; align-items: center; justify-content: center;
+  gap: 8px;
+}
+/* Heights set per mark so the two agencies read at comparable weight.
+   The paired box is width-constrained: CA.gov and CalHHS side by side
+   already fill the column, so these are near the maximum that fits. */
+.funder-logos img { display: block; width: auto; max-width: 100%; }
+.logo-cagov  { height: 30px; }
+.logo-calhhs { height: 43px; }
+.logo-ciapm  { height: 40px; }
+
+/* Label type set in a humanist sans to sit with the CalHHS wordmark
+   rather than against it. California's own design system uses Public
+   Sans; the stack falls back to the system humanist sans if it isn't
+   loaded, which is visually close. */
+.funder-label {
+  font-family: "Public Sans", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.86rem; font-weight: 600; line-height: 1.45;
+  color: var(--accent); text-align: center;
+  transition: color 0.15s;
+}
+.funder-btn:hover .funder-label { color: var(--accent-dark); }
+
+/* Disclosure fold — details and aims hidden until clicked.
+   Native details/summary, so it works without JavaScript and is
+   keyboard-operable. The link buttons sit outside this element. */
+.grant-details {
+  margin-top: 18px; padding-top: 14px;
+  border-top: 1px solid var(--rule);
+}
+.grant-details summary {
+  cursor: pointer; list-style: none;
+  display: flex; align-items: center; gap: 9px;
+  font-family: -apple-system, sans-serif; font-size: 0.76rem;
+  text-transform: uppercase; letter-spacing: 1.1px;
+  color: var(--accent);
+  transition: color 0.15s;
+}
+.grant-details summary::-webkit-details-marker { display: none; }
+.grant-details summary::before {
+  content: ""; flex-shrink: 0;
+  width: 0; height: 0;
+  border-left: 5px solid currentColor;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  transition: transform 0.2s ease;
+}
+.grant-details[open] summary::before { transform: rotate(90deg); }
+.grant-details summary:hover { color: var(--accent-dark); }
+
+/* Label / value facts — each list sizes its own label column */
+.grant-facts {
+  display: grid; grid-template-columns: max-content 1fr;
+  column-gap: 24px; row-gap: 9px;
+  margin: 16px 0 0;
+}
+.grant-facts dt {
+  font-family: -apple-system, sans-serif; font-size: 0.72rem;
+  text-transform: uppercase; letter-spacing: 1.1px;
+  color: var(--muted); white-space: nowrap; padding-top: 3px;
+}
+.grant-facts dd { margin: 0; font-size: 0.93rem; line-height: 1.6; }
+
+/* Text-only link styled to match the two logo buttons exactly:
+   same white fill, same hairline border, radius, padding and hover. */
+.grant-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 0; }
+.grant-links a {
+  flex: 1 1 auto; text-align: center;
+  font-family: "Public Sans", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.86rem; font-weight: 600; line-height: 1.45;
+  color: var(--accent); text-decoration: none;
+  background: #ffffff;
+  border: 1px solid var(--rule); border-radius: 5px;
+  padding: 15px 12px 13px;
+  transition: border-color 0.15s, box-shadow 0.15s, color 0.15s;
+}
+.grant-links a:hover {
+  border-color: var(--accent);
+  box-shadow: 0 1px 8px rgba(30, 58, 95, 0.09);
+  color: var(--accent-dark);
+}
+
+@media (max-width: 600px) {
+  /* logos above the title rather than beside it */
+  .grant-head { grid-template-columns: 1fr; gap: 16px; }
+  .grant-funders { flex-direction: row; flex-wrap: wrap; }
+  .funder-btn { flex: 1 1 150px; }
+  .grant-facts { grid-template-columns: 1fr; row-gap: 3px; }
+  .grant-facts dt { margin-top: 12px; }
+  .grant-facts dt:first-of-type { margin-top: 0; }
+}
+
+/* =========================================================
+   FEATURED FINDING — highlighted result with a figure
+   ========================================================= */
+.finding {
+  margin-top: 18px;
+  padding: 22px 24px;
+  background: var(--accent-soft);
+  border-radius: 6px;
+}
+.finding h4 {
+  font-size: 0.78rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1.6px;
+  color: var(--accent); margin-bottom: 14px;
+  font-family: -apple-system, sans-serif;
+}
+.finding ul { margin: 0 0 4px 18px; }
+.finding li { font-size: 0.95rem; margin-bottom: 8px; }
+.finding li:last-child { margin-bottom: 0; }
+
+figure.figure { margin: 20px 0 0; }
+figure.figure img {
+  width: 100%; height: auto; display: block;
+  background: white;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+figure.figure figcaption {
+  font-size: 0.83rem; color: var(--muted);
+  line-height: 1.55; margin-top: 10px;
+}
+figure.figure figcaption strong { color: var(--ink); font-weight: 600; }
+
+/* =========================================================
+   CONTACT PAGE — contact info + message form
+   ========================================================= */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 40px;
+}
+/* Label / value pairs — two aligned columns with generous gutter */
+.contact-info {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 56px;
+  row-gap: 18px;
+  align-items: baseline;
+  margin: 0;
+}
+.contact-info dt {
+  color: var(--muted); font-family: -apple-system, sans-serif;
+  font-size: 0.82rem; text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.contact-info dd {
+  margin: 0; font-size: 0.98rem; line-height: 1.65;
+}
+.contact-info dd a { text-decoration: none; }
+.contact-info dd a:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+    row-gap: 4px;
+  }
+  .contact-info dt { margin-top: 14px; }
+  .contact-info dt:first-child { margin-top: 0; }
+}
+
+/* Legacy two-column contact page layout (retired page) */
+
+/* Message form */
+.message-form { display: flex; flex-direction: column; gap: 14px; }
+.message-form label {
+  font-size: 0.85rem; color: var(--muted);
+  font-family: -apple-system, sans-serif;
+  text-transform: uppercase; letter-spacing: 1px;
+  margin-bottom: -8px;
+}
+.message-form input,
+.message-form textarea {
+  font-family: inherit; font-size: 1rem;
+  padding: 10px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: white;
+  color: var(--ink);
+  transition: border-color 0.15s;
+}
+.message-form input:focus,
+.message-form textarea:focus {
+  outline: none; border-color: var(--accent);
+}
+.message-form textarea { min-height: 120px; resize: vertical; }
+.message-form button {
+  align-self: flex-start;
+  padding: 10px 24px;
+  background: var(--accent); color: white;
+  border: none; border-radius: 4px;
+  font-family: -apple-system, sans-serif;
+  font-size: 0.95rem; letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.message-form button:hover { background: var(--accent-dark); }
+
+@media (max-width: 700px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+  margin-top: 80px; padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: 0.88rem;
+  text-align: center;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+@media (max-width: 600px) {
+  .wrap { padding: 0 22px 80px; }
+  .header-inner { padding: 0 22px; }
+  .hero-text h1 { font-size: 1.7rem; }
+  .hero-text .subtitle { font-size: 1.1rem; }
+  .headshot { width: 100px; height: 100px; font-size: 2rem; }
+
+  .site-header { margin-bottom: 12px; }
+  /* Stack: name on its own line, tabs left-aligned beneath */
+  .header-inner {
+    flex-direction: column; align-items: flex-start;
+    gap: 10px; padding: 16px 22px 10px;
+  }
+  .brand { font-size: 1.35rem; white-space: normal; }
+  .site-nav { gap: 8px 20px; }
+  .site-nav a { font-size: 0.88rem; }
+  .wrap.home { padding-top: 34px; }
+  .home-nav { gap: 8px 22px; margin-bottom: 26px; }
+  .home-nav a { font-size: 0.92rem; }
+}
