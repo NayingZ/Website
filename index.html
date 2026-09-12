@@ -14,72 +14,81 @@
   <div class="wrap home">
 
     <!-- ========== HERO: photo + name + contact + CV button ========== -->
-    <div class="hero">
-      <!-- To use a real photo, replace this <div> with:
-           <img class="headshot" src="headshot.jpg" alt="Naying Zhou"> -->
-      <div class="headshot">NZ</div>
+    <div class="home-grid">
 
-      <div class="hero-text">
-        <h1>Naying Zhou, MD, MPH</h1>
-        <p class="subtitle">PhD Candidate in Epidemiology</p>
-        <p class="affiliation">Department of Population and Public Health Sciences</p>
-        <p class="affiliation">Keck School of Medicine of USC</p>
-        <p class="contact-line">
-          <a href="mailto:naying.zhou@gmail.com">naying.zhou@gmail.com</a>
-        </p>
-        <!-- To restore the CV download button, drop cv.pdf in this folder and uncomment:
-        <a class="cv-button" href="cv.pdf" download>Download CV</a> -->
+      <!-- Left column: identity — photo, name, contact, section links -->
+      <aside class="home-identity">
+      <div class="hero">
+        <img class="headshot" src="figures/headshot.jpg" alt="Naying Zhou">
+
+        <div class="hero-text">
+          <h1>Naying Zhou</h1>
+          <p class="contact-line">
+            <a href="mailto:naying.zhou@gmail.com">naying.zhou@gmail.com</a>
+          </p>
+          <!-- To restore the CV download button, drop cv.pdf in this folder and uncomment:
+          <a class="cv-button" href="cv.pdf" download>Download CV</a> -->
+        </div>
       </div>
-    </div>
 
-    <!-- ========== NAV — sits under the hero on the landing page.
-         "About" is omitted since this page IS About. ========== -->
-    <nav class="home-nav">
-      <a href="research.html">Research &amp; Grant</a>
-      <a href="experience.html">Education &amp; Experience</a>
-      <a href="teaching.html">Teaching</a>
-    </nav>
+      <!-- ========== NAV — sits under the hero on the landing page.
+           "About" is omitted since this page IS About. ========== -->
+      <nav class="home-nav">
+        <a href="experience.html">Education &amp; Experience</a>
+        <a href="research.html">Research &amp; Grant</a>
+        <a href="teaching.html">Teaching &amp; Service</a>
+      </nav>
+      </aside>
 
-    <!-- ========== ABOUT ========== -->
-    <section>
-      <h2>About</h2>
-      <!-- Working notes (not shown on the page):
-           Research — vision, potential
-           动态 flowchart 插入 summary research
-           ABMLM infographic -->
-      <p>
-        I am a <strong>genetic epidemiologist</strong> building a career at the intersection
-        of pediatrics, medical genetics, and precision medicine. I am currently applying for
-        pediatrics residency, with the long-term goal of
-        <strong>becoming a clinical geneticist</strong> who cares for children throughout the
-        course of genetic disease, from early risk recognition and diagnosis to treatment and
-        long-term management.
-      </p>
-      <p>
-        My training has <strong>prepared me to approach medicine from both population and
-        molecular perspectives</strong>. Through my MPH training in biostatistics and
-        epidemiology, I developed a strong statistical and methodological foundation for
-        evaluating clinical and population-level evidence. My doctoral training in genetic
-        epidemiology has taken that further, into <strong>a particular interest in inherited
-        susceptibility to childhood cancer</strong>. Together, these experiences have prepared
-        me to bring rigorous scientific thinking into the next stage of my clinical training.
-      </p>
-      <p>
-        <strong>Pediatrics and genetics are central to the career I want to build.</strong> A molecular
-        diagnosis can change how we understand a child's illness while also revealing
-        implications for parents, siblings, and future generations. My goal is to combine
-        rigorous clinical training with research that translates population-scale genomic
-        discoveries into earlier diagnosis, more precise management, and better long-term
-        outcomes for children.
-      </p>
+      <!-- Right column: the About text -->
+      <div class="home-main">
+        <ul class="degrees">
+          <li>
+            <span class="degree">PhD Candidate,<br>Genetic Epidemiology</span>
+            <span class="school">USC Keck School of Medicine</span>
+          </li>
+          <li>
+            <span class="degree">MPH, Biostatistics</span>
+            <span class="school">UCLA Fielding School of Public Health</span>
+          </li>
+          <li>
+            <span class="degree">MD</span>
+            <span class="school">Ottawa-Shanghai Joint School of Medicine (OSJSM)</span>
+          </li>
+        </ul>
+
+      <!-- ========== ABOUT ========== -->
+      <section>
+        <h2>About</h2>
+        <!-- Working notes (not shown on the page):
+             Research — vision, potential
+             动态 flowchart 插入 summary research
+             ABMLM infographic -->
+        <p>
+          I'm applying for a combined Pediatrics and Medical Genetics residency after
+          completing my medical training through the Ottawa-Shanghai joint medical program
+          and spending my PhD years at USC studying inherited cancer risk in children.
+          My research studied California's archived newborn blood spots for germline genetic
+          susceptibility in childhood cancer.
+        </p>
+        <p>
+          What continues to draw me toward clinical care is the chance to help families
+          navigate uncertainty, answering parents' questions about what a diagnosis means for
+          their children, staying with them as the picture becomes clearer, and finding the
+          best management together. Pediatrics has been the constant throughout my journey,
+          and I'm ready to bring what I've learned from genetics back to the bedside.
+        </p>
 
       <figure class="about-figure">
-        <img src="about-diagram.svg"
-             alt="The course of genetic disease in five stages: screening and ascertainment, deep phenotyping, genomic testing and interpretation, counseling and cascade testing, and targeted therapy and surveillance. My doctoral research on population-level cancer clustering and genetic susceptibility across California feeds into screening, genomic testing, counseling, and targeted therapy; periodic reanalysis of unsolved cases feeds back into interpretation.">
-      </figure>
-    </section>
+          <img src="about-diagram.svg"
+               alt="The course of genetic disease in five stages: screening and ascertainment, deep phenotyping, genomic testing and interpretation, counseling and cascade testing, and targeted therapy and surveillance. My doctoral research on germline genetic susceptibility to childhood cancer feeds into screening, genomic testing, counseling, and targeted therapy; periodic reanalysis of unsolved cases feeds back into interpretation.">
+        </figure>
+      </section>
+      </div>
 
-    <footer>© 2026 Naying Zhou · Last updated August 2026</footer>
+    </div>
+
+    <footer>© 2026 Naying Zhou · Last updated September 2026</footer>
   </div>
 </body>
 </html>

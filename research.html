@@ -15,9 +15,9 @@
       <a class="brand" href="index.html">Naying Zhou<span class="post">, MD, MPH</span></a>
       <nav class="site-nav">
         <a href="index.html">About</a>
-        <a href="research.html" class="active">Research &amp; Grant</a>
         <a href="experience.html">Education &amp; Experience</a>
-        <a href="teaching.html">Teaching</a>
+        <a href="research.html" class="active">Research &amp; Grant</a>
+        <a href="teaching.html">Teaching &amp; Service</a>
       </nav>
     </div>
   </header>
@@ -35,9 +35,12 @@
       where such risk has been least well characterized.
     </p>
 
+
     <!-- ========== GRANT ========== -->
-    <section>
-      <h2>Grant</h2>
+    <section id="grant">
+      <details class="fold">
+        <summary><h2>Grant</h2></summary>
+        <div class="fold-body">
 
       <div class="entry grant">
 
@@ -75,11 +78,6 @@
                      alt="California Initiative to Advance Precision Medicine" loading="lazy">
               </span>
             </a>
-
-            <!-- Text-only link, sits with the funder buttons -->
-            <div class="grant-links">
-              <a href="https://files.constantcontact.com/5e6673ed901/3b2c9a06-1d24-4974-8243-146f3d8585f7.pdf" target="_blank" rel="noopener">Program &amp; funded projects (PDF)</a>
-            </div>
           </div>
 
           <div class="grant-headline">
@@ -113,14 +111,15 @@
 
               <dl class="grant-facts">
                 <dt>Program</dt>
-                <dd>CIAPM Next-Gen Representative Research Program</dd>
+                <dd>CIAPM Next-Gen Representative Research Program
+                  (<a href="https://files.constantcontact.com/5e6673ed901/3b2c9a06-1d24-4974-8243-146f3d8585f7.pdf" target="_blank" rel="noopener">PDF</a>)</dd>
 
                 <dt>Term</dt>
                 <dd>2.5 years, 2026–2028</dd>
 
                 <dt>Award</dt>
                 <dd>
-                  One of 12 awards made statewide from a $1.8 million program, selected from applications across California.
+                  Selected as one of 12 statewide awardees from a $1.8 million program open to applicants across California.
                 </dd>
 
                 <dt>Disease</dt>
@@ -143,75 +142,86 @@
 
         </div>
       </div>
+        </div>
+      </details>
     </section>
 
-    <!-- ========== ON-GOING RESEARCH ========== -->
-    <section>
-      <h2>On-Going Research</h2>
+    <!-- ========== PUBLICATIONS ========== -->
+    <section id="publications">
+      <details class="fold">
+        <summary><h2>Publications</h2></summary>
+        <div class="fold-body">
 
       <div class="entry">
         <div class="grant-head">
 
           <div class="grant-funders">
-            <a class="thumb-btn" href="clic-pipeline.html">
-              <img src="clic-pipeline-thumb.png"
-                   alt="Preview of the CLIC genomics pipeline diagram, showing the Step 1 and Step 2 flowcharts" loading="lazy">
-              <span>CLIC genomics pipeline →</span>
+            <a class="thumb-btn" href="figures/jnci-sir.svg" target="_blank" rel="noopener">
+              <img src="figures/jnci-sir-thumb.svg"
+                   alt="Standardized incidence ratios: 2.35 for siblings, 8.06 for a second primary after a CNS tumor, 10.02 for a CNS tumor after another cancer">
+              <span>Key result &mdash; familial &amp; second primary risk &rarr;</span>
             </a>
           </div>
 
           <div class="grant-headline">
-            <span class="entry-date">2024 – Present</span>
-            <span class="entry-title">
-              <a href="https://www.clic.ngo/" target="_blank" rel="noopener">Childhood Cancer and Leukemia International Consortium (CLIC)</a>
-            </span>
-            <dl class="grant-facts">
-              <dt>Role</dt>
-              <dd>Lead Genomic Data Analysis Coordinator</dd>
+            <div class="entry-title">Patterning of familial and multiple cancer clustering of early-onset CNS tumors in California</div>
+            <div class="entry-meta">
+            <strong>Zhou N</strong>, Cote DJ, Ostrom Q, Wiemels JL.
+            <em>Journal of the National Cancer Institute.</em> Submitted, June 2026.
+            </div>
 
-              <dt>Center</dt>
-              <dd>Americas Analysis Center, USC</dd>
+            <ul class="keywords" aria-label="Keywords">
+              <li class="kw-disease">Early-onset CNS tumors</li>
+              <li class="kw-disease">Second primary cancers</li>
+              <li class="kw-method">Registry linkage</li>
+              <li class="kw-method">SIR analysis</li>
+              <li>Familial aggregation</li>
+            </ul>
 
-              <dt>Consortium Chair</dt>
-              <dd>
-                <a href="https://med.umn.edu/bio/logan-spector" target="_blank" rel="noopener">Dr. Logan G. Spector</a>
-                · University of Minnesota
-              </dd>
-
-              <dt>USC Site Lead</dt>
-              <dd>
-                <a href="https://keck.usc.edu/faculty-search/joseph-leo-wiemels/" target="_blank" rel="noopener">Dr. Joseph L. Wiemels</a>
-              </dd>
-
-              <dt>Collaborators</dt>
-              <dd>
-                <a href="https://www.chla.org/profile/eric-nickels-md" target="_blank" rel="noopener">Dr. Eric Nickels</a> ·
-                <a href="https://sites.usc.edu/wiemels/about/" target="_blank" rel="noopener">Yijin Xiang</a>
-              </dd>
-            </dl>
-
-            <!-- Collapsed by default, matching the grant entry -->
             <details class="grant-details">
-              <summary>Project details</summary>
+              <summary>Details</summary>
               <ul class="detail-list">
                 <li>
-                  Track data transfer across contributing sites, harmonize datasets, and resolve
-                  discrepancies between study-specific formats and conventions.
+                  Linked the California Cancer Registry to the state birth registry to follow
+                  families and individuals diagnosed with early-onset CNS tumors or other cancers
+                  between 1989 and 2020, separating inherited susceptibility, shared environment
+                  and treatment-related second cancers by CNS tumor subtype.
                 </li>
                 <li>
-                  Lead end-to-end genomic processing: PLINK-based quality control (Genvisis), RFMix ancestry
-                  inference, TOPMed imputation, and post-imputation QC.
+                  Across 6,311 families with at least one CNS tumor, siblings of the proband had
+                  more than twice the expected rate of early-onset cancer
+                  (SIR 2.35, 95% CI 1.82–2.98), with the strongest familial signal for pituitary
+                  adenoma, neuronal and mixed neuronal-glial tumors, astrocytoma, and unspecified
+                  CNS neoplasms.
                 </li>
                 <li>
-                  Acquire and clean dbGaP public control data, then match controls to cases for
-                  association testing.
+                  Among 51,344 individuals with a primary cancer, the risk ran in both directions:
+                  a first primary CNS tumor was followed by any second primary at
+                  SIR 8.06 (7.13–9.07), and any first primary cancer was followed by a CNS tumor at
+                  SIR 10.02 (8.88–11.27).
                 </li>
                 <li>
-                  Bridge contributing investigators and the analytic workflow, integrating
-                  heterogeneous cohorts into consistent, analysis-ready datasets for large-scale
-                  studies of genetic susceptibility to childhood leukemia.
+                  Subtypes sorted by sequence: medulloblastoma, choroid plexus tumors and
+                  oligoastrocytic tumors appeared more often as first primaries, while meningioma,
+                  astrocytoma, nerve sheath tumors and glioblastoma were more common as subsequent
+                  primaries.
+                </li>
+                <li>
+                  Together these argue for subtype-informed genetic evaluation, counseling and
+                  long-term surveillance for affected families and for survivors.
                 </li>
               </ul>
+
+              <figure class="figure">
+                <img src="figures/jnci-sir.svg"
+                     alt="Forest plot of standardized incidence ratios: 2.35 for siblings, 8.06 for any second primary after a CNS tumor, and 10.02 for a subsequent CNS tumor after any first cancer.">
+                <figcaption>
+                  <strong>Familial and second primary risk.</strong>
+                  Standardized incidence ratios with 95% confidence intervals, on a log scale;
+                  the dashed line marks the population rate.
+                </figcaption>
+              </figure>
+
             </details>
           </div>
 
@@ -219,210 +229,645 @@
       </div>
 
       <div class="entry">
-        <span class="entry-date">2025 – Present</span>
-        <span class="entry-title">Molecular &amp; Genetic Epidemiology — Cross-Laboratory Collaboration</span>
-        <div class="entry-meta">Interdisciplinary Research Collaborator · USC</div>
-        <div class="entry-desc">
-          Collaborate across USC laboratories on projects spanning wet-lab science, molecular
-          epidemiology, and computational genomics. This work took me beyond computational
-          research into hands-on laboratory technique, including DNA extraction and PCR
-          analysis. Parallel cross-lab projects integrate albumin adduct profiling with
-          genotype data, and use Multiethnic Cohort genotypes to develop models predicting
-          <em>GSTM1</em>/<em>GSTT1</em> deletion status — enabling gene–environment
-          interaction analyses in cohorts that lack direct deletion typing.
+        <div class="grant-head">
+
+          <div class="grant-funders">
+            <a class="thumb-btn" href="figures/mb-figure1.jpg" target="_blank" rel="noopener">
+              <img src="figures/mb-figure1-thumb.jpg" loading="lazy"
+                   alt="Grid of seven patients against five genes, each tile colored by alteration type, with the additional primary cancer and sex alongside">
+              <span>Figure 1 &mdash; variants by patient &rarr;</span>
+            </a>
+          </div>
+
+          <div class="grant-headline">
+            <div class="entry-title">Underlying genetic predisposition in children who present with medulloblastoma and additional primary cancers</div>
+            <div class="entry-meta">
+            <strong>Zhou N</strong>, Walsh KM, Wiemels JL.
+            <em>Pediatric Blood &amp; Cancer.</em> Submitted, August 2026.
+            </div>
+
+            <ul class="keywords" aria-label="Keywords">
+              <li class="kw-disease">Medulloblastoma</li>
+              <li class="kw-disease">Multiple primaries</li>
+              <li class="kw-method">Whole-exome sequencing</li>
+              <li class="kw-method">Newborn blood spots</li>
+              <li>TP53</li>
+              <li>PMS2</li>
+            </ul>
+
+            <details class="grant-details">
+              <summary>Details</summary>
+              <ul class="detail-list">
+                <li>
+                  Asks whether children whose medulloblastoma is accompanied by other primary
+                  cancers are enriched for inherited susceptibility, a group rarely examined on
+                  its own. Twenty-two patients contributed 39 primary cancer events; 17 (77%) had
+                  a second primary, and the median age at first diagnosis was 4 years.
+                </li>
+                <li>
+                  Germline whole-exome sequencing was run on DNA from archived neonatal dried
+                  blood spots, with SNV/indel calling in GATK, copy-number calling in ExomeDepth,
+                  and classification against the Genomics England childhood solid tumour panel
+                  following ACMG/AMP and ACMG/ClinGen criteria.
+                </li>
+                <li>
+                  Seven of 22 patients (32%) carried a pathogenic or likely pathogenic variant
+                  with plausible phenotype concordance, far above the roughly 6% reported in
+                  largely unselected medulloblastoma cohorts.
+                </li>
+                <li>
+                  The genes tracked the tumors: three <em>TP53</em> variants (p.R141H, p.E207X,
+                  p.R205L) in the Li–Fraumeni spectrum, <em>RB1</em> p.R455X in a child with
+                  retinoblastoma, <em>NF1</em> p.R304X in a child with glioma, and
+                  <em>LZTR1</em> p.Y155X.
+                </li>
+                <li>
+                  A multi-exon <em>PMS2</em> deletion (~18.8 kb, introns 6–13) was found in a
+                  child with both colorectal adenocarcinoma and medulloblastoma at age 12. The
+                  phenotype fits constitutional mismatch repair deficiency better than classic
+                  Lynch syndrome, raising the possibility of a second hit not captured by exome
+                  data. Pseudogene homology with <em>PMS2CL</em> makes this locus particularly
+                  demanding, and confirmatory <em>PMS2</em>-specific testing is warranted.
+                </li>
+                <li>
+                  Taken together, the yield argues for systematic germline evaluation and
+                  risk-adapted counseling in multi-primary pediatric medulloblastoma. It also
+                  offers a scalable model, built on stored newborn blood spots, for thinking about
+                  precision prevention.
+                </li>
+              </ul>
+
+              <figure class="figure">
+                <img src="figures/mb-figure1.jpg" loading="lazy"
+                     alt="Figure 1: seven de-identified patients by five genes (TP53, RB1, NF1, LZTR1, PMS2); each tile is colored by alteration type (nonsense, missense or CNV deletion), with the exact variant listed at right alongside the patient's additional primary cancer and sex.">
+                <figcaption>
+                  <strong>Figure 1. Germline pathogenic and likely pathogenic variants in 7 of 22
+                  pediatric patients with medulloblastoma.</strong>
+                  Each row is a de-identified patient; gene columns carry a tile colored by
+                  alteration type, with the exact variant at right. Annotation columns show the
+                  additional, non-medulloblastoma primary cancer and sex. The alignment between
+                  gene and accompanying tumor is the phenotype–genotype concordance the study
+                  rests on.
+                </figcaption>
+              </figure>
+            </details>
+          </div>
+
         </div>
       </div>
 
       <div class="entry">
-        <span class="entry-date">2024 – Present</span>
-        <span class="entry-title">Whole-Exome Sequencing of California Newborn Dried Blood Spots</span>
-        <div class="entry-meta">Graduate Research Assistant</div>
-        <div class="entry-desc">
-          Lead end-to-end WES pipelines — from raw sequence processing and alignment
-          through SNV, indel, and CNV calling, QC, and annotation — for germline studies
-          using dried blood spots collected at birth through the California biobank.
-          Analyses span four pediatric cancer cohorts: 320 individuals with glioma,
-          50 with atypical teratoid/rhabdoid tumor (ATRT), 22 with medulloblastoma, and
-          114 samples from families with multiple cancer-affected members, characterizing
-          cancer predisposition variants underlying early-onset CNS tumors and familial
-          cancer clustering.
+        <div class="grant-head">
+
+          <div class="grant-funders">
+            <a class="thumb-btn" href="figures/ltl-glioma-forest.svg" target="_blank" rel="noopener">
+              <img src="figures/ltl-glioma-thumb.svg"
+                   alt="Forest plot: odds ratios of 2.12 overall, 1.89 after age 6, and 1.04 at or before age 6, per 1-SD longer telomere length">
+              <span>Key result &mdash; forest plot &rarr;</span>
+            </a>
+          </div>
+
+          <div class="grant-headline">
+            <div class="entry-title">Relationship between genetically determined telomere length and childhood glioma risk</div>
+            <div class="entry-meta">
+            <strong>Zhou N</strong>, Li S, Foss-Skiftesvik J, Dahlin AM, Bybjerg-Grauholm J,
+            Melin B, de Smith AJ, Walsh KM, Wiemels JL.
+            <em>Acta Neuropathologica Communications.</em> 2026;14(1):93.
+            PMID: 41668119.
+            doi:<a href="https://doi.org/10.1186/s40478-025-02199-2" target="_blank" rel="noopener">10.1186/s40478-025-02199-2</a>
+            </div>
+
+            <ul class="keywords" aria-label="Keywords">
+              <li class="kw-disease">Pediatric glioma</li>
+              <li class="kw-method">Mendelian randomization</li>
+              <li class="kw-method">Polygenic risk scores</li>
+              <li class="kw-method">Meta-GWAS</li>
+              <li>Telomere biology</li>
+            </ul>
+
+            <details class="grant-details">
+              <summary>Details</summary>
+              <ul class="detail-list">
+          <li>
+            First genetic evidence linking longer genetically predicted leukocyte
+            telomere length (LTL) to increased pediatric glioma risk, using Mendelian
+            randomization and polygenic risk scores across 4,069 cases and 8,778
+            controls from the largest available childhood glioma meta-GWAS.
+          </li>
+          <li>
+            Each 1-SD increase in genetically predicted LTL roughly doubled childhood
+            glioma risk: OR 2.12 (95% CI 1.32–3.39, <em>P</em> = .002) in the
+            multi-ancestry group and OR 2.16 (95% CI 1.16–4.03, <em>P</em> = .015)
+            in the European group.
+          </li>
+          <li>
+            The contributing variants differed from those driving adult glioma:
+            rs59294613 (<em>POT1</em>), rs8105767 (<em>ZNF208</em>), and rs7705526
+            (<em>TERT</em>) in children, versus <em>TERT</em> and <em>RTEL1</em> in
+            adults, with <em>RTEL1</em> showing a null pediatric effect.
+          </li>
+          <li>
+            The effect is age-dependent: OR 1.89 (95% CI 1.33–2.69, <em>P</em> &lt; .001)
+            in children diagnosed after age 6 versus OR 1.04 (95% CI 0.74–1.45,
+            <em>P</em> = .73) at or before age 6 (<em>P</em><sub>het</sub> = .006).
+            A generalized additive model showed LTL PRS rising steadily with diagnosis
+            age from 0–10 years, then plateauing.
+          </li>
+              </ul>
+
+              <figure class="figure">
+                <img src="figures/ltl-glioma-forest.svg"
+                     alt="Forest plot of Mendelian randomization estimates for childhood glioma risk per 1-SD increase in genetically predicted leukocyte telomere length, by ancestry group and age at diagnosis.">
+                <figcaption>
+                  <strong>Mendelian randomization estimates by ancestry and age at diagnosis.</strong>
+                  Odds ratios with 95% confidence intervals per genetically predicted 1-SD increase
+                  in leukocyte telomere length; the dashed line marks no effect.
+                  <br>
+                  Redrawn from the estimates reported in Zhou et al.,
+                  <em>Acta Neuropathol Commun</em> 2026;14(1):93.
+                  <a href="https://link.springer.com/article/10.1186/s40478-025-02199-2/figures/4" target="_blank" rel="noopener">See the published Figure 4</a>,
+                  which adds the age-at-diagnosis model (panel B).
+                </figcaption>
+              </figure>
+            </details>
+          </div>
+
         </div>
       </div>
 
       <div class="entry">
-        <span class="entry-date">2025</span>
-        <span class="entry-title">WES Analysis of Early-Onset Soft Tissue Sarcoma in California</span>
-        <div class="entry-meta">Multiethnic family-based population study</div>
-        <div class="entry-desc">
-          Led whole-exome sequencing analyses identifying germline cancer predisposition
-          variants in early-onset soft tissue sarcoma patients and their affected siblings.
-          Characterized candidate susceptibility loci with ancestry-specific patterns, and
-          identified a novel recurrent <em>USP6</em> mutation in two unrelated Southeast Asian
-          individuals (Filipino and Guamanian) with rhabdomyosarcoma — a potential
-          ancestry-associated susceptibility signal warranting further investigation.
+        <div class="grant-head">
+
+          <div class="grant-funders">
+            <a class="thumb-btn" href="figures/all-signatures.jpg" target="_blank" rel="noopener">
+              <img src="figures/all-signatures-thumb.jpg" loading="lazy"
+                   alt="Dot plot of mutational signatures across childhood ALL subtypes, dots sized by how often each signature is detected and colored by environmental, endogenous or unknown etiology">
+              <span>Figure 1 &mdash; signatures by subtype &rarr;</span>
+            </a>
+          </div>
+
+          <div class="grant-headline">
+            <div class="entry-title">Investigating the causes of childhood acute lymphoblastic leukemia through mutational epidemiology</div>
+            <div class="entry-meta">
+            de Smith AJ, <strong>Zhou N</strong>, Li Y, Liu T, Patrus N, Wiemels JL.
+            <em>Current Problems in Pediatric and Adolescent Health Care.</em> 2025;55(9):101818.
+            PMID: 41338871.
+            doi:<a href="https://doi.org/10.1016/j.cppeds.2025.101818" target="_blank" rel="noopener">10.1016/j.cppeds.2025.101818</a>
+            </div>
+
+            <ul class="keywords" aria-label="Keywords">
+              <li class="kw-disease">Childhood ALL</li>
+              <li class="kw-method">Mutational signatures</li>
+              <li class="kw-method">Tumor sequencing</li>
+              <li>Mutational epidemiology</li>
+              <li>Prevention</li>
+            </ul>
+
+            <details class="grant-details">
+              <summary>Details</summary>
+              <ul class="detail-list">
+                <li>
+                  ALL is the most common childhood cancer, roughly a quarter of all pediatric
+                  malignancies, with about 3,200 US diagnoses expected in 2025. Cure rates now
+                  exceed 90%, but ~10% relapse and survivors carry lifelong treatment-related
+                  morbidity, so prevention, not just cure, is the open problem.
+                </li>
+                <li>
+                  Germline susceptibility is well established; the modifiable half of the picture
+                  is not. Most exposure evidence rests on questionnaires, which are prone to recall
+                  bias and say little about whether an exposure is actually leukemogenic.
+                </li>
+                <li>
+                  <em>Mutational epidemiology</em> is the proposed way through: carcinogens leave
+                  characteristic mutational signatures in the tumor genome, so pairing signature
+                  analysis with epidemiologic data turns the leukemia itself into a record of
+                  exposure. The approach has already produced findings in adult solid tumors,
+                  including explanations for global variation in incidence, but has not been
+                  brought to childhood cancer.
+                </li>
+                <li>
+                  Sequencing studies of childhood ALL already show a recurring set of signatures:
+                  APOBEC-related SBS2 and SBS13 (enriched in <em>ETV6::RUNX1</em> B-ALL),
+                  the ROS/oxidative-damage signature SBS18, the UV-related SBS7 (enriched in
+                  aneuploid subtypes including hyperdiploid, near-haploid and iAMP21), alongside
+                  endogenous processes such as SBS3 and deletions from illegitimate V(D)J
+                  recombination.
+                </li>
+                <li>
+                  The gap the review identifies: the clinical cohorts carrying this sequencing data
+                  hold no exposure information, so direct exposure-to-signature analysis has never
+                  been possible. Linking the two is what would let specific leukemogenic exposures
+                  be named, the prerequisite for precision prevention.
+                </li>
+              </ul>
+
+              <figure class="figure">
+                <img src="figures/all-signatures.jpg" loading="lazy"
+                     alt="Dot plot: mutational signatures (rows) against ALL immunophenotypes and molecular subtypes (columns). Dot size shows the proportion of patients in which each signature was detected; color marks environmental, endogenous or unknown proposed etiology.">
+                <figcaption>
+                  <strong>Figure 1. Mutational signatures reported in childhood ALL across
+                  subtypes.</strong>
+                  Dot size gives the reported frequency of patients in whom each signature was
+                  detected; color marks whether the proposed etiology is environmental (green),
+                  endogenous (blue) or unknown (grey). Signatures reported in under 5% of cases
+                  are omitted.
+                  <br>
+                  From de Smith et al., <em>Curr Probl Pediatr Adolesc Health Care</em>
+                  2025;55(9):101818.
+                  doi:<a href="https://doi.org/10.1016/j.cppeds.2025.101818" target="_blank" rel="noopener">10.1016/j.cppeds.2025.101818</a>
+                </figcaption>
+              </figure>
+            </details>
+          </div>
+
         </div>
       </div>
+
+      <div class="entry">
+        <div class="grant-head">
+
+          <div class="grant-funders">
+            <a class="thumb-btn" href="figures/twin-concordance.svg" target="_blank" rel="noopener">
+              <img src="figures/twin-concordance-thumb.svg"
+                   alt="Bar chart of leukemia concordance among twin pairs: 0.8% for all leukemia, 0.5% lymphoid and 2.9% AML, all below the 5-25% reported in earlier twin series">
+              <span>Key result &mdash; twin concordance &rarr;</span>
+            </a>
+          </div>
+
+          <div class="grant-headline">
+            <div class="entry-title">A first-born twin has a higher risk of acute leukemia in a population-based assessment of cancer in twins in California, and a lower than anticipated rate of twin concordance</div>
+            <div class="entry-meta">
+            Nickels EM, <strong>Zhou N</strong>, Wiemels JL.
+            <em>Haematologica.</em> 2025;110(10):2463–2468.
+            PMID: 39815817.
+            doi:<a href="https://doi.org/10.3324/haematol.2024.286309" target="_blank" rel="noopener">10.3324/haematol.2024.286309</a>
+            </div>
+
+            <ul class="keywords" aria-label="Keywords">
+              <li class="kw-disease">Childhood leukemia</li>
+              <li class="kw-method">Registry linkage</li>
+              <li class="kw-method">Twin concordance</li>
+              <li>Birth order</li>
+              <li>Prenatal origins</li>
+            </ul>
+
+            <details class="grant-details">
+              <summary>Details</summary>
+              <ul class="detail-list">
+                <li>
+                  Population-based rather than volunteer-based: California birth records
+                  (1982–2017) linked to the California Cancer Registry (1988–2022) identified
+                  255 twin pairs in which at least one twin developed leukemia, 258 diagnoses
+                  in all, avoiding the recruitment bias of earlier twin series.
+                </li>
+                <li>
+                  Within pairs discordant for disease, the affected twin was more often the
+                  first-born: OR 1.80 (<em>P</em> = .001) for leukemia overall and OR 2.26
+                  (<em>P</em> &lt; .001) for lymphoid leukemia, mirroring the first-born
+                  association already described for ALL in singleton births.
+                </li>
+                <li>
+                  Concordance was far lower than the textbook figure: 0.8% of pairs for all
+                  leukemias, 0.5% for lymphoid leukemia and 2.9% for AML. Adjusting for the
+                  expected share of monozygotic pairs raised these to 2.6%, 1.4% and 16.7%,
+                  still well below the 5–25% reported in earlier studies.
+                </li>
+                <li>
+                  The gap suggests those earlier estimates were inflated by ascertainment,
+                  since concordant pairs are more likely to be noticed and enrolled. That bears on
+                  how much of childhood leukemia risk is attributed to shared prenatal events.
+                </li>
+              </ul>
+
+              <figure class="figure">
+                <img src="figures/twin-concordance.svg"
+                     alt="Bar chart comparing observed and monozygosity-adjusted twin concordance for all leukemia, lymphoid leukemia and AML against the 5-25% range reported in earlier twin series.">
+                <figcaption>
+                  <strong>Twin concordance for leukemia, observed versus long-assumed.</strong>
+                  Percentage of twin pairs in which both twins were diagnosed, shown before and
+                  after adjusting for the expected proportion of monozygotic pairs; the shaded
+                  band marks the 5–25% range reported in earlier twin series.
+                  <br>
+                  Drawn from the estimates reported in Nickels, Zhou &amp; Wiemels,
+                  <em>Haematologica</em> 2025;110(10):2463–2468.
+                </figcaption>
+              </figure>
+            </details>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="grant-head">
+
+          <div class="grant-funders">
+            <a class="thumb-btn" href="figures/rsg-mechanism.svg" target="_blank" rel="noopener">
+              <img src="figures/rsg-mechanism-thumb.svg"
+                   alt="Schematic: tPA after stroke causes barrier leak and hemorrhage; rosiglitazone acting through PPAR-gamma shifts microglia and keeps the barrier intact">
+              <span>Mechanism &mdash; PPAR-&#947; and microglia &rarr;</span>
+            </a>
+          </div>
+
+          <div class="grant-headline">
+            <div class="entry-title">Rosiglitazone ameliorates tissue plasminogen activator-induced brain hemorrhage after stroke</div>
+            <div class="entry-meta">
+            Li Y, Zhu ZY, Lu BW, Huang TT, Zhang YM, <strong>Zhou NY</strong>, Xuan W, Chen ZA, Wen DX, Yu WF, Li PY.
+            <em>CNS Neuroscience &amp; Therapeutics.</em> 2019;25(12):1343–1352.
+            PMID: 31756041.
+            doi:<a href="https://doi.org/10.1111/cns.13260" target="_blank" rel="noopener">10.1111/cns.13260</a>
+            </div>
+
+            <ul class="keywords" aria-label="Keywords">
+              <li class="kw-disease">Ischemic stroke</li>
+              <li class="kw-disease">Brain hemorrhage</li>
+              <li class="kw-method">MCAO model</li>
+              <li class="kw-method">Flow cytometry</li>
+              <li>PPAR-γ</li>
+              <li>Microglial polarization</li>
+            </ul>
+
+            <details class="grant-details">
+              <summary>Details</summary>
+              <ul class="detail-list">
+                <li>
+                  Addresses the central limitation of stroke thrombolysis: given late, tPA
+                  raises the risk of brain hemorrhage. Mice underwent middle cerebral artery
+                  occlusion and received tPA two hours after onset, with rosiglitazone, a
+                  PPAR-γ agonist already in clinical use for diabetes, given beforehand.
+                </li>
+                <li>
+                  Rosiglitazone reduced infarct volume at day 1 and markedly lessened both
+                  blood–brain barrier disruption and hemorrhage compared with tPA alone.
+                </li>
+                <li>
+                  Flow cytometry and immunostaining traced the effect to microglial phenotype:
+                  CD206 and Arg-1 up, iNOS down, a shift away from the pro-inflammatory state.
+                </li>
+                <li>
+                  The protection disappeared when the PPAR-γ antagonist GW9662 was co-administered,
+                  placing the mechanism squarely on PPAR-γ rather than on an off-target effect.
+                </li>
+              </ul>
+
+              <figure class="figure">
+                <img src="figures/rsg-mechanism.svg"
+                     alt="Schematic of the proposed mechanism: delayed tPA after occlusion causes barrier breakdown and hemorrhage; rosiglitazone activates PPAR-gamma, shifting microglia toward CD206 and Arg-1 expression and preserving the barrier; GW9662 abolishes the protection.">
+                <figcaption>
+                  <strong>How the protection is thought to work.</strong>
+                  Drawn from the mechanism reported in Li et al.,
+                  <em>CNS Neurosci Ther</em> 2019;25(12):1343–1352.
+                </figcaption>
+              </figure>
+            </details>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="grant-head">
+
+          <div class="grant-funders">
+            <a class="thumb-btn" href="figures/bbb-two-photon.svg" target="_blank" rel="noopener">
+              <img src="figures/bbb-two-photon-thumb.svg"
+                   alt="Schematic: tracer confined to the vessel in sham mice, leaking into surrounding tissue 30 to 60 minutes after occlusion">
+              <span>What the imaging showed &rarr;</span>
+            </a>
+          </div>
+
+          <div class="grant-headline">
+            <div class="entry-title">Two-photon in vivo imaging of blood brain barrier injury in the ultra-early stage of cerebral ischemic stroke</div>
+            <div class="entry-meta">
+            Huang TT, Li Y, Zhang YM, <strong>Zhou NY</strong>, Fan RH, Li PY.
+            <em>Journal of Shanghai Jiaotong University (Medical Science).</em> 2019;39(9):998–1003.
+            [in Chinese]
+            doi:<a href="https://doi.org/10.3969/j.issn.1674-8115.2019.09.010" target="_blank" rel="noopener">10.3969/j.issn.1674-8115.2019.09.010</a>
+            </div>
+
+            <ul class="keywords" aria-label="Keywords">
+              <li class="kw-disease">Ischemic stroke</li>
+              <li class="kw-method">Two-photon microscopy</li>
+              <li class="kw-method">MCAO model</li>
+              <li>Blood–brain barrier</li>
+              <li>Neutrophil dynamics</li>
+            </ul>
+
+            <details class="grant-details">
+              <summary>Details</summary>
+              <ul class="detail-list">
+                <li>
+                  Asks how early the blood–brain barrier actually fails after ischemic stroke,
+                  a question conventional endpoint assays, which sample one time point after the
+                  fact, cannot answer.
+                </li>
+                <li>
+                  Twelve C57BL/6 mice (sham or 60-minute middle cerebral artery occlusion, n = 6
+                  each) were imaged live by two-photon microscopy using Alexa Fluor 488–dextran
+                  to outline vessels, rhodamine 6G to label neutrophils, and TMR as the barrier
+                  tracer.
+                </li>
+                <li>
+                  Within 30–60 minutes of reperfusion, extravascular TMR fluorescence was already
+                  significantly increased (<em>P</em> &lt; .001). The barrier leaks far earlier
+                  than the classical delayed-opening picture suggests.
+                </li>
+                <li>
+                  Neutrophils moved significantly more slowly inside occluded-side vessels
+                  (<em>P</em> &lt; .001), consistent with early leukocyte–endothelium engagement
+                  alongside the leak.
+                </li>
+              </ul>
+
+              <figure class="figure">
+                <img src="figures/bbb-two-photon.svg"
+                     alt="Two panels: in sham mice the TMR tracer stays within the vessel and neutrophils move freely; after occlusion the tracer diffuses into surrounding tissue and neutrophils slow.">
+                <figcaption>
+                  <strong>What the live imaging showed.</strong>
+                  Schematic of the two readouts, tracer escape from the vessel and neutrophil
+                  velocity within it. Drawn from the findings reported in Huang et al.,
+                  <em>J Shanghai Jiao Tong Univ (Med Sci)</em> 2019;39(9):998–1003.
+                </figcaption>
+              </figure>
+            </details>
+          </div>
+
+        </div>
+      </div>
+
+        </div>
+      </details>
     </section>
 
-    <!-- ========== PUBLICATIONS ========== -->
-    <section>
-      <h2>Publications</h2>
+    <!-- ========== ONGOING RESEARCH ========== -->
+    <section id="ongoing">
+      <details class="fold">
+        <summary><h2>Ongoing Research</h2></summary>
+        <div class="fold-body">
 
       <div class="entry">
-        <div class="entry-title">Patterning of familial and multiple cancer clustering of early-onset CNS tumors in California</div>
-        <div class="entry-meta">
-          <strong>Zhou N</strong>, Cote DJ, Ostrom Q, Wiemels JL.
-          <em>Journal of the National Cancer Institute.</em> Submitted, June 2026.
+        <span class="entry-date">2024 &ndash; Present</span>
+        <span class="entry-title">Reading Germline Genomes Out of Archived Newborn Blood Spots</span>
+        <div class="entry-meta">Graduate Research Assistant &middot; Wiemels Lab, USC</div>
+        <div class="entry-desc">
+          Built and now run the end-to-end whole-exome pipeline that turns decades-old
+          California newborn dried blood spots into analysis-ready germline data: raw sequence
+          processing and alignment, SNV, indel and CNV calling, quality control and annotation,
+          on input material that is degraded, minute in quantity and irreplaceable. The pipeline
+          currently supports four pediatric cancer cohorts totalling more than 500 children.
         </div>
       </div>
 
       <div class="entry">
-        <div class="entry-title">Underlying genetic predisposition in children who present with medulloblastoma and additional primary cancers</div>
-        <div class="entry-meta">
-          <strong>Zhou N</strong>, Walsh KM, Wiemels JL.
-          <em>Pediatric Blood &amp; Cancer.</em> Submitted, August 2026.
+        <span class="entry-date">2024 &ndash; Present</span>
+        <span class="entry-title">Germline Predisposition Across Early-Onset CNS Tumors</span>
+        <div class="entry-meta">Pediatric glioma, ATRT and medulloblastoma cohorts &middot; California biobank</div>
+        <div class="entry-desc">
+          Characterizing inherited cancer predisposition across three childhood brain tumor
+          types sequenced from birth specimens: 320 children with glioma, 50 with atypical
+          teratoid/rhabdoid tumor, and 22 with medulloblastoma. Sequencing the germline at birth
+          sidesteps the treatment exposures and tumor contamination that complicate variants
+          called later in the disease course.
         </div>
       </div>
 
       <div class="entry">
-        <div class="entry-title">Relationship between genetically determined telomere length and childhood glioma risk</div>
-        <div class="entry-meta">
-          <strong>Zhou N</strong>, Li S, Foss-Skiftesvik J, Dahlin AM, Bybjerg-Grauholm J,
-          Melin B, de Smith AJ, Walsh KM, Wiemels JL.
-          <em>Acta Neuropathologica Communications.</em> 2026;14(1):93.
-          PMID: 41668119.
-          doi:<a href="https://doi.org/10.1186/s40478-025-02199-2" target="_blank" rel="noopener">10.1186/s40478-025-02199-2</a>
-        </div>
-
-        <div class="finding">
-          <h4>Key Findings</h4>
-          <ul>
-            <li>
-              First genetic evidence linking longer genetically predicted leukocyte
-              telomere length (LTL) to increased pediatric glioma risk, using Mendelian
-              randomization and polygenic risk scores across 4,069 cases and 8,778
-              controls from the largest available childhood glioma meta-GWAS.
-            </li>
-            <li>
-              Each 1-SD increase in genetically predicted LTL roughly doubled childhood
-              glioma risk: OR 2.12 (95% CI 1.32–3.39, <em>P</em> = .002) in the
-              multi-ancestry group and OR 2.16 (95% CI 1.16–4.03, <em>P</em> = .015)
-              in the European group.
-            </li>
-            <li>
-              The contributing variants differed from those driving adult glioma —
-              rs59294613 (<em>POT1</em>), rs8105767 (<em>ZNF208</em>), and rs7705526
-              (<em>TERT</em>) in children, versus <em>TERT</em> and <em>RTEL1</em> in
-              adults, with <em>RTEL1</em> showing a null pediatric effect.
-            </li>
-            <li>
-              The effect is age-dependent: OR 1.89 (95% CI 1.33–2.69, <em>P</em> &lt; .001)
-              in children diagnosed after age 6 versus OR 1.04 (95% CI 0.74–1.45,
-              <em>P</em> = .73) at or before age 6 (<em>P</em><sub>het</sub> = .006).
-              A generalized additive model showed LTL PRS rising steadily with diagnosis
-              age from 0–10 years, then plateauing.
-            </li>
-          </ul>
-
-          <figure class="figure">
-            <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs40478-025-02199-2/MediaObjects/40478_2025_2199_Fig4_HTML.png"
-                 alt="Figure 4: (A) Forest plot of Mendelian randomization estimates for childhood glioma risk per standard deviation increase in genetically predicted leukocyte telomere length, stratified by age at diagnosis. (B) Generalized additive model showing the smoothed association between leukocyte telomere length polygenic risk score and age at glioma diagnosis."
-                 loading="lazy">
-            <figcaption>
-              <strong>Figure 4. Stratified MR and LTL PRS analysis by age at diagnosis.</strong>
-              (<strong>A</strong>) Forest plot of MR estimates for each age-at-diagnosis group
-              (IVW random-effects, weighted median, and weighted mode models), reported as odds
-              ratios with 95% CIs per genetically predicted 1-SD increase in telomere length;
-              <em>P*</em> denotes the between-group heterogeneity test.
-              (<strong>B</strong>) Generalized additive model of the smoothed association between
-              LTL PRS and age at diagnosis, adjusted for sex and the first 10 principal components.
-              The red vertical line marks age 10; the association strengthens from ages 0–10 and
-              then stabilizes.
-              <br>
-              Reproduced from Zhou et al., <em>Acta Neuropathol Commun</em> 2026, under
-              <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
-              <a href="https://link.springer.com/article/10.1186/s40478-025-02199-2/figures/4" target="_blank" rel="noopener">View full-size figure</a>.
-            </figcaption>
-          </figure>
+        <span class="entry-date">2024 &ndash; Present</span>
+        <span class="entry-title">Shared Germline Architecture in Cancer-Affected Sibling Pairs</span>
+        <div class="entry-meta">114 paired-sequenced siblings from multi-affected California families</div>
+        <div class="entry-desc">
+          Paired whole-exome sequencing of siblings who each developed cancer, asking which
+          germline variants are shared within a pair and how much of the familial clustering
+          observed in the state registry is attributable to known predisposition genes. The
+          concordant sibling design concentrates inherited signal in a way that unrelated
+          case-control comparisons cannot.
         </div>
       </div>
 
       <div class="entry">
-        <div class="entry-title">Investigating the causes of childhood acute lymphoblastic leukemia through mutational epidemiology</div>
-        <div class="entry-meta">
-          de Smith AJ, <strong>Zhou N</strong>, Li Y, Liu T, Patrus N, Wiemels JL.
-          <em>Current Problems in Pediatric and Adolescent Health Care.</em> 2025;55(9):101818.
-          PMID: 41338871.
-          doi:<a href="https://doi.org/10.1016/j.cppeds.2025.101818" target="_blank" rel="noopener">10.1016/j.cppeds.2025.101818</a>
+        <span class="entry-date">2025 &ndash; Present</span>
+        <span class="entry-title">Epigenome-Wide DNA Methylation and Childhood Glioma Risk</span>
+        <div class="entry-meta">Neonatal dried blood spots &middot; California Biobank Program</div>
+        <div class="entry-desc">
+          End-to-end study of neonatal DNA methylation in children who later developed glioma,
+          which I carry from bench to analysis: Performed DNA extraction and quantification from 
+          archived dried blood spots and conducted quality control, normalization, adjustment for 
+          cord-blood cell composition, and epigenome-wide association analyses of DNA methylation 
+          data. Because the specimen predates diagnosis and
+          treatment, any signal reflects methylation present at birth rather than a consequence
+          of the disease.
         </div>
       </div>
 
       <div class="entry">
-        <div class="entry-title">A first-born twin has a higher risk of acute leukemia in a population-based assessment of cancer in twins in California, and a lower than anticipated rate of twin concordance</div>
-        <div class="entry-meta">
-          Nickels EM, <strong>Zhou N</strong>, Wiemels JL.
-          <em>Haematologica.</em> 2025;110(10):2463–2468.
-          PMID: 39815817.
-          doi:<a href="https://doi.org/10.3324/haematol.2024.286309" target="_blank" rel="noopener">10.3324/haematol.2024.286309</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== PREDOCTORAL PUBLICATIONS ========== -->
-    <section>
-      <h2>Predoctoral Publications</h2>
-
-      <div class="entry">
-        <div class="entry-title">Rosiglitazone ameliorates tissue plasminogen activator-induced brain hemorrhage after stroke</div>
-        <div class="entry-meta">
-          Li Y, Zhu ZY, Lu BW, Huang TT, Zhang YM, <strong>Zhou NY</strong>, Xuan W, Chen ZA, Wen DX, Yu WF, Li PY.
-          <em>CNS Neuroscience &amp; Therapeutics.</em> 2019;25(12):1343–1352.
-          PMID: 31756041.
-          doi:<a href="https://doi.org/10.1111/cns.13260" target="_blank" rel="noopener">10.1111/cns.13260</a>
+        <span class="entry-date">2025 &ndash; Present</span>
+        <span class="entry-title">Imputing <em>GSTM1</em> and <em>GSTT1</em> Deletion Genotypes from Genome-Wide Array Data</span>
+        <div class="entry-meta">Multiethnic Cohort &middot; Cross-laboratory collaboration, USC</div>
+        <div class="entry-desc">
+          Developing and validating models that predict <em>GSTM1</em> and <em>GSTT1</em>
+          deletion status directly from flanking array genotypes. Both are common, functionally
+          important deletions in carcinogen metabolism that standard genotyping platforms do not
+          capture, so imputing them retrospectively opens gene-by-environment analyses in large
+          cohorts that were never typed for copy number.
         </div>
       </div>
 
       <div class="entry">
-        <div class="entry-title">Two-photon in vivo imaging of blood brain barrier injury in the ultra-early stage of cerebral ischemic stroke</div>
-        <div class="entry-meta">
-          Huang TT, Li Y, Zhang YM, <strong>Zhou NY</strong>, Fan RH, Li PY.
-          <em>Journal of Shanghai Jiaotong University (Medical Science).</em> 2019;39(9):998–1003.
-          [in Chinese]
-          doi:<a href="https://doi.org/10.3969/j.issn.1674-8115.2019.09.010" target="_blank" rel="noopener">10.3969/j.issn.1674-8115.2019.09.010</a>
+        <span class="entry-date">2025 &ndash; Present</span>
+        <span class="entry-title">Germline Modifiers of the Blood Adductome: Albumin Adductomics and Genotype</span>
+        <div class="entry-meta">Cross-laboratory collaboration &middot; USC</div>
+        <div class="entry-desc">
+          Integrating untargeted albumin adductomics, a cumulative record of reactive chemical
+          exposure, with germline genotype to test whether inherited differences in metabolic
+          capacity shape the adduct burden an exposure leaves behind. 
         </div>
       </div>
+        </div>
+      </details>
     </section>
 
     <!-- ========== CONFERENCES ========== -->
-    <section>
-      <h2>Conference Presentations</h2>
+    <section id="conferences">
+      <details class="fold">
+        <summary><h2>Conference Presentations</h2></summary>
+        <div class="fold-body">
 
       <div class="entry">
-        <span class="entry-date">Nov 2026</span>
-        <span class="entry-title">Patterning of familial and multiple cancer clustering of early-onset CNS tumors in California</span>
-        <div class="entry-meta">
-          <strong>Zhou N</strong>, Cote DJ, Ostrom Q, Wiemels JL.
-          <em>Oral presentation</em> —
-          <a href="https://www.soc-neuro-onc.org/meetings-education/31st-society-for-neuro-oncology-annual-meeting-education-day" target="_blank" rel="noopener">31st
-          Society for Neuro-Oncology (SNO) Annual Meeting &amp; Education Day</a>;
-          November 2026; Philadelphia, PA.
+        <div class="grant-head">
+
+          <div class="grant-funders">
+            <div class="edu-logo">
+              <img class="logo-sno" src="education_logo/sno.svg"
+                   alt="Society for Neuro-Oncology" loading="lazy">
+            </div>
+          </div>
+
+          <div class="grant-headline">
+            <span class="entry-date">Nov 2026</span>
+            <span class="entry-title">Patterning of familial and multiple cancer clustering of early-onset CNS tumors in California</span>
+            <div class="entry-meta">
+              <strong>Zhou N</strong>, Cote DJ, Ostrom Q, Wiemels JL.
+              <em>Oral presentation</em> &middot;
+              <a href="https://www.soc-neuro-onc.org/meetings-education/31st-society-for-neuro-oncology-annual-meeting-education-day" target="_blank" rel="noopener">31st
+              Society for Neuro-Oncology (SNO) Annual Meeting &amp; Education Day</a>;
+              November 2026; Philadelphia, PA.
+            </div>
+          </div>
+
         </div>
       </div>
 
       <div class="entry">
-        <span class="entry-date">Apr 2025</span>
-        <span class="entry-title">Whole-exome sequencing analysis of early-onset soft tissue sarcoma in a multiethnic family-based population study in California</span>
-        <div class="entry-meta">
-          <strong>Zhou N</strong>, Hattig ZS, Godley LA, Wiemels JL.
-          <em>Poster presentation</em> — American Association for Cancer Research (AACR)
-          Annual Meeting 2025; April 25–30, 2025; Chicago, IL.
-          <em>Cancer Res.</em> 2025;85(8_Suppl_1):Abstract 2280.
-          doi:<a href="https://aacrjournals.org/cancerres/article/85/8_Supplement_1/2280/758136" target="_blank" rel="noopener">10.1158/1538-7445.AM2025-2280</a>
+        <div class="grant-head">
+
+          <div class="grant-funders">
+            <div class="edu-logo">
+              <img class="logo-aacr" src="education_logo/aacr.png"
+                   alt="American Association for Cancer Research" loading="lazy">
+            </div>
+          </div>
+
+          <div class="grant-headline">
+            <span class="entry-date">Apr 2025</span>
+            <span class="entry-title">Whole-exome sequencing analysis of early-onset soft tissue sarcoma in a multiethnic family-based population study in California</span>
+            <div class="entry-meta">
+              <strong>Zhou N</strong>, Hattig ZS, Godley LA, Wiemels JL.
+              <em>Poster presentation</em> &middot; American Association for Cancer Research (AACR)
+              Annual Meeting 2025; April 25&ndash;30, 2025; Chicago, IL.
+              <em>Cancer Res.</em> 2025;85(8_Suppl_1):Abstract 2280.
+              doi:<a href="https://aacrjournals.org/cancerres/article/85/8_Supplement_1/2280/758136" target="_blank" rel="noopener">10.1158/1538-7445.AM2025-2280</a>
+            </div>
+
+            <details class="grant-details">
+              <summary>Details</summary>
+              <ul class="detail-list">
+                <li>
+                  Led the whole-exome sequencing analyses for this multiethnic, family-based
+                  population study, searching for germline cancer predisposition variants in
+                  patients with early-onset soft tissue sarcoma and in their affected siblings.
+                </li>
+                <li>
+                  Characterized candidate susceptibility loci, several of which showed
+                  ancestry-specific patterns.
+                </li>
+                <li>
+                  Identified a novel recurrent <em>USP6</em> mutation in two unrelated Southeast
+                  Asian individuals, one Filipino and one Guamanian, both with rhabdomyosarcoma:
+                  a possible ancestry-associated susceptibility signal that warrants further
+                  investigation.
+                </li>
+              </ul>
+            </details>
+          </div>
+
         </div>
       </div>
+        </div>
+      </details>
     </section>
 
-    <footer>© 2026 Naying Zhou · Last updated August 2026</footer>
+    <footer>© 2026 Naying Zhou · Last updated September 2026</footer>
   </div>
+
 </body>
 </html>

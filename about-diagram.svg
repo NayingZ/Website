@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 302" width="680" height="302" role="img"
-     aria-label="The course of genetic disease, shown as five stages in sequence: screening and ascertainment, deep phenotyping, genomic testing and interpretation, counseling and cascade testing, and targeted therapy and surveillance. Above the sequence, a note reads that my doctoral research on population-level cancer clustering and genetic susceptibility across California aims to inform, with four arrows pointing to screening and ascertainment, genomic testing and interpretation, counseling and cascade testing, and targeted therapy and surveillance. Below the sequence, a feedback loop shows periodic reanalysis of unsolved cases returning to the testing and interpretation stage.">
+     aria-label="The course of genetic disease, shown as five stages in sequence: screening and ascertainment, deep phenotyping, genomic testing and interpretation, counseling and cascade testing, and targeted therapy and surveillance. Above the sequence, a note reads “My Doctoral Research on Germline Genetic Susceptibility to Childhood Cancer”, with four arrows pointing to screening and ascertainment, genomic testing and interpretation, counseling and cascade testing, and targeted therapy and surveillance. Below the sequence, a feedback loop shows periodic reanalysis of unsolved cases returning to the testing and interpretation stage.">
 
   <!-- ===========================================================
        Naying Zhou — care continuum diagram
@@ -104,8 +104,7 @@
 
   <!-- ===== research input, above ===== -->
   <rect class="note" x="110" y="52" width="460" height="44" rx="22"/>
-  <text class="sans note-text" x="340" y="71" text-anchor="middle">My doctoral research on population-level cancer clustering</text>
-  <text class="sans note-text" x="340" y="87" text-anchor="middle">and genetic susceptibility across California aims to inform</text>
+  <text class="sans note-text" x="340" y="79" text-anchor="middle">My Doctoral Research on Germline Genetic Susceptibility to Childhood Cancer</text>
 
   <line class="feed f1" x1="180" y1="96" x2="76"  y2="128" marker-end="url(#arrowMuted)"/>
   <line class="feed f2" x1="300" y1="96" x2="338" y2="128" marker-end="url(#arrowMuted)"/>
