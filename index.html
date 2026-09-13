@@ -9,98 +9,172 @@
 <script src="analytics.js" defer></script>
 </head>
 <body>
-  <!-- The landing page has no header bar — the hero below carries the
-       name, and the nav sits beneath it. Inner pages keep the bar. -->
-  <div class="wrap home">
+  <!-- ========== HEADER: name left, tabs right, one row ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Naying Zhou<span class="post">, MD, MPH</span></a>
+      <nav class="site-nav">
+        <a href="index.html" class="active">About</a>
+        <a href="research.html">Research</a>
+        <a href="experience.html">Experience</a>
+        <a href="teaching.html">Teaching</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- ========== HERO: photo + name + contact + CV button ========== -->
+  <div class="wrap">
+
+    <!-- Two columns: identity rail at the left, content at the right.
+         The nav lives in the horizontal bar above, not in the rail. -->
     <div class="home-grid">
 
-      <!-- Left column: identity — photo, name, contact, section links -->
       <aside class="home-identity">
-      <div class="hero">
         <img class="headshot" src="figures/headshot.jpg" alt="Naying Zhou">
+        <ul class="profile-links">
+                  <li>
+                    <a href="mailto:naying.zhou@gmail.com" title="Email naying.zhou@gmail.com">
+                      <img src="education_logo/email.png" alt="" width="63" height="48" aria-hidden="true">
+                      <span class="visually-hidden">Email</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://orcid.org/0009-0004-1785-3584" target="_blank" rel="noopener me" title="ORCID 0009-0004-1785-3584">
+                      <img src="education_logo/orcid.png" alt="" width="32" height="32" aria-hidden="true">
+                      <span class="visually-hidden">ORCID</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/nayingzhou" target="_blank" rel="noopener me" title="LinkedIn profile">
+                      <img src="education_logo/linkedin.png" alt="" width="56" height="48" aria-hidden="true">
+                      <span class="visually-hidden">LinkedIn</span>
+                    </a>
+                  </li>
+                </ul>
+            <section id="usmle-ecfmg">
+              <h2>USMLE &amp; ECFMG Certificate</h2>
 
-        <div class="hero-text">
-          <h1>Naying Zhou</h1>
-          <p class="contact-line">
-            <a href="mailto:naying.zhou@gmail.com">naying.zhou@gmail.com</a>
-          </p>
 
-          <ul class="profile-links">
-            <li>
-              <a href="https://orcid.org/0009-0004-1785-3584" target="_blank" rel="noopener me">
-                <img src="education_logo/orcid.png" alt="" width="32" height="32" aria-hidden="true">
-                <span>ORCID</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/nayingzhou" target="_blank" rel="noopener me">
-                <img src="education_logo/linkedin.png" alt="" width="56" height="48" aria-hidden="true">
-                <span>LinkedIn</span>
-              </a>
-            </li>
-          </ul>
-          <!-- To restore the CV download button, drop cv.pdf in this folder and uncomment:
-          <a class="cv-button" href="cv.pdf" download>Download CV</a> -->
-        </div>
-      </div>
+              <!-- Horizontal path: USMLE steps sit above the line, the English
+                   test and the certificate below it. -->
+              <ol class="steps">
+                <li class="step up">
+                  <div class="step-card">
+                    <span class="step-date">2020</span>
+                    <span class="step-title">USMLE Step 1</span>
+                    <span class="step-meta"><span class="step-score">249</span><span class="step-score-label">score</span></span>
+                  </div>
+                  <span class="step-dot"></span>
+                </li>
+                <li class="step down">
+                  <span class="step-dot"></span>
+                  <div class="step-card">
+                    <span class="step-date">2025</span>
+                    <span class="step-title">USMLE Step 2 CK</span>
+                    <span class="step-meta"><span class="step-score">246</span><span class="step-score-label">score</span></span>
+                  </div>
+                </li>
+                <li class="step up">
+                  <div class="step-card">
+                    <span class="step-date">2025</span>
+                    <span class="step-title step-title-wide">Occupational English Test</span>
+                    <span class="step-meta">Pass &middot; Cambridge Boxhill</span>
+                  </div>
+                  <span class="step-dot"></span>
+                </li>
+                <li class="step down">
+                  <span class="step-dot"></span>
+                  <div class="step-card">
+                    <span class="step-date">2026</span>
+                    <span class="step-title">ECFMG Certificate</span>
+                    <span class="step-meta">Valid through 2029</span>
+                  </div>
+                </li>
+                <li class="step up is-upcoming">
+                  <div class="step-card">
+                    <span class="step-date">Dec 2026</span>
+                    <span class="step-title">USMLE Step 3</span>
+                    <span class="step-meta">Scheduled</span>
+                  </div>
+                  <span class="step-dot"></span>
+                </li>
+              </ol>
+            </section>
 
-      <!-- ========== NAV — sits under the hero on the landing page.
-           "About" is omitted since this page IS About. ========== -->
-      <nav class="home-nav">
-        <a href="experience.html">Education &amp; Experience</a>
-        <a href="research.html">Research &amp; Grant</a>
-        <a href="teaching.html">Teaching &amp; Service</a>
-      </nav>
+        <!-- To restore the CV download button, drop cv.pdf in this folder and uncomment:
+        <a class="cv-button" href="cv.pdf" download>Download CV</a> -->
       </aside>
 
-      <!-- Right column: the About text -->
       <div class="home-main">
-        <ul class="degrees">
-          <li>
-            <span class="degree">PhD Candidate,<br>Genetic Epidemiology</span>
-            <span class="school">USC Keck School of Medicine</span>
-          </li>
-          <li>
-            <span class="degree">MPH, Biostatistics</span>
-            <span class="school">UCLA Fielding School of Public Health</span>
-          </li>
-          <li>
-            <span class="degree">MD</span>
-            <span class="school">Ottawa-Shanghai Joint School of Medicine (OSJSM)</span>
-          </li>
-        </ul>
 
-      <!-- ========== ABOUT ========== -->
-      <section>
-        <h2>About</h2>
-        <!-- Working notes (not shown on the page):
-             Research — vision, potential
-             动态 flowchart 插入 summary research
-             ABMLM infographic -->
-        <p>
-          I'm applying for a combined Pediatrics and Medical Genetics residency after
-          completing my medical training through the Ottawa-Shanghai joint medical program
-          and spending my PhD years at USC studying inherited cancer risk in children.
-          My research studied California's archived newborn blood spots for germline genetic
-          susceptibility in childhood cancer.
-        </p>
-        <p>
-          What continues to draw me toward clinical care is the chance to help families
-          navigate uncertainty, answering parents' questions about what a diagnosis means for
-          their children, staying with them as the picture becomes clearer, and finding the
-          best management together. Pediatrics has been the constant throughout my journey,
-          and I'm ready to bring what I've learned from genetics back to the bedside.
-        </p>
+        <section id="about">
+          <h2>About</h2>
+          <p>
+                    I'm applying to combined Pediatrics and Medical Genetics residency programs after
+                    completing my medical training through the Ottawa-Shanghai joint medical program
+                    and spending my PhD years at USC studying inherited cancer risk in children.
+                    My research used California's archived newborn blood spots to study germline genetic
+                    susceptibility to childhood cancer.
+                  </p>
+                  <p>
+                    What continues to draw me toward clinical care is the chance to help families
+                    navigate uncertainty, answering parents' questions about what a diagnosis means for
+                    their children, staying with them as the picture becomes clearer, and finding the
+                    best management together. Pediatrics has been the constant throughout my journey,
+                    and I'm ready to bring what I've learned from genetics back to the bedside.
+                  </p>
+        </section>
 
-      <figure class="about-figure">
-          <img src="about-diagram.svg"
-               alt="The course of genetic disease in five stages: screening and ascertainment, deep phenotyping, genomic testing and interpretation, counseling and cascade testing, and targeted therapy and surveillance. My doctoral research on germline genetic susceptibility to childhood cancer feeds into screening, genomic testing, counseling, and targeted therapy; periodic reanalysis of unsolved cases feeds back into interpretation.">
-        </figure>
-      </section>
+        <section id="education">
+          <h2>Education</h2>
+
+          <div class="entry edu-entry">
+            <div class="edu-row">
+              <div class="edu-logo">
+                <img class="logo-usc" src="education_logo/usc.png" alt="University of Southern California" loading="lazy">
+              </div>
+              <div class="edu-body">
+                <span class="entry-date">2023 &ndash; Present</span>
+                <span class="edu-degree">PhD Candidate, Genetic Epidemiology</span>
+                <span class="edu-school">USC Keck School of Medicine</span>
+                <span class="edu-note">GPA 3.9/4.0 &middot; Advisor:
+                  <a href="https://keck.usc.edu/faculty-search/joseph-leo-wiemels/" target="_blank" rel="noopener">Dr. Joseph L. Wiemels</a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="entry edu-entry">
+            <div class="edu-row">
+              <div class="edu-logo">
+                <img class="logo-ucla" src="education_logo/ucla.png" alt="University of California, Los Angeles" loading="lazy">
+              </div>
+              <div class="edu-body">
+                <span class="entry-date">2021 &ndash; 2023</span>
+                <span class="edu-degree">MPH, Biostatistics</span>
+                <span class="edu-school">UCLA Fielding School of Public Health</span>
+                <span class="edu-note">GPA 4.0/4.0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="entry edu-entry">
+            <div class="edu-row">
+              <div class="edu-logo">
+                <img class="logo-osjsm" src="education_logo/osjsm.png" alt="Ottawa-Shanghai Joint School of Medicine" loading="lazy">
+              </div>
+              <div class="edu-body">
+                <span class="entry-date">2015 &ndash; 2021</span>
+                <span class="edu-degree">MD</span>
+                <span class="edu-school">SJTU
+                  <a href="https://www.uottawa.ca/about-us/media/news/ottawa-shanghai-joint-school-medicine-celebrates-its-first-cohort" target="_blank" rel="noopener">Ottawa-Shanghai Joint School of Medicine</a>
+                </span>
+                <span class="edu-note">Overall GPA 3.5/4.0 &middot; major GPA 3.8/4.0 &middot; top 8% of class</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
-
     </div>
 
     <footer>© 2026 Naying Zhou · Last updated September 2026</footer>
