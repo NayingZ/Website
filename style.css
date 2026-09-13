@@ -26,7 +26,7 @@ body {
   line-height: 1.7;
   font-size: 17px;
 }
-.wrap { max-width: 1060px; margin: 0 auto; padding: 0 32px 120px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 32px 120px; }
 
 /* =========================================================
    SITE HEADER — appears on every page.
@@ -43,7 +43,7 @@ body {
   margin-bottom: 14px;
 }
 .header-inner {
-  max-width: 1060px; margin: 0 auto; padding: 20px 32px 10px;
+  max-width: 1120px; margin: 0 auto; padding: 20px 32px 10px;
   display: flex; align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap; gap: 10px 32px;
@@ -977,3 +977,109 @@ footer {
 .page-intro { display: none; }
 .page-title { margin-bottom: 26px; }
 .page-intro + section > .fold { border-top: 1px solid var(--rule); }
+
+/* ============================================================
+   LEFT CONTENTS RAIL  (preview — research.html only)
+   To remove: delete this block and the .page-rail markup.
+   ============================================================ */
+
+/* Two columns: the rail, then the content. The rail column is fixed
+   width; the content column takes what is left. minmax(0,1fr) stops
+   wide figures from pushing the grid past the viewport. */
+.wrap.has-rail {
+  display: grid;
+  grid-template-columns: 168px minmax(0, 1fr);
+  gap: 38px;
+  align-items: start;
+}
+.wrap.has-rail > .page-title { grid-column: 2; }
+.rail-main { min-width: 0; }
+.wrap.has-rail > footer { grid-column: 1 / -1; }
+
+.page-rail {
+  position: sticky;
+  top: 96px;                 /* clears the sticky site header */
+  padding-top: 6px;
+  max-height: calc(100vh - 130px);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.page-rail::-webkit-scrollbar { display: none; }
+
+.rail-label {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.68rem; letter-spacing: 0.13em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 12px; padding-left: 13px;
+}
+
+.page-rail ol { list-style: none; margin: 0; padding: 0; }
+.page-rail li { margin: 0; }
+
+.page-rail a {
+  display: block;
+  padding: 7px 0 7px 13px;
+  border-left: 2px solid var(--rule);
+  font-size: 0.87rem; line-height: 1.35;
+  color: var(--muted); text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.page-rail a:hover { color: var(--ink); border-left-color: var(--muted); }
+
+/* Set by rail.js as you scroll. */
+.page-rail a.is-current {
+  color: var(--accent); border-left-color: var(--accent); font-weight: 600;
+}
+
+/* Anchor jumps land below the sticky header instead of under it. */
+.wrap.has-rail section { scroll-margin-top: 92px; }
+
+/* Below 900px the rail would crowd the text, so it goes away and the
+   page becomes an ordinary single column. */
+@media (max-width: 900px) {
+  .wrap.has-rail { display: block; }
+  .page-rail { display: none; }
+}
+
+/* A rail is navigation, not content — never print it. */
+@media print {
+  .page-rail { display: none; }
+  .wrap.has-rail { display: block; }
+}
+
+/* A photograph inside a Details fold (e.g. presenting a poster). */
+.detail-photo { margin: 20px 0 4px; }
+.detail-photo img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--rule); border-radius: 4px;
+}
+.detail-photo figcaption {
+  margin-top: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.76rem; letter-spacing: 0.03em; color: var(--muted);
+}
+
+/* Shanghai Children's Medical Center — tall stacked mark, so sized by height. */
+.logo-scmc { height: 92px; width: auto; max-width: 100%; }
+
+/* Shanghai Disabled Person's Federation — compact round emblem. */
+.logo-sdpf { height: 84px; width: auto; max-width: 100%; }
+
+/* Scholarly / professional profile links in the identity rail. */
+.profile-links {
+  list-style: none; margin: -6px 0 18px; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 8px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.78rem; letter-spacing: 0.04em;
+}
+.profile-links a {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--muted); text-decoration: none;
+  transition: color 0.15s ease;
+}
+.profile-links a span { border-bottom: 1px solid var(--rule); padding-bottom: 2px; transition: border-color 0.15s ease; }
+.profile-links a:hover { color: var(--accent); }
+.profile-links a:hover span { border-bottom-color: var(--accent); }
+/* Official brand marks, used unmodified and sized by height so each keeps
+   its own proportions (the LinkedIn bug carries a trailing (R)). */
+.profile-links img { height: 16px; width: auto; display: block; }

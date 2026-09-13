@@ -7,6 +7,7 @@
 <title>Education &amp; Experience — Naying Zhou, MD, MPH</title>
 <link rel="stylesheet" href="style.css">
 <script src="analytics.js" defer></script>
+<script src="rail.js" defer></script>
 </head>
 <body>
   <!-- ========== HEADER: name left, tabs right, one row ========== -->
@@ -22,7 +23,20 @@
     </div>
   </header>
 
-  <div class="wrap">
+  <div class="wrap has-rail">
+
+    <!-- Sticky contents rail. Hidden below 900px; the page then just scrolls. -->
+    <nav class="page-rail" aria-label="Contents of this page">
+      <span class="rail-label">On this page</span>
+      <ol>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#usmle-ecfmg">USMLE &amp; ECFMG</a></li>
+        <li><a href="#clinical-experience">Clinical Experience</a></li>
+        <li><a href="#honors-awards">Honors &amp; Awards</a></li>
+      </ol>
+    </nav>
+
+    <div class="rail-main">
 
     <h1 class="page-title">Education &amp; Experience</h1>
     <p class="page-intro">
@@ -32,9 +46,8 @@
 
     <!-- ========== EDUCATION ========== -->
     <section id="education">
-      <details class="fold">
-        <summary><h2>Education</h2></summary>
-        <div class="fold-body">
+      <h2>Education</h2>
+
 
       <div class="entry">
         <div class="grant-head">
@@ -47,7 +60,7 @@
 
           <div class="grant-headline">
             <span class="entry-date">2023 – Present</span>
-            <span class="entry-title">Doctor of Philosophy (PhD), Epidemiology <span style="font-weight:400">(expected May 2027)</span></span>
+            <span class="entry-title">Doctor of Philosophy (PhD), Genetic Epidemiology</span>
             <div class="entry-meta">
               Keck School of Medicine, Department of Population and Public Health Sciences,
               University of Southern California
@@ -115,15 +128,12 @@
 
         </div>
       </div>
-        </div>
-      </details>
     </section>
 
     <!-- ========== USMLE & ECFMG ========== -->
     <section id="usmle-ecfmg">
-      <details class="fold">
-        <summary><h2>USMLE &amp; ECFMG Certificate</h2></summary>
-        <div class="fold-body">
+      <h2>USMLE &amp; ECFMG Certificate</h2>
+
 
       <!-- Horizontal path: USMLE steps sit above the line, the English
            test and the certificate below it. -->
@@ -169,16 +179,13 @@
           <span class="step-dot"></span>
         </li>
       </ol>
-        </div>
-      </details>
     </section>
 
 
     <!-- ========== CLINICAL EXPERIENCE ========== -->
     <section id="clinical-experience">
-      <details class="fold">
-        <summary><h2>Clinical Experience</h2></summary>
-        <div class="fold-body">
+      <h2>Clinical Experience</h2>
+
 
       <div class="entry">
         <div class="grant-head">
@@ -363,16 +370,13 @@
 
         </div>
       </div>
-        </div>
-      </details>
     </section>
 
 
     <!-- ========== HONORS ========== -->
     <section id="honors-awards">
-      <details class="fold">
-        <summary><h2>Honors &amp; Awards</h2></summary>
-        <div class="fold-body">
+      <h2>Honors &amp; Awards</h2>
+
 
       <div class="entry">
         <span class="entry-date">2024</span>
@@ -397,13 +401,57 @@
         <span class="entry-title">National Medical School Student Clinical Skill Competition (CSC)</span>
         <div class="entry-meta">Shanghai regional contest</div>
         <div class="entry-desc">
-          Ranked 1st among 26 teams in the Shanghai regional contest of this interactive,
-          team-based analysis of clinical scenarios for senior medical students.
-          <br>
-          Four-time winner of single-step awards: medical history inquiry, diagnosis of
-          pulmonary embolism, ECG interpretation, and gynecological examination.
+          Winner of the Group Grand Prize, ranked 1st among 26 teams.
         </div>
+
+        <details class="grant-details">
+          <summary>Details</summary>
+          <ul class="detail-list">
+            <li>
+              A timed, team-based competition in which senior medical students work through
+              clinical scenarios in front of faculty judges.
+            </li>
+            <li>
+              Four-time winner of individual single-step awards: medical history inquiry,
+              diagnosis of pulmonary embolism, ECG interpretation, and gynecological
+              examination.
+            </li>
+          </ul>
+        </details>
       </div>
+      <div class="entry">
+        <span class="entry-date">2017 – 2018</span>
+        <span class="entry-title">Undergraduate Innovative Talents Training Program Grant</span>
+        <div class="entry-meta">Shanghai Jiao Tong University School of Medicine</div>
+        <div class="entry-desc">
+          Competitive undergraduate research funding for &ldquo;A Preliminary Study of SENP3 for
+          Antioxidant Function.&rdquo;
+        </div>
+
+        <details class="grant-details">
+          <summary>Details</summary>
+          <ul class="detail-list">
+            <li>
+              Awarded by the 11th SJTU School of Medicine Undergraduate Innovative Talents
+              Training Program (award no. 20170305).
+            </li>
+            <li>
+              Carried out from May 2017 to August 2018 in the Department of Biochemistry and
+              Molecular Cellular Biology.
+            </li>
+            <li>
+              Reduced <em>SENP3</em> translation in HeLa cells by siRNA transfection, then
+              extracted RNA and used RT-PCR to measure the resulting changes in transcription
+              of antioxidant genes.
+            </li>
+            <li>
+              My first funded project, and my first experience designing an experiment rather
+              than following one.
+            </li>
+          </ul>
+        </details>
+      </div>
+
       <div class="entry">
         <span class="entry-date">2016 – 2019</span>
         <span class="entry-title">Scholarship for Outstanding Academic Achievement</span>
@@ -412,9 +460,9 @@
           Awarded annually for four consecutive years.
         </div>
       </div>
-        </div>
-      </details>
     </section>
+
+    </div><!-- /.rail-main -->
 
     <footer>© 2026 Naying Zhou · Last updated September 2026</footer>
   </div>

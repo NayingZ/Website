@@ -7,6 +7,7 @@
 <title>Teaching &amp; Service — Naying Zhou, MD, MPH</title>
 <link rel="stylesheet" href="style.css">
 <script src="analytics.js" defer></script>
+<script src="rail.js" defer></script>
 </head>
 <body>
   <!-- ========== HEADER: name left, tabs right, one row ========== -->
@@ -22,7 +23,20 @@
     </div>
   </header>
 
-  <div class="wrap">
+  <div class="wrap has-rail">
+
+    <!-- Sticky contents rail. Hidden below 900px; the page then just scrolls. -->
+    <nav class="page-rail" aria-label="Contents of this page">
+      <span class="rail-label">On this page</span>
+      <ol>
+        <li><a href="#professional-service-experience">Professional &amp;<br>Service Experience</a></li>
+        <li><a href="#courses-taught">Courses Taught</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#professional-memberships">Professional Memberships</a></li>
+      </ol>
+    </nav>
+
+    <div class="rail-main">
 
     <h1 class="page-title">Teaching &amp; Service</h1>
     <p class="page-intro">
@@ -34,9 +48,8 @@
 
     <!-- ========== PROFESSIONAL & SERVICE ========== -->
     <section id="professional-service-experience">
-      <details class="fold">
-        <summary><h2>Professional &amp; Service Experience</h2></summary>
-        <div class="fold-body">
+      <h2>Professional &amp; Service Experience</h2>
+
 
       <div class="entry">
         <div class="grant-head">
@@ -162,7 +175,7 @@
 
           <div class="grant-headline">
             <span class="entry-date">2021 – 2022</span>
-            <span class="entry-title">Emergency Department Volunteer</span>
+            <span class="entry-title">Volunteer, Emergency Department</span>
             <div class="entry-meta">Kaiser Permanente West Los Angeles &middot; Los Angeles, CA</div>
 
             <details class="grant-details">
@@ -186,15 +199,84 @@
 
         </div>
       </div>
+    <!-- ========== COURSES ========== -->
+      <div class="entry">
+        <div class="grant-head">
+
+          <div class="grant-funders">
+            <div class="edu-logo">
+              <img class="logo-scmc" src="education_logo/scmc.png"
+                   alt="Shanghai Children&rsquo;s Medical Center" loading="lazy">
+            </div>
+          </div>
+
+          <div class="grant-headline">
+            <span class="entry-date">Sep 2018 &ndash; Jan 2020</span>
+            <span class="entry-title">Volunteer, Department of Social Work and Community Services</span>
+            <div class="entry-meta">Shanghai Children&rsquo;s Medical Center &middot; Shanghai, China</div>
+
+            <details class="grant-details">
+              <summary>Details</summary>
+              <ul class="detail-list">
+                <li>
+                  Sixteen months with the social work service of a children&rsquo;s hospital,
+                  working on the conditions families live with rather than the hospital visit itself.
+                </li>
+                <li>
+                  Worked alongside the community health team and other volunteers to promote safe
+                  water, sanitation and hygiene practices in low-income communities.
+                </li>
+                <li>
+                  Helped organize family therapy sessions for LGBTQ+ adolescents and ran the
+                  accompanying education sessions, work that depended on families feeling safe
+                  enough to take part.
+                </li>
+              </ul>
+            </details>
+          </div>
+
         </div>
-      </details>
+      </div>
+
+      <div class="entry">
+        <div class="grant-head">
+
+          <div class="grant-funders">
+            <div class="edu-logo">
+              <img class="logo-sdpf" src="education_logo/sdpf.png"
+                   alt="Shanghai Disabled Person&rsquo;s Federation" loading="lazy">
+            </div>
+          </div>
+
+          <div class="grant-headline">
+            <span class="entry-date">Jan 2016 &ndash; Jun 2018</span>
+            <span class="entry-title">Volunteer, Shanghai Disabled Person&rsquo;s Federation</span>
+            <div class="entry-meta">Hongkou District &middot; Shanghai, China</div>
+
+            <details class="grant-details">
+              <summary>Details</summary>
+              <ul class="detail-list">
+                <li>
+                  Led the planning and execution of <em>Caring for Down&rsquo;s Baby</em>, a district
+                  program promoting the value, acceptance and inclusion of people with Down syndrome.
+                </li>
+                <li>
+                  Two and a half years spent with families raising children with a genetic condition,
+                  several years before I began studying genetics, and the reason the clinical side of
+                  genetics has never felt abstract to me.
+                </li>
+              </ul>
+            </details>
+          </div>
+
+        </div>
+      </div>
+
     </section>
 
-    <!-- ========== COURSES ========== -->
     <section id="courses-taught">
-      <details class="fold">
-        <summary><h2>Courses Taught</h2></summary>
-        <div class="fold-body">
+      <h2>Courses Taught</h2>
+
 
       <div class="entry">
         <span class="entry-date">2025 &ndash; 2026</span>
@@ -317,15 +399,12 @@
           </ul>
         </details>
       </div>
-        </div>
-      </details>
     </section>
 
     <!-- ========== CERTIFICATES ========== -->
     <section id="certificates">
-      <details class="fold">
-        <summary><h2>Certificates</h2></summary>
-        <div class="fold-body">
+      <h2>Certificates</h2>
+
 
       <div class="entry">
         <span class="entry-date">Aug 2026</span>
@@ -356,15 +435,12 @@
         <span class="entry-title">Advanced Cardiovascular Life Support (ACLS)</span>
         <div class="entry-meta">American Heart Association</div>
       </div>
-        </div>
-      </details>
     </section>
 
     <!-- ========== MEMBERSHIPS ========== -->
     <section id="professional-memberships">
-      <details class="fold">
-        <summary><h2>Professional Memberships</h2></summary>
-        <div class="fold-body">
+      <h2>Professional Memberships</h2>
+
       <ul class="plain-list">
         <li><span class="mem-year">2026 &ndash; Present</span> American Academy of Pediatrics (AAP)</li>
         <li><span class="mem-year">2026 &ndash; Present</span> Association of Chinese American Physicians (ACAP)</li>
@@ -373,8 +449,6 @@
         <li><span class="mem-year">2025 &ndash; Present</span> American Society of Human Genetics (ASHG)</li>
         <li><span class="mem-year">2024 &ndash; Present</span> Brain Tumor Epidemiology Consortium (BTEC)</li>
       </ul>
-        </div>
-      </details>
     </section>
 
     <!-- ========== TECHNICAL SKILLS: hidden for now.
@@ -406,6 +480,8 @@
       </details>
     </section>
          ========== -->
+
+    </div><!-- /.rail-main -->
 
     <footer>© 2026 Naying Zhou · Last updated September 2026</footer>
   </div>

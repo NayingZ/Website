@@ -7,6 +7,7 @@
 <title>Research &amp; Grant — Naying Zhou, MD, MPH</title>
 <link rel="stylesheet" href="style.css">
 <script src="analytics.js" defer></script>
+<script src="rail.js" defer></script>
 </head>
 <body>
   <!-- ========== HEADER: name left, tabs right, one row ========== -->
@@ -22,7 +23,20 @@
     </div>
   </header>
 
-  <div class="wrap">
+  <div class="wrap has-rail">
+
+    <!-- Sticky contents rail. Hidden below 900px; the page then just scrolls. -->
+    <nav class="page-rail" aria-label="Contents of this page">
+      <span class="rail-label">On this page</span>
+      <ol>
+        <li><a href="#grant">Grant</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#ongoing">Ongoing Research</a></li>
+        <li><a href="#conferences">Conference Presentations</a></li>
+      </ol>
+    </nav>
+
+    <div class="rail-main">
 
     <h1 class="page-title">Research &amp; Grant</h1>
     <!-- Working notes (not shown on the page):
@@ -38,9 +52,8 @@
 
     <!-- ========== GRANT ========== -->
     <section id="grant">
-      <details class="fold">
-        <summary><h2>Grant</h2></summary>
-        <div class="fold-body">
+      <h2>Grant</h2>
+
 
       <div class="entry grant">
 
@@ -142,15 +155,12 @@
 
         </div>
       </div>
-        </div>
-      </details>
     </section>
 
     <!-- ========== PUBLICATIONS ========== -->
     <section id="publications">
-      <details class="fold">
-        <summary><h2>Publications</h2></summary>
-        <div class="fold-body">
+      <h2>Publications</h2>
+
 
       <div class="entry">
         <div class="grant-head">
@@ -694,16 +704,12 @@
 
         </div>
       </div>
-
-        </div>
-      </details>
     </section>
 
     <!-- ========== ONGOING RESEARCH ========== -->
     <section id="ongoing">
-      <details class="fold">
-        <summary><h2>Ongoing Research</h2></summary>
-        <div class="fold-body">
+      <h2>Ongoing Research</h2>
+
 
       <div class="entry">
         <span class="entry-date">2024 &ndash; Present</span>
@@ -782,15 +788,12 @@
           capacity shape the adduct burden an exposure leaves behind. 
         </div>
       </div>
-        </div>
-      </details>
     </section>
 
     <!-- ========== CONFERENCES ========== -->
     <section id="conferences">
-      <details class="fold">
-        <summary><h2>Conference Presentations</h2></summary>
-        <div class="fold-body">
+      <h2>Conference Presentations</h2>
+
 
       <div class="entry">
         <div class="grant-head">
@@ -857,14 +860,20 @@
                   investigation.
                 </li>
               </ul>
+
+              <figure class="detail-photo">
+                <img src="figures/aacr2025-poster.jpg" width="1000" height="750" loading="lazy"
+                     alt="Naying Zhou presenting the soft tissue sarcoma poster at the AACR Annual Meeting 2025 in Chicago.">
+                <figcaption>Abstract 2280 &middot; AACR Annual Meeting 2025, Chicago, IL</figcaption>
+              </figure>
             </details>
           </div>
 
         </div>
       </div>
-        </div>
-      </details>
     </section>
+
+    </div><!-- /.rail-main -->
 
     <footer>© 2026 Naying Zhou · Last updated September 2026</footer>
   </div>
