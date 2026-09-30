@@ -634,6 +634,10 @@ li.placeholder-note {
 .keywords li.kw-method {
   color: var(--accent); background: var(--accent-soft); border-color: #d3dfec;
 }
+/* In Publications the full keyword set is shown: the chips wrap onto
+   as many rows as they need instead of scrolling sideways. */
+#publications .keywords { flex-wrap: wrap; overflow-x: visible; row-gap: 8px; }
+
 /* the fold sits directly beneath the bubbles */
 .keywords + .grant-details { margin-top: 16px; }
 /* and, in an education entry, the GPA and advisor lines */
@@ -1485,3 +1489,210 @@ footer {
 #conferences .grant-head { align-items: center; }
 #conferences .logo-sno  { height: 58px; }
 #conferences .logo-aacr { height: 46px; }
+/* BTEC ships a square lockup, so it needs more height than the two wordmarks. */
+#conferences .logo-btec { height: 84px; }
+
+/* Publication titles link straight to the paper; they keep title styling
+   rather than looking like body links. */
+.entry-title a {
+  color: inherit; text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.entry-title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* =========================================================
+   PAPER BRIEF CHIP  (Publications, research.html)
+
+   Sits under the keyword chips as a third control on the entry:
+   the title goes to the DOI and this
+   opens that paper's brief in papers/research_pages/.
+   ========================================================= */
+.paper-brief {
+  display: inline-flex; align-items: center; gap: 7px;
+  margin-top: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.78rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1px;
+  color: var(--accent); text-decoration: none;
+  background: var(--accent-soft);
+  border: 1px solid transparent; border-radius: 4px;
+  padding: 7px 13px 6px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.paper-brief:hover { background: #ffffff; border-color: var(--accent); }
+
+
+/* =========================================================
+   EXPERIENCE TIMELINE
+
+   One chronological spine for a page that is otherwise split
+   into Clinical and Professional & Service sections, so the
+   order of events is hard to see. Same visual language as the
+   USMLE steps on the About page: date, dot, role.
+   --tl-spine is where the vertical rule sits; it has to match
+   the centre of the dot column at each breakpoint.
+   ========================================================= */
+.timeline {
+  --tl-spine: 174px;
+  list-style: none; margin: 0; padding: 0;
+}
+.tl-item {
+  position: relative;
+  display: grid;
+  grid-template-areas: "date dot body";
+  grid-template-columns: 150px 20px minmax(0, 1fr);
+  column-gap: 14px;
+  padding-bottom: 22px;
+}
+.tl-item:last-child { padding-bottom: 0; }
+.tl-item::before {
+  content: ""; position: absolute;
+  left: var(--tl-spine); top: 13px; bottom: 0;
+  width: 1px; background: var(--rule);
+}
+.tl-item:last-child::before { display: none; }
+
+.tl-date {
+  grid-area: date; text-align: right; padding-top: 1px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem; letter-spacing: 0.3px; line-height: 1.5;
+  color: var(--accent); white-space: nowrap;
+}
+.tl-dot {
+  grid-area: dot; justify-self: center;
+  width: 9px; height: 9px; margin-top: 6px; border-radius: 50%;
+  background: #ffffff; border: 2px solid var(--accent);
+  position: relative; z-index: 1;
+}
+/* a role still running reads as a filled dot */
+.tl-item.is-current .tl-dot { background: var(--accent); }
+
+.tl-body { grid-area: body; }
+.tl-role {
+  display: block;
+  font-size: 1rem; font-weight: 600; line-height: 1.4;
+}
+.tl-org {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem; line-height: 1.5; color: var(--muted);
+}
+
+/* Narrow: the date moves above the role and the spine hugs the left. */
+@media (max-width: 760px) {
+  .timeline { --tl-spine: 10px; }
+  .tl-item {
+    grid-template-areas: "dot date" "dot body";
+    grid-template-columns: 20px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+  .tl-date { text-align: left; white-space: normal; }
+  .tl-dot { margin-top: 5px; }
+}
+
+/* =========================================================
+   RESEARCH MAP  (About page)
+
+   A radial map: navy hub, four coloured arc bands, leader
+   lines out to two label columns. Each group's labels are set
+   in a darker shade of its own band colour, so the words
+   around the circle carry the colour too rather than sitting
+   in plain ink. Geometry is baked into the SVG; this block
+   only carries weight and the hover behaviour.
+   ========================================================= */
+#research-map { margin-top: 64px; }
+.rmap-intro {
+  color: var(--muted); font-size: 0.97rem; line-height: 1.6;
+  margin: 0 0 20px;
+}
+.rmap-fig { margin: 0; }
+svg.rmap { display: block; width: 100%; height: auto; }
+
+/* Label colour comes from the SVG itself, one shade per group. */
+.rmap .rm-leader { fill: none; stroke-width: 1.6; opacity: 0.75; }
+.rmap .rm-dot    { stroke: var(--bg); stroke-width: 1.5; }
+
+/* Hovering one group dims the other three. */
+.rmap .rm-group { transition: opacity 0.25s ease; }
+.rmap:hover .rm-group { opacity: 0.18; }
+.rmap .rm-group:hover { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .rmap .rm-group { transition: none; }
+  .rmap:hover .rm-group, .rmap .rm-group:hover { opacity: 1; }
+}
+
+/* Text equivalent, for narrow screens only. */
+.rmap-list { display: none; list-style: none; margin: 0; padding: 0; }
+.rmap-row {
+  display: grid; grid-template-columns: 10px 1fr;
+  column-gap: 12px; padding: 12px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.rmap-row:last-child { border-bottom: none; }
+.rmap-swatch { width: 10px; height: 10px; border-radius: 50%; margin-top: 7px; }
+.rmap-gname {
+  grid-column: 2; display: block;
+  font-size: 1rem; font-weight: 600; line-height: 1.4;
+}
+.rmap-items {
+  grid-column: 2; display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem; line-height: 1.6; color: var(--muted);
+}
+
+/* Below this width the SVG labels would render under ~11px. */
+@media (max-width: 620px) {
+  .rmap-fig  { display: none; }
+  .rmap-list { display: block; }
+  .rmap-intro { margin-bottom: 4px; }
+  .rmap-hint { display: none; }   /* no hover target on touch */
+}
+
+/* =========================================================
+   FIGURE PAGES  (figures/abstracts/*.html)
+
+   Each publication's thumbnail on the Research page opens one
+   of these: the figure at full size, its caption, and the key
+   points that used to sit in the Details fold. The thumbnail
+   itself is unchanged — only where it points.
+   ========================================================= */
+.wrap.figpage { padding-bottom: 80px; }
+.figpage-back {
+  display: inline-block; margin-bottom: 26px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.86rem; color: var(--muted); text-decoration: none;
+  transition: color 0.15s ease;
+}
+.figpage-back:hover { color: var(--accent); }
+
+.figpage .page-title { margin-bottom: 6px; }
+.figpage-paper {
+  color: var(--muted); font-size: 1.02rem; line-height: 1.6;
+  margin-bottom: 34px; padding-bottom: 22px;
+  border-bottom: 1px solid var(--rule);
+}
+.figpage-paper a { color: var(--ink); text-decoration-thickness: 1px; }
+.figpage-paper a:hover { color: var(--accent); }
+
+.figpage-figure { margin: 0 0 40px; }
+.figpage-figure img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid var(--rule); border-radius: 4px;
+  background: #ffffff;
+}
+.figpage-figure figcaption {
+  margin-top: 16px; font-size: 0.93rem; line-height: 1.65; color: var(--muted);
+}
+
+.figpage-notes h2 { font-size: 1.25rem; margin-bottom: 16px; }
+.figpage-notes .detail-list { margin: 0; }
+
+.figpage-more {
+  margin-top: 36px; padding-top: 22px;
+  border-top: 1px solid var(--rule);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.92rem;
+}
+.figpage-more a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.figpage-more a:hover { text-decoration: underline; }

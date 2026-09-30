@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mutational Epidemiology of Childhood ALL &mdash; Naying Zhou, MD, MPH</title>
+<meta name="description" content="A review arguing that the mutations inside a childhood leukemia can be read as a record of the exposures that caused it — an approach that has reshaped adult cancer epidemiology and has not yet been applied to children.">
+<style>
+:root{
+  color-scheme: light;
+  /* Tokens mirror style.css so these pages read as part of the site. */
+  --page:#fdfdfb; --surface:#faf9f6; --card:#ffffff;
+  --ink:#1a1a1a; --ink-2:#4a4a4a; --muted:#6b6b6b;
+  --rule:#e5e5e0; --wash:#f3f2ee;
+  --accent:#1e3a5f; --accent-soft:#e8eef5;
+  --band:#1e3a5f; --band-ink:#eef2f7; --band-gold:#a8bed6;
+  --r1:#1e3a5f; --r2:#b5562a; --r3:#2f7d5f; --r4:#b58b2a;
+  --r5:#8a4f7d; --r6:#1e3a5f; --r7:#4a4a8a; --r8:#a33a3a;
+  --display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --body:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --mono:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.68;-webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility}
+.wrap{max-width:1020px;margin:0 auto;padding-inline:clamp(20px,3vw,32px)}
+.measure{max-width:none}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0}
+p{margin:0 0 1em}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* masthead */
+.masthead{background:var(--band);color:var(--band-ink);position:relative;
+  padding-block:clamp(26px,4vw,44px) clamp(24px,3.4vw,38px)}
+.masthead::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;
+  background:var(--band-gold)}
+.mast-top{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between;
+  align-items:baseline;font-family:var(--mono);font-size:14px;letter-spacing:.12em;
+  text-transform:uppercase;opacity:.82}
+.mast-rule{height:1px;background:currentColor;opacity:.32;margin:14px 0 clamp(18px,3vw,30px)}
+h1{font-size:clamp(24px,3vw,32px);line-height:1.24;letter-spacing:-.012em;
+  margin:.4em 0 .55em;font-weight:500;max-width:none}
+.authors+.standfirst{margin-top:20px}
+.standfirst{font-size:17px;line-height:1.68;max-width:none;
+  opacity:.92;font-weight:400;margin-bottom:0}
+.authors{margin-top:0;font-family:var(--mono);font-size:14px;line-height:1.7;
+  opacity:.86;max-width:none}
+.authors u{text-decoration:none;font-weight:700;opacity:1;
+  border-bottom:2px solid var(--band-gold);padding-bottom:1px}
+.keyfacts{display:flex;flex-wrap:wrap;margin-top:clamp(24px,3.6vw,36px);
+  border-top:1px solid rgba(255,255,255,.22)}
+.keyfacts>div{flex:1 1 148px;padding:16px 20px 4px 0;
+  border-right:1px solid rgba(255,255,255,.14)}
+.keyfacts>div:last-child{border-right:0}
+.keyfacts .n{font-family:var(--display);font-size:32px;line-height:1;
+  font-weight:500}
+.keyfacts .l{font-family:var(--mono);font-size:14px;letter-spacing:0;
+  opacity:.76;margin-top:10px;line-height:1.5}
+
+/* sections */
+.section{padding-block:clamp(40px,5.4vw,78px);border-top:1px solid var(--rule)}
+.section:first-of-type{border-top:0}
+.part{display:flex;align-items:baseline;gap:18px;margin-bottom:14px}
+.part .num{font-family:var(--mono);font-size:14px;letter-spacing:.01em;
+  font-weight:600;color:var(--accent);white-space:nowrap}
+.part .bar{flex:1;height:1px;background:var(--rule)}
+h2{font-size:26px;line-height:1.28;letter-spacing:-.012em;margin:0 0 .62em}
+h3{font-size:17px;line-height:1.5;margin:1.8em 0 .4em;font-weight:700}
+h4{font-family:var(--display);font-size:17px;letter-spacing:0;
+  color:var(--ink);margin:1.8em 0 .55em;font-weight:700}
+.lede{font-size:17px;line-height:1.68;max-width:none}
+/* figures */
+figure{margin:clamp(28px,3.6vw,48px) 0;padding:0}
+figure svg{display:block;width:100%;height:auto}
+
+.plate{background:var(--surface);border:1px solid var(--rule);padding:clamp(10px,1.4vw,16px)}
+figcaption{font-family:var(--mono);font-size:14px;line-height:1.6;color:var(--ink-2);
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);max-width:none}
+figcaption b{color:var(--accent);letter-spacing:0;
+  font-size:14px;font-weight:700;margin-right:8px;white-space:nowrap}
+
+/* tables */
+.tablewrap{overflow-x:auto;margin:clamp(24px,3vw,40px) 0;border:1px solid var(--rule);
+  background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-family:var(--mono);font-size:14px}
+caption{text-align:left;font-family:var(--mono);font-size:14px;letter-spacing:0;
+  color:var(--accent);font-weight:700;padding:18px 18px 0}
+caption span{display:block;letter-spacing:0;font-size:14px;
+  color:var(--ink-2);font-weight:400;margin-top:8px;line-height:1.6}
+thead th{text-align:left;font-weight:600;font-size:14px;letter-spacing:0;
+  color:var(--muted);padding:18px 18px 11px;
+  border-bottom:1px solid var(--ink);vertical-align:bottom}
+tbody td,tbody th{padding:12px 18px;border-bottom:1px solid var(--rule);
+  vertical-align:top;text-align:left;font-weight:400;line-height:1.55}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+tbody th{font-weight:600;color:var(--ink)}
+tbody tr:hover{background:var(--wash)}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.up{color:var(--r8);font-weight:700}.down{color:var(--r1);font-weight:700}
+.flat{color:var(--muted)}
+
+/* blocks */
+.box{border:1px solid var(--rule);border-top:3px solid var(--accent);
+  background:var(--surface);padding:clamp(18px,2.4vw,28px);margin:clamp(24px,3vw,38px) 0}
+.box h4{margin-top:0}
+.box p:last-child{margin-bottom:0}
+.box .src{font-family:var(--body);font-size:14px;line-height:1.6;
+  color:var(--muted);margin-top:16px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:clamp(18px,2.2vw,28px)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin:clamp(24px,3vw,38px) 0}
+.grid3 > div{background:var(--surface);padding:22px 24px 24px}
+.stat{font-family:var(--display);font-size:26px;line-height:1.15;
+  font-weight:600}
+.stat.acc{color:var(--accent)}
+.statl{font-family:var(--body);font-size:14px;letter-spacing:0;
+  color:var(--accent);font-weight:600;margin-bottom:10px;line-height:1.5}
+.statn{font-family:var(--body);font-size:14px;color:var(--ink-2);margin-top:12px;
+  line-height:1.6}
+.refs{font-family:var(--mono);font-size:14px;line-height:1.65;color:var(--ink-2)}
+footer.colophon{background:var(--band);color:var(--band-ink);
+  padding-block:clamp(32px,4.6vw,56px);margin-top:clamp(36px,5vw,72px)}
+footer.colophon .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:26px}
+footer.colophon p{font-family:var(--mono);font-size:14px;line-height:1.65;opacity:.9}
+footer.colophon h4{color:var(--band-gold);margin-top:0}
+footer.colophon a{text-decoration-color:var(--band-gold)}
+@media (max-width:620px){body{font-size:16px}.keyfacts>div{flex:1 1 45%;border-right:0}
+  .part{flex-wrap:wrap;gap:6px 14px}.part .num{white-space:normal}
+  .header-inner{padding:16px 20px 8px}.brand{font-size:1.35rem}.site-nav{gap:6px 18px}}
+
+/* ================= SITE CHROME — matches style.css ================= */
+.site-header{position:sticky;top:0;z-index:20;background:rgba(253,253,251,.88);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);
+  backdrop-filter:saturate(180%) blur(14px)}
+.header-inner{max-width:1020px;margin:0 auto;
+  padding:20px clamp(18px,4vw,52px) 10px;display:flex;align-items:baseline;
+  justify-content:space-between;flex-wrap:wrap;gap:10px 32px}
+.brand{text-decoration:none;font-family:var(--body);font-size:1.65rem;font-weight:500;
+  letter-spacing:-.015em;line-height:1.2;color:var(--ink);white-space:nowrap}
+.brand .post{font-size:.74em;font-weight:400;color:var(--muted)}
+.brand:hover{color:var(--accent)}
+.site-nav{display:flex;flex-wrap:wrap;gap:8px 26px}
+.site-nav a{position:relative;font-family:var(--body);font-size:.95rem;
+  color:var(--muted);text-decoration:none;padding-bottom:5px;transition:color .2s ease}
+.site-nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:var(--accent);transform:scaleX(0);transform-origin:center;
+  transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.site-nav a:hover{color:var(--accent)}
+.site-nav a:hover::after,.site-nav a.active::after{transform:scaleX(1)}
+.site-nav a.active{color:var(--accent)}
+.backlink{display:inline-block;margin-top:clamp(18px,2.6vw,26px);font-family:var(--mono);
+  font-size:14px;letter-spacing:0;color:var(--band-gold);
+  text-decoration:none;transition:color .2s ease}
+.backlink:hover{color:#fff}
+.sitefoot{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.22);
+  margin-top:10px;padding-top:20px;text-align:center}
+.sitefoot p{opacity:.74;margin:0}
+.sitefoot a{color:var(--band-gold)}
+@media print{.masthead,.site-header,footer.colophon{background:#fff;color:#000}}
+</style>
+<script src="../../analytics.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../../index.html">Naying Zhou<span class="post">, MD, MPH</span></a>
+    <nav class="site-nav">
+      <a href="../../index.html">About</a>
+      <a href="../../research.html" class="active">Research</a>
+      <a href="../../experience.html">Experience</a>
+      <a href="../../teaching.html">Teaching</a>
+    </nav>
+  </div>
+</header>
+<header class="masthead">
+  <div class="wrap">
+    <div class="mast-top"><span>Current Problems in Pediatric and Adolescent Health Care &middot; 2025 &middot; 55(9):101818</span></div>
+    <div class="mast-rule"></div>
+    <h1>Investigating the causes of childhood acute lymphoblastic leukemia through mutational epidemiology</h1>
+    <div class="authors">Adam J. de Smith, <u>Naying Zhou</u>, Yunqi Li, Tanxin Liu, Nathan Patrus, Joseph L. Wiemels</div>
+    <p class="standfirst">A review of mutational signature analysis as a route to identifying environmental causes of childhood acute lymphoblastic leukemia. It summarizes the signatures reported to date, the established and emerging risk factors, and the study designs that would link signatures to measured exposures.</p>
+    <div class="keyfacts"><div><div class="n">2&ndash;5 y</div><div class="l">Peak age of incidence</div></div><div><div class="n">85%</div><div class="l">Of childhood lymphoblastic leukemia is B-lineage</div></div><div><div class="n">20+</div><div class="l">Defined molecular subtypes of B-lineage disease</div></div><div><div class="n">5&times;</div><div class="l">Risk difference across the polygenic score distribution</div></div></div>
+    <a class="backlink" href="../../research.html">&larr; Research</a>
+  </div>
+</header>
+<main>
+<section class="section" id="premise">
+  <div class="wrap">
+    <div class="part"><span class="num">Rationale</span><span class="bar"></span></div>
+    <h2>Limitations of questionnaire-based exposure assessment</h2>
+    <div class="measure">
+      <p class="lede">Acute lymphoblastic leukemia is the most common cancer in children, with incidence peaking between two and five years of age. Most epidemiologic evidence on its causes derives from case-control studies using parental recall of exposures.</p>
+      <p>This approach has two principal limitations: questionnaire data are subject to recall bias, and an observed association provides little information about the mechanism by which an exposure might be leukemogenic. Geospatial studies, which link a birth address to an exposure database, avoid recall bias but substitute residence for dose.</p>
+      <p>Mutagenic processes damage DNA in characteristic ways, and the resulting patterns — mutational signatures — can be recovered from sequenced tumors. In adult cancer this has identified exposures that questionnaires could not: aristolochic acid signatures concentrated in kidney cancers from Romania, Serbia and Thailand; colibactin signatures enriched in high-incidence and early-onset colorectal cancer; and a mutagenic contribution from air pollution in lung cancer among never-smokers.</p>
+      <p>The principal obstacle is that the cohorts holding tumor sequencing data lack exposure information, and the studies holding exposure data lack sequencing. The two have not yet been combined in a childhood cancer.</p>
+    </div>
+
+    <figure class="plate">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 376" width="100%" role="img" aria-label="what mutational epidemiology is"><desc>The forensic version of this is old — TP53 carries G→T changes with a specific strand bias in the lung tumors of smokers, and CC→TT transitions in skin cancer. What is new is doing it at genome scale, across cohorts, with epidemiologic data attached.</desc>
+<text x="40.00" y="44.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="start" font-weight="700">What mutational epidemiology is</text>
+<rect x="40.0" y="96" width="218.0" height="206" fill="var(--surface)" stroke="var(--rule)" stroke-width="1.2" rx="3"/>
+<rect x="40.0" y="96" width="218.0" height="4" fill="var(--accent)"/>
+<text x="52.00" y="122.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="start" font-weight="700">1 · Exposure</text>
+<text x="52.00" y="144.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">Something</text>
+<text x="52.00" y="164.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">carcinogenic happens</text>
+<text x="52.00" y="192.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">Tobacco smoke, ultraviolet</text>
+<text x="52.00" y="208.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">light, reactive oxygen</text>
+<text x="52.00" y="224.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">species, a pesticide — acting</text>
+<text x="52.00" y="240.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">before birth, or in the first</text>
+<text x="52.00" y="256.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">years of life.</text>
+<path d="M260.0 199 L272.0 199 M267.0 194 L272.0 199 L267.0 204" fill="none" stroke="var(--ink-2)" stroke-width="1.3"/>
+<rect x="274.0" y="96" width="218.0" height="206" fill="var(--surface)" stroke="var(--rule)" stroke-width="1.2" rx="3"/>
+<rect x="274.0" y="96" width="218.0" height="4" fill="var(--accent)"/>
+<text x="286.00" y="122.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="start" font-weight="700">2 · Damage</text>
+<text x="286.00" y="144.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">It leaves a</text>
+<text x="286.00" y="164.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">characteristic scar</text>
+<text x="286.00" y="192.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">Each mutagenic process damages</text>
+<text x="286.00" y="208.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">DNA in its own way, so the</text>
+<text x="286.00" y="224.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">mutations it causes fall into</text>
+<text x="286.00" y="240.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">a recognizable pattern of base</text>
+<text x="286.00" y="256.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">changes and contexts.</text>
+<path d="M494.0 199 L506.0 199 M501.0 194 L506.0 199 L501.0 204" fill="none" stroke="var(--ink-2)" stroke-width="1.3"/>
+<rect x="508.0" y="96" width="218.0" height="206" fill="var(--surface)" stroke="var(--rule)" stroke-width="1.2" rx="3"/>
+<rect x="508.0" y="96" width="218.0" height="4" fill="var(--accent)"/>
+<text x="520.00" y="122.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="start" font-weight="700">3 · Record</text>
+<text x="520.00" y="144.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">The tumor genome</text>
+<text x="520.00" y="164.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">keeps it</text>
+<text x="520.00" y="192.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">Sequencing thousands of tumors</text>
+<text x="520.00" y="208.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">has resolved those patterns</text>
+<text x="520.00" y="224.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">into catalogued mutational</text>
+<text x="520.00" y="240.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">signatures — a personalized</text>
+<text x="520.00" y="256.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">record of what a cell was</text>
+<text x="520.00" y="272.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">exposed to, written in the</text>
+<text x="520.00" y="288.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">cancer itself.</text>
+<path d="M728.0 199 L740.0 199 M735.0 194 L740.0 199 L735.0 204" fill="none" stroke="var(--ink-2)" stroke-width="1.3"/>
+<rect x="742.0" y="96" width="218.0" height="206" fill="var(--surface)" stroke="var(--rule)" stroke-width="1.2" rx="3"/>
+<rect x="742.0" y="96" width="218.0" height="4" fill="var(--accent)"/>
+<text x="754.00" y="122.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="start" font-weight="700">4 · Inference</text>
+<text x="754.00" y="144.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">Epidemiology reads it</text>
+<text x="754.00" y="164.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">back</text>
+<text x="754.00" y="192.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">Link signatures to exposure</text>
+<text x="754.00" y="208.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">data across many patients and</text>
+<text x="754.00" y="224.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">you get a causal claim that no</text>
+<text x="754.00" y="240.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">questionnaire can deliver: not</text>
+<text x="754.00" y="256.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">what a parent remembers, but</text>
+<text x="754.00" y="272.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">what the genome recorded.</text>
+<text x="40.00" y="338.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">The forensic version of this is old — TP53 carries G→T changes with a specific strand bias in the lung tumors of smokers, and CC→TT</text>
+<text x="40.00" y="354.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">transitions in skin cancer. What is new is doing it at genome scale, across cohorts, with epidemiologic data attached.</text>
+</svg>
+<figcaption><b>Figure 1</b> Mutational epidemiology in four steps, from tumor sequencing to signature-informed exposure inference.</figcaption>
+</figure>
+
+  </div>
+</section>
+
+<section class="section" id="timing">
+  <div class="wrap">
+    <div class="part"><span class="num">Natural history</span><span class="bar"></span></div>
+    <h2>Timing of leukemogenic events</h2>
+    <div class="measure">
+      <p class="lede">The initiating lesion in childhood ALL can be dated to fetal development, which defines the window any preventive intervention would have to reach.</p>
+      <p>Two lines of evidence support this. Monozygotic twins concordant for ALL carry chromosomal translocations with identical breakpoints, presumed to have transferred between twins through a shared placenta. Backtracking studies detect the same leukemia-driving fusions in neonatal blood spots from children diagnosed years later.</p>
+      <p>An initiating lesion is not sufficient for leukemia. Second-hit alterations, including deletions and point mutations, occur closer to overt disease, so postnatal exposures are also relevant. Both windows are early.</p>
+    </div>
+
+    <figure class="plate">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 496" width="100%" role="img" aria-label="two windows of exposure, not one"><desc>The natural history is what makes prevention conceivable and dates the exposures worth measuring: prenatal for the initiating lesion, early childhood for the second hit.</desc>
+<text x="40.00" y="34.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="start" font-weight="700">Two windows of exposure, not one</text>
+<line x1="48.0" y1="218.0" x2="952.0" y2="218.0" stroke="var(--ink)" stroke-width="1.6"/>
+<path d="M940 213.0 L952 218.0 L940 223.0" fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+<circle cx="147.0" cy="218.0" r="6" fill="var(--accent)"/>
+<line x1="147.0" y1="209.0" x2="147.0" y2="192.0" stroke="var(--accent)" stroke-width="1.2"/>
+<text x="147.00" y="55.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="middle" font-weight="700">In utero</text>
+<text x="147.00" y="89.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="middle" font-weight="600">The initiating lesion</text>
+<text x="147.00" y="116.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">Chromosomal translocations with</text>
+<text x="147.00" y="130.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">identical breakpoints in monozygotic</text>
+<text x="147.00" y="143.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">twins concordant for ALL, passed</text>
+<text x="147.00" y="157.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">through a shared placenta; the same</text>
+<text x="147.00" y="170.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">fusions found by backtracking into</text>
+<text x="147.00" y="184.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">neonatal blood spots.</text>
+<circle cx="381.9" cy="218.0" r="6" fill="var(--accent)"/>
+<line x1="381.9" y1="227.0" x2="381.9" y2="244.0" stroke="var(--accent)" stroke-width="1.2"/>
+<text x="381.90" y="262.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="middle" font-weight="700">Birth</text>
+<text x="381.90" y="286.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="middle" font-weight="600">A covert preleukemic clone</text>
+<text x="381.90" y="311.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">Present, and by itself not enough.</text>
+<text x="381.90" y="324.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">Most children carrying one never</text>
+<text x="381.90" y="338.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">develop leukemia.</text>
+<circle cx="608.1" cy="218.0" r="6" fill="var(--accent)"/>
+<line x1="608.1" y1="209.0" x2="608.1" y2="192.0" stroke="var(--accent)" stroke-width="1.2"/>
+<text x="608.10" y="82.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="middle" font-weight="700">Early childhood</text>
+<text x="608.10" y="116.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="middle" font-weight="600">Second-hit alterations</text>
+<text x="608.10" y="143.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">Deletions and point mutations</text>
+<text x="608.10" y="157.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">acquired after birth, many formed by</text>
+<text x="608.10" y="170.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">off-target RAG recombination as the</text>
+<text x="608.10" y="184.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">immune repertoire is being built.</text>
+<circle cx="843.0" cy="218.0" r="6" fill="var(--accent)"/>
+<line x1="843.0" y1="227.0" x2="843.0" y2="244.0" stroke="var(--accent)" stroke-width="1.2"/>
+<text x="843.00" y="262.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="middle" font-weight="700">Age 2–5</text>
+<text x="843.00" y="286.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="middle" font-weight="600">The incidence peak</text>
+<text x="843.00" y="311.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">The sharp early peak that</text>
+<text x="843.00" y="324.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">distinguishes ALL from pediatric</text>
+<text x="843.00" y="338.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">AML, and the observation behind the</text>
+<text x="843.00" y="351.50" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="middle" font-weight="400">delayed-infection hypothesis.</text>
+<text x="40.00" y="462.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--muted)" text-anchor="start" font-weight="400">The natural history is what makes prevention conceivable and dates the exposures worth measuring: prenatal for the initiating lesion, early</text>
+<text x="40.00" y="478.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--muted)" text-anchor="start" font-weight="400">childhood for the second hit.</text>
+</svg>
+<figcaption><b>Figure 2</b> Natural history of childhood ALL and the two windows in which exposure could act.</figcaption>
+</figure>
+
+    <div class="measure">
+      <p>The mutations themselves carry timing information. V(D)J recombination features at immunoglobulin heavy and light chains in common childhood ALL show gene-segment usage characteristic of fetal development, coinciding with the timing of <em>ETV6::RUNX1</em> translocations. <em>TCF3::PBX1</em> translocations and transcription factor deletions instead bear marks of later-acting adaptive immune enzymes, including terminal deoxynucleotidyl transferase and activation-induced cytidine deaminase. Infant ALL shows a more mature immunoglobulin rearrangement, suggesting a clone of later developmental origin.</p>
+      <p>This distinguishes leukemia from solid tumors as a subject of mutational analysis. The hematopoietic system replaces approximately 10<sup>11</sup> cells per day, and physiological genome-editing enzymes are active in the lineage that becomes malignant, so some signatures reflect endogenous immune processes rather than environmental exposure.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="signatures">
+  <div class="wrap">
+    <div class="part"><span class="num">Mutational signatures</span><span class="bar"></span></div>
+    <h2>Signatures reported in childhood ALL</h2>
+    <div class="measure">
+      <p class="lede">Sequencing studies of childhood ALL have catalogued the signatures present. Excluding the clock-like signatures common to all tumor types, three recur and each corresponds to a candidate exposure.</p>
+    </div>
+
+    <figure class="plate">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 916" width="100%" role="img" aria-label="signatures are not spread evenly across subtypes"><desc>Frequencies as reported across sequencing studies of childhood ALL. The unevenness is the argument: if the subtypes carried the same exposure history, the APOBEC signature would not be present in every ETV6::RUNX1-like case and 7% of B-ALL overall, and the ultraviolet signature would not concentrate in the aneuploid subtypes.</desc>
+<text x="40.00" y="44.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="start" font-weight="700">Signatures are not spread evenly across subtypes</text>
+<line x1="350.0" y1="90.0" x2="350.0" y2="814.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="350.00" y="82.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--muted)" text-anchor="middle" font-weight="400">0</text>
+<line x1="456.0" y1="90.0" x2="456.0" y2="814.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="456.00" y="82.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--muted)" text-anchor="middle" font-weight="400">20</text>
+<line x1="562.0" y1="90.0" x2="562.0" y2="814.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="562.00" y="82.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--muted)" text-anchor="middle" font-weight="400">40</text>
+<line x1="668.0" y1="90.0" x2="668.0" y2="814.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="668.00" y="82.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--muted)" text-anchor="middle" font-weight="400">60</text>
+<line x1="774.0" y1="90.0" x2="774.0" y2="814.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="774.00" y="82.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--muted)" text-anchor="middle" font-weight="400">80</text>
+<line x1="880.0" y1="90.0" x2="880.0" y2="814.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="880.00" y="82.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--muted)" text-anchor="middle" font-weight="400">100</text>
+<text x="40.00" y="114.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="start" font-weight="700">Clock-like · SBS1 and SBS5</text>
+<text x="56.00" y="144.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">present in essentially every ALL</text>
+<line x1="350.0" y1="140.0" x2="874.7" y2="140.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="874.7" cy="140.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="144.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">99%</text>
+<text x="40.00" y="174.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="start" font-weight="700">APOBEC cytidine deaminases · SBS2 and SBS13</text>
+<text x="56.00" y="204.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">B-ALL overall</text>
+<line x1="350.0" y1="200.0" x2="387.1" y2="200.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="387.1" cy="200.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="204.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">7%</text>
+<text x="56.00" y="234.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">ETV6::RUNX1 fusion</text>
+<line x1="350.0" y1="230.0" x2="577.9" y2="230.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="577.9" cy="230.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="234.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">43%</text>
+<text x="56.00" y="264.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">ETV6::RUNX1-like</text>
+<line x1="350.0" y1="260.0" x2="880.0" y2="260.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="880.0" cy="260.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="264.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">100%</text>
+<text x="40.00" y="294.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="start" font-weight="700">Reactive oxygen species · SBS18</text>
+<text x="56.00" y="324.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">B-ALL overall</text>
+<line x1="350.0" y1="320.0" x2="418.9" y2="320.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="418.9" cy="320.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="324.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">13%</text>
+<text x="56.00" y="354.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">T-ALL overall</text>
+<line x1="350.0" y1="350.0" x2="477.2" y2="350.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="477.2" cy="350.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="354.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">24%</text>
+<text x="56.00" y="384.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">Ph-like CRLF2 B-ALL</text>
+<line x1="350.0" y1="380.0" x2="461.3" y2="380.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="461.3" cy="380.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="384.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">21%</text>
+<text x="56.00" y="414.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">Ph-like other B-ALL</text>
+<line x1="350.0" y1="410.0" x2="408.3" y2="410.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="408.3" cy="410.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="414.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">11%</text>
+<text x="56.00" y="444.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">PAX5alt B-ALL</text>
+<line x1="350.0" y1="440.0" x2="567.3" y2="440.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="567.3" cy="440.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="444.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">41%</text>
+<text x="56.00" y="474.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">TAL1 T-ALL</text>
+<line x1="350.0" y1="470.0" x2="540.8" y2="470.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="540.8" cy="470.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="474.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">36%</text>
+<text x="56.00" y="504.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">LMO1/2 T-ALL</text>
+<line x1="350.0" y1="500.0" x2="705.1" y2="500.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="705.1" cy="500.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="504.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">67%</text>
+<text x="40.00" y="534.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="start" font-weight="700">Ultraviolet radiation · SBS7</text>
+<text x="56.00" y="564.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">B-ALL overall</text>
+<line x1="350.0" y1="560.0" x2="397.7" y2="560.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="397.7" cy="560.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="564.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">9%</text>
+<text x="56.00" y="594.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">hyperdiploid</text>
+<line x1="350.0" y1="590.0" x2="440.1" y2="590.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="440.1" cy="590.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="594.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">17%</text>
+<text x="56.00" y="624.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">near-haploid</text>
+<line x1="350.0" y1="620.0" x2="535.5" y2="620.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="535.5" cy="620.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="624.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">35%</text>
+<text x="56.00" y="654.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">iAMP21</text>
+<line x1="350.0" y1="650.0" x2="593.8" y2="650.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="593.8" cy="650.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="654.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">46%</text>
+<text x="40.00" y="684.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="start" font-weight="700">Homologous recombination deficiency · SBS3</text>
+<text x="56.00" y="714.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">B-ALL overall</text>
+<line x1="350.0" y1="710.0" x2="466.6" y2="710.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="466.6" cy="710.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="714.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">22%</text>
+<text x="40.00" y="744.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="start" font-weight="700">Rag-mediated deletions · SV7</text>
+<text x="56.00" y="774.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">B-ALL overall</text>
+<line x1="350.0" y1="770.0" x2="683.9" y2="770.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="683.9" cy="770.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="774.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">63%</text>
+<text x="56.00" y="804.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">T-ALL overall</text>
+<line x1="350.0" y1="800.0" x2="609.7" y2="800.0" stroke="var(--accent)" stroke-width="3" opacity=".45"/>
+<circle cx="609.7" cy="800.0" r="6" fill="var(--accent)"/>
+<text x="960.00" y="804.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink)" text-anchor="end" font-weight="600">49%</text>
+<line x1="40.0" y1="822.0" x2="960.0" y2="822.0" stroke="var(--rule)" stroke-width="1"/>
+<text x="350.00" y="846.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--muted)" text-anchor="start" font-weight="400">Share of patients in whom the signature is detected</text>
+<text x="40.00" y="866.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">Frequencies as reported across sequencing studies of childhood ALL. The unevenness is the argument: if the subtypes carried the same</text>
+<text x="40.00" y="882.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">exposure history, the APOBEC signature would not be present in every ETV6::RUNX1-like case and 7% of B-ALL overall, and the ultraviolet</text>
+<text x="40.00" y="898.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">signature would not concentrate in the aneuploid subtypes.</text>
+</svg>
+<figcaption><b>Figure 3</b> Mutational signatures reported in childhood ALL, by molecular subtype. Compiled from Table 1 of the review.</figcaption>
+</figure>
+
+    <div class="measure">
+      <p>APOBEC signatures (SBS2 and SBS13) reflect cytidine deaminase activity and are enriched in <em>ETV6::RUNX1</em> fusion B-ALL. SBS18 is attributed to oxidative damage from reactive oxygen species and has been associated with air pollutants and pesticides; it is most prominent in <em>LMO1/2</em> T-ALL and <em>PAX5</em>alt B-ALL. SBS7, the ultraviolet signature, is concentrated in the aneuploid subtypes: hyperdiploid, near-haploid and iAMP21.</p>
+      <p>The clinical cohorts that produced these frequencies did not collect epidemiologic or environmental exposure information, so direct exposure-to-signature analysis has not been possible. These distributions are therefore hypothesis-generating rather than causal evidence.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <caption>Table 1 &mdash; mutational signatures reported in childhood ALL<span>Proposed etiology and the subtypes each signature is enriched in. Condensed from the review&rsquo;s Table 1.</span></caption>
+        <thead><tr><th>Signature</th><th>Proposed etiology</th><th>Where it is enriched</th></tr></thead>
+        <tbody>
+          <tr><th>SBS1, SBS5</th><td>Deamination of 5-methylcytosine &mdash; &ldquo;clock-like&rdquo;</td><td>Effectively universal: 100% and 98% of ALL</td></tr>
+          <tr><th>SBS2, SBS13</th><td>APOBEC family cytidine deaminases</td><td>7% of B-ALL; 43% of <em>ETV6::RUNX1</em>; 100% of <em>ETV6::RUNX1</em>-like</td></tr>
+          <tr><th>SBS3</th><td>Homologous recombination deficiency</td><td>22% of B-ALL</td></tr>
+          <tr><th>SBS7</th><td>Ultraviolet radiation damage</td><td>9% of B-ALL; 17% hyperdiploid; 35% near-haploid; 46% iAMP21</td></tr>
+          <tr><th>SBS18</th><td>Reactive oxygen species &mdash; possibly air pollutants, pesticides</td><td>13% B-ALL; 24% T-ALL; 41% <em>PAX5</em>alt; 36% <em>TAL1</em> T-ALL; 67% <em>LMO1/2</em> T-ALL</td></tr>
+          <tr><th>SBS26</th><td>Defective DNA mismatch repair</td><td>1% of B-ALL</td></tr>
+          <tr><th>ID1, ID2</th><td>DNA replication slippage &mdash; clock-like</td><td>89&ndash;97% of B-ALL; 92&ndash;97% of T-ALL</td></tr>
+          <tr><th>SV7</th><td>Non-clustered deletions, likely RAG-mediated</td><td>63% of B-ALL; 49% of T-ALL</td></tr>
+          <tr><th>RAG-mediated deletions</th><td>Off-target RAG recombination; early-life tobacco exposure</td><td>B-ALL, enriched in <em>ETV6::RUNX1</em>; T-ALL</td></tr>
+          <tr><th>AID/AICDA lesions</th><td>Off-target activation-induced cytidine deaminase</td><td>B-ALL; <em>TCF3::PBX1</em>; <em>BCR::ABL1</em></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <figure class="plate">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 388" width="100%" role="img" aria-label="the mechanism where exposure meets the genome"><desc>Maternal tobacco exposure in pregnancy was shown over two decades ago to increase gene deletions in cord blood T-lymphocytes through illegitimate V(D)J recombination. The tumor-sequencing version of that observation is what this review is arguing should now be done systematically.</desc>
+<text x="40.00" y="44.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="start" font-weight="700">The mechanism where exposure meets the genome</text>
+<rect x="40.0" y="96" width="296.0" height="206" fill="var(--surface)" stroke="var(--rule)" stroke-width="1.2" rx="3"/>
+<rect x="40.0" y="96" width="296.0" height="4" fill="var(--accent)"/>
+<text x="52.00" y="122.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="start" font-weight="700">On-target</text>
+<text x="52.00" y="144.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">RAG builds the immune</text>
+<text x="52.00" y="164.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">repertoire</text>
+<text x="52.00" y="192.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">RAG proteins recognize recombination</text>
+<text x="52.00" y="208.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">signal sequences beside the V, D and J</text>
+<text x="52.00" y="224.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">segments, cut, and rejoin them. This is</text>
+<text x="52.00" y="240.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">how antibody diversity is generated — a</text>
+<text x="52.00" y="256.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">controlled, essential act of genome</text>
+<text x="52.00" y="272.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">editing.</text>
+<path d="M338.0 199 L350.0 199 M345.0 194 L350.0 199 L345.0 204" fill="none" stroke="var(--ink-2)" stroke-width="1.3"/>
+<rect x="352.0" y="96" width="296.0" height="206" fill="var(--surface)" stroke="var(--rule)" stroke-width="1.2" rx="3"/>
+<rect x="352.0" y="96" width="296.0" height="4" fill="var(--accent)"/>
+<text x="364.00" y="122.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="start" font-weight="700">Off-target</text>
+<text x="364.00" y="144.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">Sometimes it cuts elsewhere</text>
+<text x="364.00" y="172.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">Illegitimate RAG recombination at</text>
+<text x="364.00" y="188.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">sequences that merely resemble the real</text>
+<text x="364.00" y="204.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">targets is an established route to the</text>
+<text x="364.00" y="220.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">second-hit deletions that push a covert</text>
+<text x="364.00" y="236.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">preleukemic clone into overt disease.</text>
+<path d="M650.0 199 L662.0 199 M657.0 194 L662.0 199 L657.0 204" fill="none" stroke="var(--ink-2)" stroke-width="1.3"/>
+<rect x="664.0" y="96" width="296.0" height="206" fill="var(--surface)" stroke="var(--rule)" stroke-width="1.2" rx="3"/>
+<rect x="664.0" y="96" width="296.0" height="4" fill="var(--accent)"/>
+<text x="676.00" y="122.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--accent)" text-anchor="start" font-weight="700">The exposure</text>
+<text x="676.00" y="144.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" fill="var(--ink)" text-anchor="start" font-weight="600">Tobacco raises the rate</text>
+<text x="676.00" y="172.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">Children with high early-life tobacco</text>
+<text x="676.00" y="188.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">exposure carry more deletions genome-wide,</text>
+<text x="676.00" y="204.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">and specifically more off-target</text>
+<text x="676.00" y="220.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">RAG-mediated deletions, than children with</text>
+<text x="676.00" y="236.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">low exposure — the clearest</text>
+<text x="676.00" y="252.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">mutational-epidemiology result so far in</text>
+<text x="676.00" y="268.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">childhood ALL.</text>
+<text x="40.00" y="338.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">Maternal tobacco exposure in pregnancy was shown over two decades ago to increase gene deletions in cord blood T-lymphocytes through</text>
+<text x="40.00" y="354.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">illegitimate V(D)J recombination. The tumor-sequencing version of that observation is what this review is arguing should now be done</text>
+<text x="40.00" y="370.00" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="var(--ink-2)" text-anchor="start" font-weight="400">systematically.</text>
+</svg>
+<figcaption><b>Figure 4</b> Off-target RAG recombination as a leukemogenic mechanism, and the single exposure so far associated with it in patients.</figcaption>
+</figure>
+
+    <div class="grid3">
+      <div><div class="statl">Prenatal + postnatal tobacco</div><div class="stat acc">~2&times;</div>
+        <div class="statn">Risk of <em>ETV6::RUNX1</em> fusion B-ALL with combined paternal prenatal and postnatal exposure; no association for high hyperdiploid B-ALL</div></div>
+      <div><div class="statl">Polygenic risk score</div><div class="stat">&gt;5&times;</div>
+        <div class="statn">Difference in ALL risk between the lowest and highest decile of the common-variant score</div></div>
+      <div><div class="statl">Epigenome</div><div class="stat">~10%</div>
+        <div class="statn">Of DNA methylation marks differ between normal pre-B cells and leukemic cells, extending the same approach to epimutations</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="risks">
+  <div class="wrap">
+    <div class="part"><span class="num">Risk factors</span><span class="bar"></span></div>
+    <h2>Established, emerging and inconsistent risk factors</h2>
+    <div class="measure">
+      <p>The review grades the evidence rather than presenting it uniformly. Some associations are established, others emerging, and several widely discussed exposures remain inconsistent. This classification determines which exposures merit signature-based investigation.</p>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <caption>Table 2 &mdash; risk factors for childhood ALL<span>Grouped by how firm the evidence is, as the review characterizes it.</span></caption>
+        <thead><tr><th>Factor</th><th>What is reported</th><th>Standing</th></tr></thead>
+        <tbody>
+          <tr><th>Ionizing radiation</th><td>Established above 0.1 Gy from atomic-bomb and nuclear-disaster populations; recent reviews suggest doses as low as 0.05 Gy may raise risk, and cumulative diagnostic exposure has been associated with ALL</td><td class="up">Established</td></tr>
+          <tr><th>Germline predisposition</th><td>Down syndrome; chromosome instability disorders; rare pathogenic variants in <em>ETV6</em>, <em>PAX5</em>, <em>TP53</em>, <em>IKZF1</em>; more than a dozen replicated common risk loci</td><td class="up">Established</td></tr>
+          <tr><th>Male sex</th><td>Up to 1.3-fold higher incidence at 0&ndash;14 years, nearly 2-fold at 15&ndash;19; mechanism unknown</td><td class="up">Established</td></tr>
+          <tr><th>High birthweight</th><td>Risk rises with birthweight, possibly non-linearly above 4,000&ndash;4,500 g; associated specifically with high hyperdiploid and <em>TCF3::PBX1</em> ALL</td><td class="up">Established</td></tr>
+          <tr><th>Cytomegalovirus</th><td>Classified a Group 2B carcinogen by IARC in part on this evidence; elevated detection in cases, especially among Hispanic/Latino children; may be specific to high hyperdiploid ALL</td><td>Emerging</td></tr>
+          <tr><th>Tobacco</th><td>Paternal smoking inconsistently associated; but maternal smoking in pregnancy is linked to more somatic gene deletions in children who develop ALL &mdash; a genotoxic mechanism rather than an epidemiologic association</td><td>Emerging</td></tr>
+          <tr><th>Pesticides</th><td>Maternal household use in pregnancy repeatedly associated; a California geospatial study linking birth addresses to a pesticide-use database implicated specific compounds and chemical classes; a Danish study found risk within 1,000 m of crop fields</td><td>Emerging</td></tr>
+          <tr><th>Traffic and air pollution</th><td>Residential traffic density associated; specific reports for nitrogen dioxide, PM2.5, 1,3-butadiene and carbon monoxide</td><td>Emerging</td></tr>
+          <tr><th>Cesarean delivery</th><td>Associated for scheduled or pre-labor procedures, not for emergency cesarean &mdash; consistent with the immune activation and cortisol surge of labor</td><td>Emerging</td></tr>
+          <tr><th>Breastfeeding</th><td>Reported protective, possibly through early immune development</td><td>Emerging</td></tr>
+          <tr><th>Ultraviolet radiation</th><td>Protective in Californian and Swiss geospatial studies; positively associated in French and U.S. cohorts, especially in Hispanic/Latino children</td><td class="flat">Inconsistent</td></tr>
+          <tr><th>Benzene</th><td>Well established for AML; most studies show no significant association with ALL</td><td class="flat">Inconsistent</td></tr>
+          <tr><th>PFAS</th><td>Elevated prenatal maternal serum levels and household dust exposure reported; findings differ by subtype, and a drinking-water study found nothing</td><td class="flat">Inconsistent</td></tr>
+          <tr><th>Oil and gas development</th><td>Case-control studies report risk rising with proximity and cumulative exposure; ecological studies find no clear clustering</td><td class="flat">Inconsistent</td></tr>
+          <tr><th>Birth order</th><td>Some studies find elevated risk in first-borns, possibly via early immune stimulation; results are not uniform</td><td class="flat">Inconsistent</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="next">
+  <div class="wrap">
+    <div class="part"><span class="num">Proposed study designs</span><span class="bar"></span></div>
+    <h2>Linking signatures to measured exposures</h2>
+    <div class="measure">
+      <p class="lede">The review sets out two study designs, differing in cost and feasibility.</p>
+      <p>The first is to link existing mutational signature results from cohorts that have already whole-genome sequenced large numbers of childhood ALL patients to exposure data already collected or feasibly collectable. The second is to add paired tumor-normal sequencing to case-control studies that hold detailed environmental exposure assessment; the Childhood Cancer and Leukemia International Consortium is identified as a suitable setting.</p>
+      <p>The stated priorities are the same in both designs: determine the etiologies of the signatures observed (APOBEC, reactive oxygen species, ultraviolet), conduct an epidemiologic study of RAG recombination-mediated deletions, and stratify by molecular subtype, which will require large samples or targeted enrollment of specific subtypes.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="box">
+        <h4>Open questions</h4>
+        <p>Why children of Hispanic/Latino ethnicity have the highest and most rapidly rising ALL incidence in the United States. Risk alleles at <em>ARID5B</em>, <em>GATA3</em> and <em>IKZF1</em> are more common in these populations but do not fully account for the difference.</p>
+        <p>Why incidence is higher in males. Sex differences in mutational signatures have been demonstrated in adult cancers but not examined in childhood ALL.</p>
+        <p style="margin-bottom:0">Whether global variation in ALL incidence has a mutational correlate, which would require sequencing patients outside the United States and Europe.</p>
+      </div>
+      <div class="box">
+        <h4>Precedents in adult cancer</h4>
+        <p>More than 5,000 tumors across smoking-associated cancer types: reported smoking correlated with mutation burden and with the tobacco signature SBS4.</p>
+        <p>Esophageal squamous cell carcinoma across eight countries: APOBEC mutagenesis was a major contributor, although no signature explained global variation in incidence.</p>
+        <p>Clear cell renal cell carcinoma: aristolochic acid signatures concentrated in Romania, Serbia and Thailand, and a signature of unknown cause common in Japan and rare elsewhere.</p>
+        <p style="margin-bottom:0">Colorectal cancer across eleven countries: colibactin signatures enriched in high-incidence regions and in early-onset cases.</p>
+      </div>
+    </div>
+
+    <div class="measure">
+      <p>These methods were developed for adult, carcinogen-driven cancers. The review argues that they transfer to childhood leukemia, and that applying them is now a matter of assembling a cohort with both sequencing and exposure data rather than of methodological development.</p>
+    </div>
+
+    <div class="box">
+      <h4>Citation</h4>
+      <p style="margin-bottom:6px">de Smith AJ, Zhou N, Li Y, Liu T, Patrus N, Wiemels JL. Investigating the causes of childhood acute lymphoblastic leukemia through mutational epidemiology. <em>Current Problems in Pediatric and Adolescent Health Care</em>. 2025;55(9):101818.</p>
+      <p class="src"><a href="https://doi.org/10.1016/j.cppeds.2025.101818">doi:10.1016/j.cppeds.2025.101818</a> &nbsp;&middot;&nbsp; Open access under CC BY-NC &nbsp;&middot;&nbsp; Center for Genetic Epidemiology, Department of Population and Public Health Sciences, Keck School of Medicine, University of Southern California.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="colophon">
+  <div class="wrap">
+    <div><h4>Paper</h4><p>Investigating the causes of childhood acute lymphoblastic leukemia through mutational epidemiology<br><br>Current Problems in Pediatric and Adolescent Health Care · 2025 · 55(9):101818<br>
+      <a href="https://doi.org/10.1016/j.cppeds.2025.101818">doi:10.1016/j.cppeds.2025.101818</a></p></div>
+    <div><h4>Naying Zhou, MD, MPH</h4><p>Center for Genetic Epidemiology, Department of Population and Public Health Sciences, Keck School of Medicine, University of Southern California. Open access under CC BY-NC.</p></div>
+    <div><h4>About this page</h4><p>A summary of the published article. All values are taken from
+      the paper. Figures were prepared for this page; those that redraw a published
+      model rather than plotting raw data are labeled schematic.</p></div>
+    <div class="sitefoot"><p>&copy; 2026 Naying Zhou &middot;
+      <a href="../../research.html">Back to Research</a></p></div>
+  </div>
+</footer>
+</body>
+</html>
