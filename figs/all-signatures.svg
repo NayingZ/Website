@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1156 876" width="1156" height="876" font-family="Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1156" height="876" fill="#ffffff"/>
+<text x="24" y="40" font-size="20" font-weight="600" fill="#1b2433">Mutational signatures reported in childhood ALL, by subtype</text>
+<text x="24" y="64" font-size="14" fill="#5e6675">Dot size: proportion of patients with the signature &#183; colour: proposed etiology</text>
+<line x1="24" y1="82" x2="1132" y2="82" stroke="#e6e1d8"/>
+<rect x="136" y="262" width="60" height="464" fill="#f6f5f1"/>
+<text transform="translate(171.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">B-ALL</text>
+<rect x="196" y="262" width="60" height="464" fill="#eeece6"/>
+<text transform="translate(231.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">T-ALL</text>
+<rect x="256" y="262" width="60" height="464" fill="#f6f5f1"/>
+<text transform="translate(291.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">ETV6::RUNX1 B-ALL</text>
+<rect x="316" y="262" width="60" height="464" fill="#eeece6"/>
+<text transform="translate(351.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">ETV6::RUNX1-like B-ALL</text>
+<rect x="376" y="262" width="60" height="464" fill="#f6f5f1"/>
+<text transform="translate(411.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">Hyperdiploid B-ALL</text>
+<rect x="436" y="262" width="60" height="464" fill="#eeece6"/>
+<text transform="translate(471.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">Near-haploid B-ALL</text>
+<rect x="496" y="262" width="60" height="464" fill="#f6f5f1"/>
+<text transform="translate(531.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">iAMP21 B-ALL</text>
+<rect x="556" y="262" width="60" height="464" fill="#eeece6"/>
+<text transform="translate(591.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">Ph-like-CRLF2 B-ALL</text>
+<rect x="616" y="262" width="60" height="464" fill="#f6f5f1"/>
+<text transform="translate(651.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">Ph-like-other B-ALL</text>
+<rect x="676" y="262" width="60" height="464" fill="#eeece6"/>
+<text transform="translate(711.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">PAX5alt B-ALL</text>
+<rect x="736" y="262" width="60" height="464" fill="#f6f5f1"/>
+<text transform="translate(771.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">TAL1 T-ALL</text>
+<rect x="796" y="262" width="60" height="464" fill="#eeece6"/>
+<text transform="translate(831.0,250) rotate(-58)" font-size="13" font-weight="500" fill="#3d4656">LMO1/2 T-ALL</text>
+<line x1="136" y1="320" x2="856" y2="320" stroke="#ffffff" stroke-width="2"/>
+<line x1="136" y1="378" x2="856" y2="378" stroke="#ffffff" stroke-width="2"/>
+<line x1="136" y1="436" x2="856" y2="436" stroke="#ffffff" stroke-width="2"/>
+<line x1="136" y1="494" x2="856" y2="494" stroke="#ffffff" stroke-width="2"/>
+<line x1="136" y1="552" x2="856" y2="552" stroke="#ffffff" stroke-width="2"/>
+<line x1="136" y1="610" x2="856" y2="610" stroke="#ffffff" stroke-width="2"/>
+<line x1="136" y1="668" x2="856" y2="668" stroke="#ffffff" stroke-width="2"/>
+<line x1="196" y1="262" x2="196" y2="726" stroke="#ffffff" stroke-width="2"/>
+<line x1="256" y1="262" x2="256" y2="726" stroke="#ffffff" stroke-width="2"/>
+<line x1="316" y1="262" x2="316" y2="726" stroke="#ffffff" stroke-width="2"/>
+<line x1="376" y1="262" x2="376" y2="726" stroke="#ffffff" stroke-width="2"/>
+<line x1="436" y1="262" x2="436" y2="726" stroke="#ffffff" stroke-width="2"/>
+<line x1="496" y1="262" x2="496" y2="726" stroke="#ffffff" stroke-width="2"/>
+<line x1="556" y1="262" x2="556" y2="726" stroke="#ffffff" stroke-width="2"/>
+<line x1="616" y1="262" x2="616" y2="726" stroke="#ffffff" stroke-width="2"/>
+<line x1="676" y1="262" x2="676" y2="726" stroke="#ffffff" stroke-width="2"/>
+<line x1="736" y1="262" x2="736" y2="726" stroke="#ffffff" stroke-width="2"/>
+<line x1="796" y1="262" x2="796" y2="726" stroke="#ffffff" stroke-width="2"/>
+<text x="880" y="248" font-size="12" font-weight="600" letter-spacing="1.6" fill="#5e6675">PROPOSED ETIOLOGY</text>
+<text x="122" y="291.0" text-anchor="end" dominant-baseline="central" font-size="14" font-weight="600" fill="#1b2433">SBS1/SBS5</text>
+<text x="880" y="291.0" dominant-baseline="central" font-size="13" fill="#3d4656">Clock-like</text>
+<circle cx="166.0" cy="291.0" r="25.2" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="226.0" cy="291.0" r="25.3" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="286.0" cy="291.0" r="25.1" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="346.0" cy="291.0" r="25.3" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="406.0" cy="291.0" r="25.2" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="466.0" cy="291.0" r="25.2" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="526.0" cy="291.0" r="25.2" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="586.0" cy="291.0" r="25.3" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="646.0" cy="291.0" r="25.1" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="706.0" cy="291.0" r="25.3" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="766.0" cy="291.0" r="25.1" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="826.0" cy="291.0" r="25.2" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<text x="122" y="349.0" text-anchor="end" dominant-baseline="central" font-size="14" font-weight="600" fill="#1b2433">SBS2/SBS13</text>
+<text x="880" y="349.0" dominant-baseline="central" font-size="13" fill="#3d4656">APOBEC</text>
+<circle cx="166.0" cy="349.0" r="8.6" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="286.0" cy="349.0" r="14.4" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="346.0" cy="349.0" r="25.3" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<text x="122" y="407.0" text-anchor="end" dominant-baseline="central" font-size="14" font-weight="600" fill="#1b2433">SBS3</text>
+<text x="880" y="398.5" dominant-baseline="central" font-size="13" fill="#3d4656">Homologous recombination</text>
+<text x="880" y="415.5" dominant-baseline="central" font-size="13" fill="#3d4656">deficiency</text>
+<circle cx="166.0" cy="407.0" r="11.2" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<text x="122" y="465.0" text-anchor="end" dominant-baseline="central" font-size="14" font-weight="600" fill="#1b2433">SBS7</text>
+<text x="880" y="465.0" dominant-baseline="central" font-size="13" fill="#3d4656">UV damage</text>
+<circle cx="166.0" cy="465.0" r="8.5" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="406.0" cy="465.0" r="10.5" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="466.0" cy="465.0" r="12.7" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="526.0" cy="465.0" r="14.3" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<text x="122" y="523.0" text-anchor="end" dominant-baseline="central" font-size="14" font-weight="600" fill="#1b2433">SBS18</text>
+<text x="880" y="514.5" dominant-baseline="central" font-size="13" fill="#3d4656">8-oxoguanine (oxidative/ROS</text>
+<text x="880" y="531.5" dominant-baseline="central" font-size="13" fill="#3d4656">damage)</text>
+<circle cx="166.0" cy="523.0" r="8.5" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="226.0" cy="523.0" r="12.0" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="586.0" cy="523.0" r="12.1" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="646.0" cy="523.0" r="8.5" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="706.0" cy="523.0" r="15.5" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="766.0" cy="523.0" r="14.6" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="826.0" cy="523.0" r="18.6" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<text x="122" y="581.0" text-anchor="end" dominant-baseline="central" font-size="14" font-weight="600" fill="#1b2433">ID1/ID2</text>
+<text x="880" y="572.5" dominant-baseline="central" font-size="13" fill="#3d4656">Replication</text>
+<text x="880" y="589.5" dominant-baseline="central" font-size="13" fill="#3d4656">slippage/clock-like</text>
+<circle cx="166.0" cy="581.0" r="23.3" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="226.0" cy="581.0" r="23.3" fill="#2f5d8a" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<text x="122" y="639.0" text-anchor="end" dominant-baseline="central" font-size="14" font-weight="600" fill="#1b2433">IDN</text>
+<text x="880" y="639.0" dominant-baseline="central" font-size="13" fill="#3d4656">Unknown</text>
+<circle cx="166.0" cy="639.0" r="15.3" fill="#5e6675" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="226.0" cy="639.0" r="18.8" fill="#5e6675" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<text x="122" y="697.0" text-anchor="end" dominant-baseline="central" font-size="14" font-weight="600" fill="#1b2433">SV7</text>
+<text x="880" y="680.0" dominant-baseline="central" font-size="13" fill="#3d4656">Non-clustered deletions</text>
+<text x="880" y="697.0" dominant-baseline="central" font-size="13" fill="#3d4656">(likely RAG-mediated</text>
+<text x="880" y="714.0" dominant-baseline="central" font-size="13" fill="#3d4656">recombination)</text>
+<circle cx="166.0" cy="697.0" r="19.7" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<circle cx="226.0" cy="697.0" r="16.8" fill="#3e7c6e" fill-opacity=".92" stroke="#ffffff" stroke-width="1"/>
+<text x="136" y="758" font-size="12" font-weight="600" letter-spacing="1.6" fill="#5e6675">PROPORTION OF PATIENTS WITH SIGNATURE</text>
+<circle cx="152.6" cy="804" r="8.6" fill="#5e6675" fill-opacity=".85"/>
+<circle cx="181.2" cy="804" r="12.0" fill="#5e6675" fill-opacity=".85"/>
+<circle cx="214.9" cy="804" r="13.7" fill="#5e6675" fill-opacity=".85"/>
+<circle cx="251.9" cy="804" r="15.3" fill="#5e6675" fill-opacity=".85"/>
+<circle cx="292.6" cy="804" r="17.4" fill="#5e6675" fill-opacity=".85"/>
+<text x="292.6" y="848" text-anchor="middle" font-size="12" fill="#3d4656">0.5</text>
+<circle cx="336.8" cy="804" r="18.8" fill="#5e6675" fill-opacity=".85"/>
+<circle cx="384.1" cy="804" r="20.5" fill="#5e6675" fill-opacity=".85"/>
+<circle cx="434.8" cy="804" r="22.2" fill="#5e6675" fill-opacity=".85"/>
+<circle cx="488.8" cy="804" r="23.9" fill="#5e6675" fill-opacity=".85"/>
+<circle cx="546.4" cy="804" r="25.8" fill="#5e6675" fill-opacity=".85"/>
+<text x="546.4" y="848" text-anchor="middle" font-size="12" fill="#3d4656">1.0</text>
+<text x="136" y="848" font-size="12" fill="#3d4656">0</text>
+<text x="880" y="758" font-size="12" font-weight="600" letter-spacing="1.6" fill="#5e6675">PROPOSED ETIOLOGY</text>
+<circle cx="889" cy="788" r="8" fill="#3e7c6e"/><text x="906" y="788" dominant-baseline="central" font-size="13" fill="#3d4656">Environmental</text>
+<circle cx="889" cy="814" r="8" fill="#2f5d8a"/><text x="906" y="814" dominant-baseline="central" font-size="13" fill="#3d4656">Endogenous</text>
+<circle cx="889" cy="840" r="8" fill="#5e6675"/><text x="906" y="840" dominant-baseline="central" font-size="13" fill="#3d4656">Unknown</text>
+</svg>

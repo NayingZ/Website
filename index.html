@@ -5,284 +5,370 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Naying Zhou, MD, MPH</title>
+<meta name="description" content="Naying Zhou, MD, MPH — physician-scientist studying germline susceptibility to childhood cancer at the Keck School of Medicine of USC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.className+=" js"</script>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="cardinal.css">
+<script src="site.js" defer></script>
 <script src="analytics.js" defer></script>
 </head>
 <body>
-  <!-- ========== HEADER: name left, tabs right, one row ========== -->
+  <div class="topbar"><div class="topbar-inner">
+    <span class="aff">Genetic Epidemiology &middot; Keck School of Medicine of USC</span>
+    <span class="topbar-links"><a href="mailto:naying.zhou@gmail.com">Email</a><a href="https://orcid.org/0009-0004-1785-3584" target="_blank" rel="noopener me">ORCID</a><a href="https://www.linkedin.com/in/nayingzhou" target="_blank" rel="noopener me">LinkedIn</a></span>
+  </div></div>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="index.html">Naying Zhou<span class="post">, MD, MPH</span></a>
-      <nav class="site-nav">
+      <a class="brand" href="index.html" aria-label="Naying Zhou, MD, MPH — home">
+        <span class="brand-mark" aria-hidden="true">NZ</span>
+        <span class="brand-text"><span class="brand-name">Naying Zhou</span><span class="brand-sub">MD &middot; MPH &middot; PhD Candidate</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+      <nav class="site-nav" aria-label="Main">
         <a href="index.html" class="active">About</a>
         <a href="research.html">Research</a>
         <a href="experience.html">Experience</a>
         <a href="teaching.html">Teaching</a>
+        <a class="nav-cta" href="mailto:naying.zhou@gmail.com">Get in touch</a>
       </nav>
     </div>
   </header>
 
-  <div class="wrap">
+  <!-- ========== HERO ========== -->
+  <section class="home-hero">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">Genetic epidemiology &middot; Childhood cancer</span>
+        <h1>Tracing the <em>inherited</em> roots of childhood cancer.</h1>
+        <p class="hero-lede">I study germline genetic susceptibility to childhood and early-onset cancers &mdash;
+          using newborn blood spots, population registries and multi-ancestry genomic data to find
+          heritable risk where it has been least well characterized.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="research.html">Explore research <span class="arr">&rarr;</span></a>
+          <a class="btn btn-ghost" href="experience.html">View experience</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="figures/headshot.jpg" alt="Naying Zhou">
+        <figcaption><strong>Naying Zhou, MD, MPH</strong>PhD Candidate &middot; Keck School of Medicine of USC</figcaption>
+      </figure>
+    </div>
+  </section>
 
-    <!-- Two columns: identity rail at the left, content at the right.
-         The nav lives in the horizontal bar above, not in the rail. -->
-    <div class="home-grid">
+  <!-- ========== STAT STRIP (USMLE & ECFMG) ========== -->
+  <section class="stats" aria-label="USMLE and ECFMG certification">
+    <div class="stats-card reveal">
+      <div class="stat"><span class="stat-num">249</span><span class="stat-label">USMLE Step 1</span><span class="stat-note">2020</span></div>
+      <div class="stat"><span class="stat-num">246</span><span class="stat-label">USMLE Step 2 CK</span><span class="stat-note">2025</span></div>
+      <div class="stat"><span class="stat-num">ECFMG</span><span class="stat-label">Certified 2026</span><span class="stat-note">Valid through 2029</span></div>
+      <div class="stat"><span class="stat-num">1<small>of 12</small></span><span class="stat-label">Statewide CIAPM awardees</span><span class="stat-note">Principal Investigator, 2026&ndash;2028</span></div>
+    </div>
+  </section>
 
-      <aside class="home-identity">
-        <img class="headshot" src="figures/headshot.jpg" alt="Naying Zhou">
-        <ul class="profile-links">
-                  <li>
-                    <a href="mailto:naying.zhou@gmail.com" title="Email naying.zhou@gmail.com">
-                      <img src="education_logo/email.png" alt="" width="63" height="48" aria-hidden="true">
-                      <span class="visually-hidden">Email</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://orcid.org/0009-0004-1785-3584" target="_blank" rel="noopener me" title="ORCID 0009-0004-1785-3584">
-                      <img src="education_logo/orcid.png" alt="" width="32" height="32" aria-hidden="true">
-                      <span class="visually-hidden">ORCID</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/nayingzhou" target="_blank" rel="noopener me" title="LinkedIn profile">
-                      <img src="education_logo/linkedin.png" alt="" width="56" height="48" aria-hidden="true">
-                      <span class="visually-hidden">LinkedIn</span>
-                    </a>
-                  </li>
-                </ul>
-            <section id="usmle-ecfmg">
-              <h2>USMLE &amp; ECFMG Certificate</h2>
+  <!-- ========== RESEARCH FOCUS ========== -->
+  <section class="hsec" id="research-map">
+    <div class="hsec-head reveal">
+      <div><span class="eyebrow">Research focus</span>
+        <h2>Germline susceptibility,<br>from cohort to clinic.</h2></div>
+    </div>
+    <div class="focus-split reveal">
+      <figure class="rmap-fig">
+        <svg class="rmap rmx" viewBox="0 0 920 600" role="img" aria-labelledby="rmx-t rmx-d" xmlns="http://www.w3.org/2000/svg">
+<title id="rmx-t">Research map</title>
+<desc id="rmx-d">Germline susceptibility to childhood cancer at the centre, ringed by four themes: diseases, data resources, methods and translational aims, each with its specific topics.</desc>
+<defs>
+<radialGradient id="rmx-hub" cx="50%" cy="38%" r="70%"><stop offset="0" stop-color="#2a4170"/><stop offset="1" stop-color="#0e1a33"/></radialGradient>
+<radialGradient id="rmx-halo" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#e7cfa4" stop-opacity=".22"/><stop offset="1" stop-color="#e7cfa4" stop-opacity="0"/></radialGradient>
+<filter id="rmx-glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<path id="rmx-p0" fill="none" d="M478.4,169.3 A132,132 0 0,1 591.7,290.8"/>
+<path id="rmx-p1" fill="none" d="M505.1,424.0 A132,132 0 0,0 591.7,309.2"/>
+<path id="rmx-p2" fill="none" d="M328.3,309.2 A132,132 0 0,0 432.6,429.1"/>
+<path id="rmx-p3" fill="none" d="M328.3,290.8 A132,132 0 0,1 414.9,176.0"/>
+</defs>
+<circle cx="460" cy="300" r="242" fill="url(#rmx-halo)"/>
+<circle class="rmx-orbit" cx="460" cy="300" r="160.0" fill="none" stroke="#e7cfa4" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="1 5"/>
+<circle class="rmx-orbit" cx="460" cy="300" r="204.0" fill="none" stroke="#e7cfa4" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="1 7"/>
+<circle class="rmx-orbit" cx="460" cy="300" r="98" fill="none" stroke="#e7cfa4" stroke-opacity="0.55" stroke-width="1" />
+<g class="rm-group" data-g="0">
+<path class="rmx-arc" d="M478.4,169.3 A132,132 0 0,1 591.7,290.8" fill="none" stroke="#7fb2e5" stroke-width="32" filter="url(#rmx-glow)" opacity=".95"/>
+<text class="rmx-glabel" font-size="14.5" font-weight="600" letter-spacing="1" fill="#0e1a33"><textPath href="#rmx-p0" startOffset="50%" text-anchor="middle" dominant-baseline="central">Diseases</textPath></text>
+<path class="rmx-link" d="M503.6,146.0 C510.6,121.0 640.0,40.0 686.0,40.0" fill="none" stroke="#7fb2e5" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="503.6" cy="146.0" r="4.2" fill="#7fb2e5" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item is-brief" href="briefs/Telomere_Length_and_Childhood_Glioma.html" aria-label="Pediatric glioma: Read the paper brief"><title>Pediatric glioma — Read the paper brief</title>
+<rect class="rmx-hit" x="682.0" y="25.0" width="169.2" height="30" fill="transparent"/>
+<circle cx="686.0" cy="40.0" r="2.6" fill="#7fb2e5"/>
+<text class="rmx-label" x="696.0" y="40.0" dominant-baseline="central" text-anchor="start" font-size="16" fill="#e9edf5">Pediatric glioma</text>
+</a>
+<path class="rmx-link" d="M543.4,163.4 C556.9,141.2 640.0,105.0 686.0,105.0" fill="none" stroke="#7fb2e5" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="543.4" cy="163.4" r="4.2" fill="#7fb2e5" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item" href="research.html#cns-predisposition" aria-label="Medulloblastoma &amp; ATRT: Go to this work on the Research page"><title>Medulloblastoma &amp; ATRT — Go to this work on the Research page</title>
+<rect class="rmx-hit" x="682.0" y="90.0" width="224.4" height="30" fill="transparent"/>
+<circle cx="686.0" cy="105.0" r="2.6" fill="#7fb2e5"/>
+<text class="rmx-label" x="696.0" y="105.0" dominant-baseline="central" text-anchor="start" font-size="16" fill="#e9edf5">Medulloblastoma &amp; ATRT</text>
+</a>
+<path class="rmx-link" d="M577.0,190.9 C596.0,173.1 640.0,170.0 686.0,170.0" fill="none" stroke="#7fb2e5" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="577.0" cy="190.9" r="4.2" fill="#7fb2e5" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item is-brief" href="briefs/Twin_Concordance_and_Birth_Order_in_Childhood_Leukemia.html" aria-label="Childhood leukemia: Read the paper brief"><title>Childhood leukemia — Read the paper brief</title>
+<rect class="rmx-hit" x="682.0" y="155.0" width="187.6" height="30" fill="transparent"/>
+<circle cx="686.0" cy="170.0" r="2.6" fill="#7fb2e5"/>
+<text class="rmx-label" x="696.0" y="170.0" dominant-baseline="central" text-anchor="start" font-size="16" fill="#e9edf5">Childhood leukemia</text>
+</a>
+<path class="rmx-link" d="M602.1,226.4 C625.1,214.4 640.0,235.0 686.0,235.0" fill="none" stroke="#7fb2e5" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="602.1" cy="226.4" r="4.2" fill="#7fb2e5" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item" href="research.html#sarcoma-wes" aria-label="Soft-tissue sarcoma: Go to this work on the Research page"><title>Soft-tissue sarcoma — Go to this work on the Research page</title>
+<rect class="rmx-hit" x="682.0" y="220.0" width="196.8" height="30" fill="transparent"/>
+<circle cx="686.0" cy="235.0" r="2.6" fill="#7fb2e5"/>
+<text class="rmx-label" x="696.0" y="235.0" dominant-baseline="central" text-anchor="start" font-size="16" fill="#e9edf5">Soft-tissue sarcoma</text>
+</a>
+<path class="rmx-link" d="M616.6,267.3 C642.1,262.0 640.0,300.0 686.0,300.0" fill="none" stroke="#7fb2e5" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="616.6" cy="267.3" r="4.2" fill="#7fb2e5" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item" href="research.html#cns-clustering" aria-label="Second primary cancers: Go to this work on the Research page"><title>Second primary cancers — Go to this work on the Research page</title>
+<rect class="rmx-hit" x="682.0" y="285.0" width="224.4" height="30" fill="transparent"/>
+<circle cx="686.0" cy="300.0" r="2.6" fill="#7fb2e5"/>
+<text class="rmx-label" x="696.0" y="300.0" dominant-baseline="central" text-anchor="start" font-size="16" fill="#e9edf5">Second primary cancers</text>
+</a>
+</g>
+<g class="rm-group" data-g="1">
+<path class="rmx-arc" d="M591.7,309.2 A132,132 0 0,1 505.1,424.0" fill="none" stroke="#6cc4ad" stroke-width="32" filter="url(#rmx-glow)" opacity=".95"/>
+<text class="rmx-glabel" font-size="14.5" font-weight="600" letter-spacing="1" fill="#0e1a33"><textPath href="#rmx-p1" startOffset="50%" text-anchor="middle" dominant-baseline="central">Data resources</textPath></text>
+<path class="rmx-link" d="M616.4,333.9 C641.8,339.5 640.0,365.0 686.0,365.0" fill="none" stroke="#6cc4ad" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="616.4" cy="333.9" r="4.2" fill="#6cc4ad" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item" href="research.html#newborn-blood-spots" aria-label="Newborn blood spots: Go to this work on the Research page"><title>Newborn blood spots — Go to this work on the Research page</title>
+<rect class="rmx-hit" x="682.0" y="350.0" width="196.8" height="30" fill="transparent"/>
+<circle cx="686.0" cy="365.0" r="2.6" fill="#6cc4ad"/>
+<text class="rmx-label" x="696.0" y="365.0" dominant-baseline="central" text-anchor="start" font-size="16" fill="#e9edf5">Newborn blood spots</text>
+</a>
+<path class="rmx-link" d="M600.3,377.0 C623.1,389.5 640.0,430.0 686.0,430.0" fill="none" stroke="#6cc4ad" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="600.3" cy="377.0" r="4.2" fill="#6cc4ad" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item is-brief" href="briefs/Twin_Concordance_and_Birth_Order_in_Childhood_Leukemia.html" aria-label="Birth &amp; cancer registries: Read the paper brief"><title>Birth &amp; cancer registries — Read the paper brief</title>
+<rect class="rmx-hit" x="682.0" y="415.0" width="252.0" height="30" fill="transparent"/>
+<circle cx="686.0" cy="430.0" r="2.6" fill="#6cc4ad"/>
+<text class="rmx-label" x="696.0" y="430.0" dominant-baseline="central" text-anchor="start" font-size="16" fill="#e9edf5">Birth &amp; cancer registries</text>
+</a>
+<path class="rmx-link" d="M572.6,413.6 C590.9,432.1 640.0,495.0 686.0,495.0" fill="none" stroke="#6cc4ad" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="572.6" cy="413.6" r="4.2" fill="#6cc4ad" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item" href="clic-pipeline.html" aria-label="CLIC consortium: Go to this work on the Research page"><title>CLIC consortium — Go to this work on the Research page</title>
+<rect class="rmx-hit" x="682.0" y="480.0" width="160.0" height="30" fill="transparent"/>
+<circle cx="686.0" cy="495.0" r="2.6" fill="#6cc4ad"/>
+<text class="rmx-label" x="696.0" y="495.0" dominant-baseline="central" text-anchor="start" font-size="16" fill="#e9edf5">CLIC consortium</text>
+</a>
+<path class="rmx-link" d="M535.7,440.9 C548.0,463.8 640.0,560.0 686.0,560.0" fill="none" stroke="#6cc4ad" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="535.7" cy="440.9" r="4.2" fill="#6cc4ad" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item is-brief" href="briefs/Telomere_Length_and_Childhood_Glioma.html" aria-label="Multi-ancestry meta-GWAS: Read the paper brief"><title>Multi-ancestry meta-GWAS — Read the paper brief</title>
+<rect class="rmx-hit" x="682.0" y="545.0" width="242.8" height="30" fill="transparent"/>
+<circle cx="686.0" cy="560.0" r="2.6" fill="#6cc4ad"/>
+<text class="rmx-label" x="696.0" y="560.0" dominant-baseline="central" text-anchor="start" font-size="16" fill="#e9edf5">Multi-ancestry meta-GWAS</text>
+</a>
+</g>
+<g class="rm-group" data-g="2">
+<path class="rmx-arc" d="M432.6,429.1 A132,132 0 0,1 328.3,309.2" fill="none" stroke="#e8b06a" stroke-width="32" filter="url(#rmx-glow)" opacity=".95"/>
+<text class="rmx-glabel" font-size="14.5" font-weight="600" letter-spacing="1" fill="#0e1a33"><textPath href="#rmx-p2" startOffset="50%" text-anchor="middle" dominant-baseline="central">Methods</textPath></text>
+<path class="rmx-link" d="M302.5,328.2 C276.9,332.8 280.0,235.0 234.0,235.0" fill="none" stroke="#e8b06a" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="302.5" cy="328.2" r="4.2" fill="#e8b06a" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item" href="research.html#methylation-glioma" aria-label="Methylation &amp; adductomics: Go to this work on the Research page"><title>Methylation &amp; adductomics — Go to this work on the Research page</title>
+<rect class="rmx-hit" x="-14.0" y="220.0" width="252.0" height="30" fill="transparent"/>
+<circle cx="234.0" cy="235.0" r="2.6" fill="#e8b06a"/>
+<text class="rmx-label" x="224.0" y="235.0" dominant-baseline="central" text-anchor="end" font-size="16" fill="#e9edf5">Methylation &amp; adductomics</text>
+</a>
+<path class="rmx-link" d="M312.2,361.2 C288.2,371.2 280.0,300.0 234.0,300.0" fill="none" stroke="#e8b06a" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="312.2" cy="361.2" r="4.2" fill="#e8b06a" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item" href="research.html#grant" aria-label="Copy-number variants: Go to this work on the Research page"><title>Copy-number variants — Go to this work on the Research page</title>
+<rect class="rmx-hit" x="32.0" y="285.0" width="206.0" height="30" fill="transparent"/>
+<circle cx="234.0" cy="300.0" r="2.6" fill="#e8b06a"/>
+<text class="rmx-label" x="224.0" y="300.0" dominant-baseline="central" text-anchor="end" font-size="16" fill="#e9edf5">Copy-number variants</text>
+</a>
+<path class="rmx-link" d="M328.7,391.4 C307.3,406.2 280.0,365.0 234.0,365.0" fill="none" stroke="#e8b06a" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="328.7" cy="391.4" r="4.2" fill="#e8b06a" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item" href="research.html#sibling-pairs" aria-label="Whole-exome sequencing: Go to this work on the Research page"><title>Whole-exome sequencing — Go to this work on the Research page</title>
+<rect class="rmx-hit" x="13.6" y="350.0" width="224.4" height="30" fill="transparent"/>
+<circle cx="234.0" cy="365.0" r="2.6" fill="#e8b06a"/>
+<text class="rmx-label" x="224.0" y="365.0" dominant-baseline="central" text-anchor="end" font-size="16" fill="#e9edf5">Whole-exome sequencing</text>
+</a>
+<path class="rmx-link" d="M351.2,417.3 C333.5,436.4 280.0,430.0 234.0,430.0" fill="none" stroke="#e8b06a" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="351.2" cy="417.3" r="4.2" fill="#e8b06a" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item is-brief" href="briefs/Telomere_Length_and_Childhood_Glioma.html" aria-label="Polygenic risk scores: Read the paper brief"><title>Polygenic risk scores — Read the paper brief</title>
+<rect class="rmx-hit" x="22.8" y="415.0" width="215.2" height="30" fill="transparent"/>
+<circle cx="234.0" cy="430.0" r="2.6" fill="#e8b06a"/>
+<text class="rmx-label" x="224.0" y="430.0" dominant-baseline="central" text-anchor="end" font-size="16" fill="#e9edf5">Polygenic risk scores</text>
+</a>
+<path class="rmx-link" d="M378.8,437.9 C365.6,460.3 280.0,495.0 234.0,495.0" fill="none" stroke="#e8b06a" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="378.8" cy="437.9" r="4.2" fill="#e8b06a" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item is-brief" href="briefs/Telomere_Length_and_Childhood_Glioma.html" aria-label="Mendelian randomization: Read the paper brief"><title>Mendelian randomization — Read the paper brief</title>
+<rect class="rmx-hit" x="4.4" y="480.0" width="233.6" height="30" fill="transparent"/>
+<circle cx="234.0" cy="495.0" r="2.6" fill="#e8b06a"/>
+<text class="rmx-label" x="224.0" y="495.0" dominant-baseline="central" text-anchor="end" font-size="16" fill="#e9edf5">Mendelian randomization</text>
+</a>
+<path class="rmx-link" d="M410.1,452.0 C402.0,476.7 280.0,560.0 234.0,560.0" fill="none" stroke="#e8b06a" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="410.1" cy="452.0" r="4.2" fill="#e8b06a" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item is-brief" href="briefs/Telomere_Length_and_Childhood_Glioma.html" aria-label="Genome-wide association: Read the paper brief"><title>Genome-wide association — Read the paper brief</title>
+<rect class="rmx-hit" x="4.4" y="545.0" width="233.6" height="30" fill="transparent"/>
+<circle cx="234.0" cy="560.0" r="2.6" fill="#e8b06a"/>
+<text class="rmx-label" x="224.0" y="560.0" dominant-baseline="central" text-anchor="end" font-size="16" fill="#e9edf5">Genome-wide association</text>
+</a>
+</g>
+<g class="rm-group" data-g="3">
+<path class="rmx-arc" d="M328.3,290.8 A132,132 0 0,1 414.9,176.0" fill="none" stroke="#c49ad8" stroke-width="32" filter="url(#rmx-glow)" opacity=".95"/>
+<text class="rmx-glabel" font-size="14.5" font-weight="600" letter-spacing="1" fill="#0e1a33"><textPath href="#rmx-p3" startOffset="50%" text-anchor="middle" dominant-baseline="central">Translational aims</textPath></text>
+<path class="rmx-link" d="M377.6,162.9 C364.2,140.6 280.0,40.0 234.0,40.0" fill="none" stroke="#c49ad8" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="377.6" cy="162.9" r="4.2" fill="#c49ad8" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item" href="research.html#grant" aria-label="Representative research: Go to this work on the Research page"><title>Representative research — Go to this work on the Research page</title>
+<rect class="rmx-hit" x="4.4" y="25.0" width="233.6" height="30" fill="transparent"/>
+<circle cx="234.0" cy="40.0" r="2.6" fill="#c49ad8"/>
+<text class="rmx-label" x="224.0" y="40.0" dominant-baseline="central" text-anchor="end" font-size="16" fill="#e9edf5">Representative research</text>
+</a>
+<path class="rmx-link" d="M332.2,203.7 C311.5,188.1 280.0,105.0 234.0,105.0" fill="none" stroke="#c49ad8" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="332.2" cy="203.7" r="4.2" fill="#c49ad8" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item is-brief" href="briefs/Mutational_Epidemiology_of_Childhood_Leukemia.html" aria-label="Precision prevention: Read the paper brief"><title>Precision prevention — Read the paper brief</title>
+<rect class="rmx-hit" x="32.0" y="90.0" width="206.0" height="30" fill="transparent"/>
+<circle cx="234.0" cy="105.0" r="2.6" fill="#c49ad8"/>
+<text class="rmx-label" x="224.0" y="105.0" dominant-baseline="central" text-anchor="end" font-size="16" fill="#e9edf5">Precision prevention</text>
+</a>
+<path class="rmx-link" d="M305.5,258.6 C280.3,251.9 280.0,170.0 234.0,170.0" fill="none" stroke="#c49ad8" stroke-opacity=".55" stroke-width="1.2"/>
+<circle cx="305.5" cy="258.6" r="4.2" fill="#c49ad8" stroke="#14213d" stroke-width="2"/>
+<a class="rmx-item" href="research.html#cns-clustering" aria-label="Risk stratification: Go to this work on the Research page"><title>Risk stratification — Go to this work on the Research page</title>
+<rect class="rmx-hit" x="41.2" y="155.0" width="196.8" height="30" fill="transparent"/>
+<circle cx="234.0" cy="170.0" r="2.6" fill="#c49ad8"/>
+<text class="rmx-label" x="224.0" y="170.0" dominant-baseline="central" text-anchor="end" font-size="16" fill="#e9edf5">Risk stratification</text>
+</a>
+</g>
+<circle cx="460" cy="300" r="92" fill="url(#rmx-hub)" stroke="#e7cfa4" stroke-opacity=".7" stroke-width="1"/>
+<text class="rmx-hub-k" x="460" y="262" text-anchor="middle" font-size="10.5" letter-spacing="2.6" fill="#e7cfa4">CENTRAL QUESTION</text>
+<text class="rmx-hub" x="460" y="294" text-anchor="middle" font-size="22" fill="#ffffff">Germline</text>
+<text class="rmx-hub" x="460" y="319" text-anchor="middle" font-size="22" fill="#ffffff">susceptibility to</text>
+<text class="rmx-hub" x="460" y="344" text-anchor="middle" font-size="22" fill="#ffffff">childhood cancer</text>
+</svg>
+      </figure>
+      <ol class="pillars">
+        <li class="pillar" data-g="0" style="--c:#2f5d8a" tabindex="0">
+          <span class="pillar-num">01</span>
+          <div class="pillar-body"><span class="pillar-kicker">What I study</span><h3>Diseases</h3>
+            <p class="pillar-desc">Childhood brain tumors, leukemia and sarcoma, and the second primary cancers that can follow.</p></div>
+        </li>
+        <li class="pillar" data-g="1" style="--c:#3e7c6e" tabindex="0">
+          <span class="pillar-num">02</span>
+          <div class="pillar-body"><span class="pillar-kicker">Where the evidence comes from</span><h3>Data resources</h3>
+            <p class="pillar-desc">Genomic data from newborn blood spots and statewide registries, along with pooled data from international consortia.</p></div>
+        </li>
+        <li class="pillar" data-g="2" style="--c:#b07a3b" tabindex="0">
+          <span class="pillar-num">03</span>
+          <div class="pillar-body"><span class="pillar-kicker">How I find inherited risk</span><h3>Methods</h3>
+            <p class="pillar-desc">From GWAS and post-GWAS analyses to methylation profiling and WES.</p></div>
+        </li>
+        <li class="pillar" data-g="3" style="--c:#7a4e7e" tabindex="0">
+          <span class="pillar-num">04</span>
+          <div class="pillar-body"><span class="pillar-kicker">Why it matters</span><h3>Translational aims</h3>
+            <p class="pillar-desc">Turning genetic and genomic information into risk stratification and precision prevention strategies that serve every community.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
 
+  <!-- ========== FEATURED WORK ========== -->
+  <section class="hsec">
+    <div class="hsec-head reveal">
+      <div><span class="eyebrow">Featured work</span><h2>Recent grants &amp;<br>publications</h2></div>
+      <a class="more" href="research.html#publications">View all research</a>
+    </div>
+    <div class="cards reveal">
+      <a class="card" href="research.html#grant">
+        <div class="card-img feature"><div><span class="big">PI</span><span class="sm">CIAPM &middot; 2026&ndash;2028</span></div></div>
+        <div class="card-body"><span class="card-tag">Grant</span>
+          <h3>Germline copy number variants and pediatric glioma in a multi-ethnic California cohort</h3>
+          <span class="card-meta">California Initiative to Advance Precision Medicine</span></div>
+      </a>
+      <a class="card" href="https://doi.org/10.1186/s40478-025-02199-2" target="_blank" rel="noopener">
+        <div class="card-img"><img src="figs/card-telomere.svg" alt="" loading="lazy"></div>
+        <div class="card-body"><span class="card-tag">Pediatric glioma</span>
+          <h3>Genetically determined telomere length and childhood glioma risk</h3>
+          <span class="card-meta">Acta Neuropathologica Communications</span></div>
+      </a>
+      <a class="card" href="https://doi.org/10.1016/j.cppeds.2025.101818" target="_blank" rel="noopener">
+        <div class="card-img"><img src="figs/card-all-signatures.svg" alt="" loading="lazy"></div>
+        <div class="card-body"><span class="card-tag">Childhood leukemia</span>
+          <h3>Investigating the causes of childhood ALL through mutational epidemiology</h3>
+          <span class="card-meta">Current Problems in Pediatric &amp; Adolescent Health Care</span></div>
+      </a>
+      <a class="card" href="https://doi.org/10.3324/haematol.2024.286309" target="_blank" rel="noopener">
+        <div class="card-img"><img src="figs/card-twins.svg" alt="" loading="lazy"></div>
+        <div class="card-body"><span class="card-tag">Twin study</span>
+          <h3>A first-born twin has a higher risk of acute leukemia in California</h3>
+          <span class="card-meta">Haematologica</span></div>
+      </a>
+    </div>
+  </section>
 
-              <!-- Horizontal path: USMLE steps sit above the line, the English
-                   test and the certificate below it. -->
-              <ol class="steps">
-                <li class="step up">
-                  <div class="step-card">
-                    <span class="step-date">2020</span>
-                    <span class="step-title">USMLE Step 1</span>
-                    <span class="step-meta"><span class="step-score">249</span><span class="step-score-label">score</span></span>
-                  </div>
-                  <span class="step-dot"></span>
-                </li>
-                <li class="step down">
-                  <span class="step-dot"></span>
-                  <div class="step-card">
-                    <span class="step-date">2025</span>
-                    <span class="step-title">USMLE Step 2 CK</span>
-                    <span class="step-meta"><span class="step-score">246</span><span class="step-score-label">score</span></span>
-                  </div>
-                </li>
-                <li class="step up">
-                  <div class="step-card">
-                    <span class="step-date">2025</span>
-                    <span class="step-title step-title-wide">Occupational English Test</span>
-                    <span class="step-meta">Pass &middot; Cambridge Boxhill</span>
-                  </div>
-                  <span class="step-dot"></span>
-                </li>
-                <li class="step down">
-                  <span class="step-dot"></span>
-                  <div class="step-card">
-                    <span class="step-date">2026</span>
-                    <span class="step-title">ECFMG Certificate</span>
-                    <span class="step-meta">Valid through 2029</span>
-                  </div>
-                </li>
-                <li class="step up is-upcoming">
-                  <div class="step-card">
-                    <span class="step-date">Dec 2026</span>
-                    <span class="step-title">USMLE Step 3</span>
-                    <span class="step-meta">Scheduled</span>
-                  </div>
-                  <span class="step-dot"></span>
-                </li>
-              </ol>
-            </section>
-
-        <!-- To restore the CV download button, drop cv.pdf in this folder and uncomment:
-        <a class="cv-button" href="cv.pdf" download>Download CV</a> -->
-      </aside>
-
-      <div class="home-main">
-
-        <!-- ABOUT: hidden for now. To bring it back, delete this line and the
-             HIDE-END line below. ===== HIDE-START =====
-        <section id="about">
-          <h2>About</h2>
-          <p>
-                    I'm applying to Pediatric residency programs after completing my medical
-                    training through the Ottawa-Shanghai joint medical program and spending my PhD
-                    years at USC studying inherited cancer risk in children. My research used
-                    California's archived newborn blood spots to study germline genetic
-                    susceptibility to childhood cancer.
-                  </p>
-        </section>
-        ===== HIDE-END ===== -->
-
-        <section id="education">
-          <h2>Education</h2>
-
-          <div class="entry edu-entry">
-            <div class="edu-row">
-              <div class="edu-logo">
-                <img class="logo-usc" src="education_logo/usc.png" alt="University of Southern California" loading="lazy">
-              </div>
-              <div class="edu-body">
-                <span class="entry-date">2023 &ndash; Present</span>
-                <span class="edu-degree">PhD Candidate, Genetic Epidemiology</span>
-                <span class="edu-school">USC Keck School of Medicine</span>
-                <span class="edu-note">GPA 3.9/4.0 &middot; Advisor:
-                  <a href="https://keck.usc.edu/faculty-search/joseph-leo-wiemels/" target="_blank" rel="noopener">Dr. Joseph L. Wiemels</a>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="entry edu-entry">
-            <div class="edu-row">
-              <div class="edu-logo">
-                <img class="logo-ucla" src="education_logo/ucla.png" alt="University of California, Los Angeles" loading="lazy">
-              </div>
-              <div class="edu-body">
-                <span class="entry-date">2021 &ndash; 2023</span>
-                <span class="edu-degree">MPH, Biostatistics</span>
-                <span class="edu-school">UCLA Fielding School of Public Health</span>
-                <span class="edu-note">GPA 4.0/4.0</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="entry edu-entry">
-            <div class="edu-row">
-              <div class="edu-logo">
-                <img class="logo-osjsm" src="education_logo/osjsm.png" alt="Ottawa-Shanghai Joint School of Medicine" loading="lazy">
-              </div>
-              <div class="edu-body">
-                <span class="entry-date">2015 &ndash; 2021</span>
-                <span class="edu-degree">MD</span>
-                <span class="edu-school">SJTU
-                  <a href="https://www.uottawa.ca/about-us/media/news/ottawa-shanghai-joint-school-medicine-celebrates-its-first-cohort" target="_blank" rel="noopener">Ottawa-Shanghai Joint School of Medicine</a>
-                </span>
-                <span class="edu-note">Overall GPA 3.5/4.0 &middot; major GPA 3.8/4.0 &middot; top 8% of class</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ========== RESEARCH MAP ========== -->
-        <section id="research-map">
-          <h2>Research focus</h2>
-          <p class="rmap-intro">
-            Germline susceptibility to childhood cancer &mdash; and the diseases, data
-            resources, methods and translational aims my work connects.
-            <span class="rmap-hint">Hover a group to bring it forward.</span>
-          </p>
-
-          <figure class="rmap-fig">
-        <svg class="rmap" width="708" height="496" viewBox="7 92 708 496" role="img" aria-labelledby="rmap-t rmap-d" xmlns="http://www.w3.org/2000/svg">
-        <title id="rmap-t">Research map</title>
-        <desc id="rmap-d">Germline susceptibility to childhood cancer sits at the centre. Four groups radiate outward: diseases studied, data resources, methods, and translational aims.</desc>
-        <defs><path id="rmp0" fill="none" d="M365.7,222.1 A108.0,108.0 0 0,1 467.9,324.3"/><path id="rmp1" fill="none" d="M366.2,447.8 A118.0,118.0 0 0,0 477.8,336.2"/><path id="rmp2" fill="none" d="M242.2,336.2 A118.0,118.0 0 0,0 353.8,447.8"/><path id="rmp3" fill="none" d="M252.1,324.3 A108.0,108.0 0 0,1 354.3,222.1"/></defs>
-        <g class="rm-group">
-        <path class="rm-leader" fill="none" stroke="#2563a8" d="M386.7,197.7 L390.0,181.0 Q444.0,181.0 508.0,111.1"/>
-        <circle class="rm-dot" cx="390.0" cy="181.0" r="5" fill="#2563a8"/>
-        <text class="rm-node" x="524.0" y="111.1" text-anchor="start" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1d4e88" font-weight="500">Pediatric glioma</text>
-        <path class="rm-leader" fill="none" stroke="#2563a8" d="M423.8,211.0 L431.8,196.0 Q485.8,196.0 508.0,163.1"/>
-        <circle class="rm-dot" cx="431.8" cy="196.0" r="5" fill="#2563a8"/>
-        <text class="rm-node" x="524.0" y="163.1" text-anchor="start" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1d4e88" font-weight="500">Medulloblastoma &amp; ATRT</text>
-        <path class="rm-leader" fill="none" stroke="#2563a8" d="M455.5,234.5 L467.5,222.5 Q521.5,222.5 508.0,215.1"/>
-        <circle class="rm-dot" cx="467.5" cy="222.5" r="5" fill="#2563a8"/>
-        <text class="rm-node" x="524.0" y="215.1" text-anchor="start" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1d4e88" font-weight="500">Childhood leukemia</text>
-        <path class="rm-leader" fill="none" stroke="#2563a8" d="M479.0,266.2 L494.0,258.2 Q548.0,258.2 508.0,267.1"/>
-        <circle class="rm-dot" cx="494.0" cy="258.2" r="5" fill="#2563a8"/>
-        <text class="rm-node" x="524.0" y="267.1" text-anchor="start" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1d4e88" font-weight="500">Soft-tissue sarcoma</text>
-        <path class="rm-leader" fill="none" stroke="#2563a8" d="M492.3,303.3 L509.0,300.0 Q563.0,300.0 508.0,319.1"/>
-        <circle class="rm-dot" cx="509.0" cy="300.0" r="5" fill="#2563a8"/>
-        <text class="rm-node" x="524.0" y="319.1" text-anchor="start" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#1d4e88" font-weight="500">Second primary cancers</text>
-        <path class="rm-band" d="M366.9,198.2 A132.0,132.0 0 0,1 491.8,323.1 L453.9,325.1 A94.0,94.0 0 0,0 364.9,236.1 Z" fill="#2563a8"/>
-        <text class="rm-glabel" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="0.5" fill="#ffffff"><textPath href="#rmp0" startOffset="50%" text-anchor="middle">Diseases</textPath></text>
-        </g>
-        <g class="rm-group">
-        <path class="rm-leader" fill="none" stroke="#0f8f74" d="M491.3,361.5 L507.8,365.5 Q561.8,365.5 508.0,371.1"/>
-        <circle class="rm-dot" cx="507.8" cy="365.5" r="5" fill="#0f8f74"/>
-        <text class="rm-node" x="524.0" y="371.1" text-anchor="start" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#0c6f5c" font-weight="500">Newborn blood spots</text>
-        <path class="rm-leader" fill="none" stroke="#0f8f74" d="M471.3,406.5 L485.3,416.1 Q539.3,416.1 508.0,423.1"/>
-        <circle class="rm-dot" cx="485.3" cy="416.1" r="5" fill="#0f8f74"/>
-        <text class="rm-node" x="524.0" y="423.1" text-anchor="start" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#0c6f5c" font-weight="500">Birth &amp; cancer registries</text>
-        <path class="rm-leader" fill="none" stroke="#0f8f74" d="M436.5,441.3 L446.1,455.3 Q500.1,455.3 508.0,475.1"/>
-        <circle class="rm-dot" cx="446.1" cy="455.3" r="5" fill="#0f8f74"/>
-        <text class="rm-node" x="524.0" y="475.1" text-anchor="start" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#0c6f5c" font-weight="500">CLIC consortium</text>
-        <path class="rm-leader" fill="none" stroke="#0f8f74" d="M391.5,461.3 L395.5,477.8 Q449.5,477.8 508.0,527.1"/>
-        <circle class="rm-dot" cx="395.5" cy="477.8" r="5" fill="#0f8f74"/>
-        <text class="rm-node" x="524.0" y="527.1" text-anchor="start" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#0c6f5c" font-weight="500">Multi-ancestry meta-GWAS</text>
-        <path class="rm-band" d="M491.8,336.9 A132.0,132.0 0 0,1 366.9,461.8 L364.9,423.9 A94.0,94.0 0 0,0 453.9,334.9 Z" fill="#0f8f74"/>
-        <text class="rm-glabel" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="0.5" fill="#ffffff"><textPath href="#rmp1" startOffset="50%" text-anchor="middle">Data resources</textPath></text>
-        </g>
-        <g class="rm-group">
-        <path class="rm-leader" fill="none" stroke="#c2600d" d="M336.6,462.9 L333.6,479.7 Q279.6,479.7 212.0,570.5"/>
-        <circle class="rm-dot" cx="333.6" cy="479.7" r="5" fill="#c2600d"/>
-        <text class="rm-node" x="196.0" y="570.5" text-anchor="end" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9c4d0a" font-weight="500">Genome-wide association</text>
-        <path class="rm-leader" fill="none" stroke="#c2600d" d="M305.1,453.3 L298.2,468.9 Q244.2,468.9 212.0,518.5"/>
-        <circle class="rm-dot" cx="298.2" cy="468.9" r="5" fill="#c2600d"/>
-        <text class="rm-node" x="196.0" y="518.5" text-anchor="end" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9c4d0a" font-weight="500">Mendelian randomization</text>
-        <path class="rm-leader" fill="none" stroke="#c2600d" d="M276.9,436.4 L266.4,449.8 Q212.4,449.8 212.0,466.5"/>
-        <circle class="rm-dot" cx="266.4" cy="449.8" r="5" fill="#c2600d"/>
-        <text class="rm-node" x="196.0" y="466.5" text-anchor="end" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9c4d0a" font-weight="500">Polygenic risk scores</text>
-        <path class="rm-leader" fill="none" stroke="#c2600d" d="M253.6,413.1 L240.2,423.6 Q186.2,423.6 212.0,414.5"/>
-        <circle class="rm-dot" cx="240.2" cy="423.6" r="5" fill="#c2600d"/>
-        <text class="rm-node" x="196.0" y="414.5" text-anchor="end" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9c4d0a" font-weight="500">Whole-exome sequencing</text>
-        <path class="rm-leader" fill="none" stroke="#c2600d" d="M236.7,384.9 L221.1,391.8 Q167.1,391.8 212.0,362.5"/>
-        <circle class="rm-dot" cx="221.1" cy="391.8" r="5" fill="#c2600d"/>
-        <text class="rm-node" x="196.0" y="362.5" text-anchor="end" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9c4d0a" font-weight="500">Copy-number variants</text>
-        <path class="rm-leader" fill="none" stroke="#c2600d" d="M227.1,353.4 L210.3,356.4 Q156.3,356.4 212.0,310.5"/>
-        <circle class="rm-dot" cx="210.3" cy="356.4" r="5" fill="#c2600d"/>
-        <text class="rm-node" x="196.0" y="310.5" text-anchor="end" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#9c4d0a" font-weight="500">Methylation &amp; adductomics</text>
-        <path class="rm-band" d="M353.1,461.8 A132.0,132.0 0 0,1 228.2,336.9 L266.1,334.9 A94.0,94.0 0 0,0 355.1,423.9 Z" fill="#c2600d"/>
-        <text class="rm-glabel" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="0.5" fill="#ffffff"><textPath href="#rmp2" startOffset="50%" text-anchor="middle">Methods</textPath></text>
-        </g>
-        <g class="rm-group">
-        <path class="rm-leader" fill="none" stroke="#8b46b0" d="M230.9,290.5 L214.6,285.6 Q160.6,285.6 212.0,258.5"/>
-        <circle class="rm-dot" cx="214.6" cy="285.6" r="5" fill="#8b46b0"/>
-        <text class="rm-node" x="196.0" y="258.5" text-anchor="end" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#6f3790" font-weight="500">Risk stratification</text>
-        <path class="rm-leader" fill="none" stroke="#8b46b0" d="M264.5,234.5 L252.5,222.5 Q198.5,222.5 212.0,206.5"/>
-        <circle class="rm-dot" cx="252.5" cy="222.5" r="5" fill="#8b46b0"/>
-        <text class="rm-node" x="196.0" y="206.5" text-anchor="end" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#6f3790" font-weight="500">Precision prevention</text>
-        <path class="rm-leader" fill="none" stroke="#8b46b0" d="M320.5,200.9 L315.6,184.6 Q261.6,184.6 212.0,154.5"/>
-        <circle class="rm-dot" cx="315.6" cy="184.6" r="5" fill="#8b46b0"/>
-        <text class="rm-node" x="196.0" y="154.5" text-anchor="end" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#6f3790" font-weight="500">Representative research</text>
-        <path class="rm-band" d="M228.2,323.1 A132.0,132.0 0 0,1 353.1,198.2 L355.1,236.1 A94.0,94.0 0 0,0 266.1,325.1 Z" fill="#8b46b0"/>
-        <text class="rm-glabel" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="0.5" fill="#ffffff"><textPath href="#rmp3" startOffset="50%" text-anchor="middle">Translational aims</textPath></text>
-        </g>
-        <circle class="rm-hub" cx="360.0" cy="330.0" r="82.0" fill="#1e3a5f"/>
-        <text class="rm-hubtext" x="360.0" y="311" text-anchor="middle" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15.5" font-weight="600" fill="#ffffff">Germline</text>
-        <text class="rm-hubtext" x="360.0" y="331" text-anchor="middle" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15.5" font-weight="600" fill="#ffffff">susceptibility to</text>
-        <text class="rm-hubtext" x="360.0" y="351" text-anchor="middle" dominant-baseline="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15.5" font-weight="600" fill="#ffffff">childhood cancer</text>
-        </svg>
-          </figure>
-
-          <!-- Text equivalent, shown instead of the diagram on narrow screens where
-               the labels would be too small to read. -->
-          <ul class="rmap-list">
-            <li class="rmap-row"><span class="rmap-swatch" style="background:#2563a8"></span>
-              <span class="rmap-gname" style="color:#2563a8">Diseases</span>
-              <span class="rmap-items">Pediatric glioma &middot; Medulloblastoma &amp; ATRT &middot; Childhood leukemia &middot; Soft-tissue sarcoma &middot; Second primary cancers</span></li>
-            <li class="rmap-row"><span class="rmap-swatch" style="background:#0f8f74"></span>
-              <span class="rmap-gname" style="color:#0f8f74">Data resources</span>
-              <span class="rmap-items">Newborn blood spots &middot; Birth &amp; cancer registries &middot; CLIC consortium &middot; Multi-ancestry meta-GWAS</span></li>
-            <li class="rmap-row"><span class="rmap-swatch" style="background:#c2600d"></span>
-              <span class="rmap-gname" style="color:#c2600d">Methods</span>
-              <span class="rmap-items">Genome-wide association &middot; Mendelian randomization &middot; Polygenic risk scores &middot; Whole-exome sequencing &middot; Copy-number variants &middot; Methylation &amp; adductomics</span></li>
-            <li class="rmap-row"><span class="rmap-swatch" style="background:#8b46b0"></span>
-              <span class="rmap-gname" style="color:#8b46b0">Translational aims</span>
-              <span class="rmap-items">Risk stratification &middot; Precision prevention &middot; Representative research</span></li>
-          </ul>
-        </section>
-
+  <!-- ========== EDUCATION ========== -->
+  <section class="hsec" id="education">
+    <div class="hsec-head reveal">
+      <div><span class="eyebrow">Education</span><h2>Medicine, biostatistics &amp;<br>genetic epidemiology</h2></div>
+      <a class="more" href="experience.html">Full experience</a>
+    </div>
+    <div class="edu-cards reveal">
+      <div class="ecard">
+        <div class="logo-tile"><img src="education_logo/edu-usc.png" alt="University of Southern California" loading="lazy"></div>
+        <span class="yr">2023 &ndash; PRESENT</span>
+        <h3>PhD, Genetic Epidemiology</h3>
+        <div class="sch">USC Keck School of Medicine</div>
+        <div class="note">GPA 3.9/4.0 &middot; Advisor: <a href="https://keck.usc.edu/faculty-search/joseph-leo-wiemels/" target="_blank" rel="noopener">Dr. Joseph L. Wiemels</a></div>
+      </div>
+      <div class="ecard">
+        <div class="logo-tile"><img class="ucla" src="education_logo/edu-ucla.png" alt="University of California, Los Angeles" loading="lazy"></div>
+        <span class="yr">2021 &ndash; 2023</span>
+        <h3>MPH, Biostatistics</h3>
+        <div class="sch">UCLA Fielding School of Public Health</div>
+        <div class="note">GPA 4.0/4.0</div>
+      </div>
+      <div class="ecard">
+        <div class="logo-tile fill"><img src="education_logo/edu-sjtu-uottawa.jpg" alt="Shanghai Jiao Tong University and University of Ottawa" loading="lazy"></div>
+        <span class="yr">2015 &ndash; 2021</span>
+        <h3>MD</h3>
+        <div class="sch">SJTU <a href="https://www.uottawa.ca/about-us/media/news/ottawa-shanghai-joint-school-medicine-celebrates-its-first-cohort" target="_blank" rel="noopener">Ottawa-Shanghai Joint School of Medicine</a></div>
+        <div class="note">Overall GPA 3.5/4.0 &middot; major GPA 3.8/4.0 &middot; top 8% of class</div>
       </div>
     </div>
+  </section>
 
-    <footer>© 2026 Naying Zhou · Last updated September 2026</footer>
-  </div>
+  <!-- ========== CONNECT ========== -->
+  <section class="connect">
+    <div class="connect-inner">
+      <div class="reveal"><span class="eyebrow">Connect</span>
+        <h2>Let&rsquo;s talk.</h2>
+        <p>Whether it&rsquo;s a research collaboration, a question about my clinical and research experience, or teaching and mentoring, I&rsquo;d be glad to hear from you.</p>
+        <p style="margin-top:26px"><a class="btn btn-dark" href="mailto:naying.zhou@gmail.com">Email me <span class="arr">&rarr;</span></a></p>
+      </div>
+      <div class="tiles reveal">
+        <a class="tile" href="research.html"><div><b>Research</b><span>Grant, papers &amp; ongoing work</span></div><span class="arr">&rarr;</span></a>
+        <a class="tile" href="teaching.html"><div><b>Teaching</b><span>Courses &amp; mentoring</span></div><span class="arr">&rarr;</span></a>
+        <a class="tile" href="https://orcid.org/0009-0004-1785-3584" target="_blank" rel="noopener me"><div><b>ORCID</b><span>0009-0004-1785-3584</span></div><span class="arr">&nearr;</span></a>
+        <a class="tile" href="https://www.linkedin.com/in/nayingzhou" target="_blank" rel="noopener me"><div><b>LinkedIn</b><span>in/nayingzhou</span></div><span class="arr">&nearr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="rule-gold"></div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">Naying Zhou, MD, MPH</span>
+        <p>PhD candidate in Genetic Epidemiology at the Keck School of Medicine of USC, studying inherited susceptibility to childhood cancer.</p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="index.html">About</a></li><li><a href="research.html">Research</a></li>
+        <li><a href="experience.html">Experience</a></li><li><a href="teaching.html">Teaching</a></li></ul></div>
+      <div><h4>Research</h4><ul>
+        <li><a href="research.html#grant">Grant</a></li><li><a href="research.html#publications">Publications</a></li>
+        <li><a href="research.html#ongoing">Ongoing work</a></li><li><a href="clic-pipeline.html">CLIC pipeline</a></li></ul></div>
+      <div><h4>Connect</h4><ul>
+        <li><a href="mailto:naying.zhou@gmail.com">naying.zhou@gmail.com</a></li>
+        <li><a href="https://orcid.org/0009-0004-1785-3584" target="_blank" rel="noopener me">ORCID</a></li>
+        <li><a href="https://www.linkedin.com/in/nayingzhou" target="_blank" rel="noopener me">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-base"><span>&copy; 2026 Naying Zhou</span><span>Last updated September 2026</span></div>
+  </footer>
 </body>
 </html>

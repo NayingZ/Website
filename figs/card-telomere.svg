@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 275" font-family="Inter, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="400" height="275" fill="#f7f6f2"/>
+<text x="24" y="36" font-size="15" font-weight="600" fill="#14213d">Glioma risk per 1-SD longer telomeres</text>
+<rect x="140" y="58" width="62.0" height="164" fill="#eef1f6"/>
+<line x1="167.1" y1="58" x2="167.1" y2="222" stroke="#e6e1d8"/>
+<text x="167.1" y="244" text-anchor="middle" font-size="13" fill="#5e6675">0.75</text>
+<line x1="202.0" y1="58" x2="202.0" y2="222" stroke="#e6e1d8"/>
+<text x="202.0" y="244" text-anchor="middle" font-size="13" fill="#5e6675">1</text>
+<line x1="286.0" y1="58" x2="286.0" y2="222" stroke="#e6e1d8"/>
+<text x="286.0" y="244" text-anchor="middle" font-size="13" fill="#5e6675">2</text>
+<line x1="370.1" y1="58" x2="370.1" y2="222" stroke="#e6e1d8"/>
+<text x="370.1" y="244" text-anchor="middle" font-size="13" fill="#5e6675">4</text>
+<line x1="202.0" y1="58" x2="202.0" y2="222" stroke="#5e6675" stroke-dasharray="4 4"/>
+<text x="24" y="88" dominant-baseline="central" font-size="15" font-weight="500" fill="#14213d">Overall</text>
+<text x="24" y="107" dominant-baseline="central" font-size="12.5" fill="#5e6675">OR 2.12</text>
+<line x1="235.6" y1="88" x2="350.0" y2="88" stroke="#14213d" stroke-width="2.5"/>
+<rect x="286.1" y="81" width="14" height="14" fill="#14213d"/>
+<text x="24" y="140" dominant-baseline="central" font-size="15" font-weight="500" fill="#14213d">Age &gt; 6</text>
+<text x="24" y="159" dominant-baseline="central" font-size="12.5" fill="#5e6675">OR 1.89</text>
+<line x1="236.5" y1="140" x2="322.0" y2="140" stroke="#14213d" stroke-width="2.5"/>
+<rect x="272.2" y="133" width="14" height="14" fill="#14213d"/>
+<text x="24" y="192" dominant-baseline="central" font-size="15" font-weight="500" fill="#14213d">Age &#8804; 6</text>
+<text x="24" y="211" dominant-baseline="central" font-size="12.5" fill="#5e6675">OR 1.04</text>
+<line x1="165.4" y1="192" x2="247.0" y2="192" stroke="#9c968b" stroke-width="2.5"/>
+<rect x="199.7" y="185" width="14" height="14" fill="#9c968b"/>
+<text x="258.0" y="264" text-anchor="middle" font-size="12" fill="#5e6675">Odds ratio (log scale)</text>
+</svg>

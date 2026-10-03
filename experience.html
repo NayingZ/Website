@@ -5,23 +5,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Experience — Naying Zhou, MD, MPH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.className+=" js"</script>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="cardinal.css">
+<script src="site.js" defer></script>
 <script src="analytics.js" defer></script>
 <script src="rail.js" defer></script>
 </head>
 <body>
-  <!-- ========== HEADER: name left, tabs right, one row ========== -->
+  <div class="topbar"><div class="topbar-inner">
+    <span class="aff">Genetic Epidemiology &middot; Keck School of Medicine of USC</span>
+    <span class="topbar-links"><a href="mailto:naying.zhou@gmail.com">Email</a><a href="https://orcid.org/0009-0004-1785-3584" target="_blank" rel="noopener me">ORCID</a><a href="https://www.linkedin.com/in/nayingzhou" target="_blank" rel="noopener me">LinkedIn</a></span>
+  </div></div>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="index.html">Naying Zhou<span class="post">, MD, MPH</span></a>
-      <nav class="site-nav">
+      <a class="brand" href="index.html" aria-label="Naying Zhou, MD, MPH — home">
+        <span class="brand-mark" aria-hidden="true">NZ</span>
+        <span class="brand-text"><span class="brand-name">Naying Zhou</span><span class="brand-sub">MD &middot; MPH &middot; PhD Candidate</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+      <nav class="site-nav" aria-label="Main">
         <a href="index.html">About</a>
         <a href="research.html">Research</a>
         <a href="experience.html" class="active">Experience</a>
         <a href="teaching.html">Teaching</a>
+        <a class="nav-cta" href="mailto:naying.zhou@gmail.com">Get in touch</a>
       </nav>
     </div>
   </header>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="eyebrow">Clinical &middot; Quantitative &middot; Research</span>
+      <h1>Experience</h1>
+      <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Experience</div>
+    </div>
+  </section>
 
   <div class="wrap has-rail">
 
@@ -31,14 +54,15 @@
       <ol>
         <li><a href="#timeline">Timeline</a></li>
         <li><a href="#clinical-experience">Clinical Experience</a></li>
+        <li><a href="#teaching">Teaching Experience</a></li>
         <li><a href="#professional-service-experience">Professional &amp;<br>Service Experience</a></li>
         <li><a href="#honors-awards">Honors &amp; Awards</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#professional-memberships">Professional Memberships</a></li>
       </ol>
     </nav>
 
     <div class="rail-main">
-
-    <h1 class="page-title">Experience</h1>
     <p class="page-intro">
       Training in medicine, biostatistics, and epidemiology — the clinical
       grounding, the quantitative toolkit, and the credentials that connect them.
@@ -47,80 +71,57 @@
     <!-- ========== TIMELINE ========== -->
     <section id="timeline">
       <h2>Timeline</h2>
-      <ol class="timeline">
-        <li class="tl-item">
-          <span class="tl-date">Aug &ndash; Sep 2026</span>
-          <span class="tl-dot"></span>
-          <span class="tl-body">
-            <span class="tl-role">Visiting Physician Observer, Medical Genetics</span>
-            <span class="tl-org">University of California, Los Angeles</span>
-          </span>
-        </li>
-        <li class="tl-item is-current">
-          <span class="tl-date">Jul 2026 &ndash; Present</span>
-          <span class="tl-dot"></span>
-          <span class="tl-body">
-            <span class="tl-role">Clinical Extern, Family Medicine</span>
-            <span class="tl-org">Singh A. Boun, MD &amp; Nick Lee, MD &middot; Los Angeles and Perris, CA</span>
-          </span>
-        </li>
-        <li class="tl-item">
-          <span class="tl-date">May 2026</span>
-          <span class="tl-dot"></span>
-          <span class="tl-body">
-            <span class="tl-role">Visiting Physician Observer, Pediatric Hematology/Oncology</span>
-            <span class="tl-org">Children&rsquo;s Hospital Los Angeles</span>
-          </span>
-        </li>
-        <li class="tl-item is-current">
-          <span class="tl-date">2024 &ndash; Present</span>
-          <span class="tl-dot"></span>
-          <span class="tl-body">
-            <span class="tl-role">Lead Genomic Data Analysis Coordinator</span>
-            <span class="tl-org">CLIC Americas Analysis Center at USC</span>
-          </span>
-        </li>
-        <li class="tl-item">
-          <span class="tl-date">Jun &ndash; Aug 2022</span>
-          <span class="tl-dot"></span>
-          <span class="tl-body">
-            <span class="tl-role">Biostatistics Intern, Real-World Evidence</span>
-            <span class="tl-org">Bristol Myers Squibb &middot; Seattle, WA</span>
-          </span>
-        </li>
-        <li class="tl-item">
-          <span class="tl-date">2021 &ndash; 2022</span>
-          <span class="tl-dot"></span>
-          <span class="tl-body">
-            <span class="tl-role">Volunteer, Emergency Department</span>
-            <span class="tl-org">Kaiser Permanente West Los Angeles</span>
-          </span>
-        </li>
-        <li class="tl-item">
-          <span class="tl-date">2019 &ndash; 2021</span>
-          <span class="tl-dot"></span>
-          <span class="tl-body">
-            <span class="tl-role">Core Clinical Rotations</span>
-            <span class="tl-org">Shanghai Jiao Tong University School of Medicine</span>
-          </span>
-        </li>
-        <li class="tl-item">
-          <span class="tl-date">2018 &ndash; 2020</span>
-          <span class="tl-dot"></span>
-          <span class="tl-body">
-            <span class="tl-role">Volunteer, Social Work and Community Services</span>
-            <span class="tl-org">Shanghai Children&rsquo;s Medical Center</span>
-          </span>
-        </li>
-        <li class="tl-item">
-          <span class="tl-date">2016 &ndash; 2018</span>
-          <span class="tl-dot"></span>
-          <span class="tl-body">
-            <span class="tl-role">Volunteer Leader, Down Syndrome Program</span>
-            <span class="tl-org">Shanghai Disabled Persons&rsquo; Federation</span>
-          </span>
-        </li>
-      </ol>
+      <div class="dual" aria-label="Education and experience on a shared timeline">
+        <span class="dual-head dual-head-l" style="grid-row:1">Education</span>
+        <span class="dual-head dual-head-r" style="grid-row:1">Experience</span>
+        <span class="dual-spine" style="grid-row:2 / 26"></span>
+        <span class="dual-year" style="grid-row:2 / span 2">2026</span>
+        <div class="dual-exp" style="grid-row:2 / span 2">
+          <div class="dx is-current"><span class="dx-date">Aug &ndash; Sep 2026</span><span class="dx-role">Visiting Physician Observer, Medical Genetics</span><span class="dx-org">University of California, Los Angeles</span></div>
+          <div class="dx is-current"><span class="dx-date">Jul 2026 &ndash; Present</span><span class="dx-role">Clinical Extern, Family Medicine</span><span class="dx-org">Singh A. Boun, MD &amp; Nick Lee, MD &middot; Los Angeles and Perris, CA</span></div>
+          <div class="dx is-current"><span class="dx-date">May 2026</span><span class="dx-role">Visiting Physician Observer, Pediatric Hematology/Oncology</span><span class="dx-org">Children&rsquo;s Hospital Los Angeles</span></div>
+        </div>
+        <span class="dual-year" style="grid-row:4 / span 2">2025</span>
+        <div class="dual-exp" style="grid-row:4 / span 2">
+          <div class="dx"><span class="dx-date">Nov 2025 &ndash; May 2026</span><span class="dx-role">Graduate Course Instructor, PM 527</span><span class="dx-org">Epidemiology of Infectious Disease &middot; Keck School of Medicine of USC</span></div>
+          <div class="dx"><span class="dx-date">Spring 2025</span><span class="dx-role">Teaching Assistant, PM 528</span><span class="dx-org">Program Design and Evaluation &middot; Department of Population and Public Health Sciences, USC</span></div>
+        </div>
+        <span class="dual-year" style="grid-row:6 / span 2">2024</span>
+        <div class="dual-exp" style="grid-row:6 / span 2">
+          <div class="dx is-current"><span class="dx-date">2024 &ndash; Present</span><span class="dx-role">Lead Genomic Data Analysis Coordinator</span><span class="dx-org">CLIC Americas Analysis Center at USC</span></div>
+        </div>
+        <span class="dual-year" style="grid-row:8 / span 2">2023</span>
+        <span class="dual-year" style="grid-row:10 / span 2">2022</span>
+        <div class="dual-exp" style="grid-row:10 / span 2">
+          <div class="dx"><span class="dx-date">Jun &ndash; Aug 2022</span><span class="dx-role">Biostatistics Intern, Real-World Evidence</span><span class="dx-org">Bristol Myers Squibb &middot; Seattle, WA</span></div>
+        </div>
+        <span class="dual-year" style="grid-row:12 / span 2">2021</span>
+        <div class="dual-exp" style="grid-row:12 / span 2">
+          <div class="dx"><span class="dx-date">2021 &ndash; 2022</span><span class="dx-role">Volunteer, Emergency Department</span><span class="dx-org">Kaiser Permanente West Los Angeles</span></div>
+        </div>
+        <span class="dual-year" style="grid-row:14 / span 2">2020</span>
+        <span class="dual-year" style="grid-row:16 / span 2">2019</span>
+        <div class="dual-exp" style="grid-row:16 / span 2">
+          <div class="dx is-current"><span class="dx-date">2019 &ndash; 2021</span><span class="dx-role">Core Clinical Rotations</span><span class="dx-org">Shanghai Jiao Tong University School of Medicine</span></div>
+        </div>
+        <span class="dual-year" style="grid-row:18 / span 2">2018</span>
+        <div class="dual-exp" style="grid-row:18 / span 2">
+          <div class="dx"><span class="dx-date">2018 &ndash; 2020</span><span class="dx-role">Volunteer, Social Work and Community Services</span><span class="dx-org">Shanghai Children&rsquo;s Medical Center</span></div>
+        </div>
+        <span class="dual-year" style="grid-row:20 / span 2">2017</span>
+        <span class="dual-year" style="grid-row:22 / span 2">2016</span>
+        <div class="dual-exp" style="grid-row:22 / span 2">
+          <div class="dx"><span class="dx-date">2016 &ndash; 2018</span><span class="dx-role">Volunteer Leader, Down Syndrome Program</span><span class="dx-org">Shanghai Disabled Persons&rsquo; Federation</span></div>
+        </div>
+        <span class="dual-year" style="grid-row:24 / span 2">2015</span>
+        <span class="dual-bar is-current" style="grid-row:2 / 9"></span>
+        <div class="dual-edu" style="grid-row:2 / 9"><span class="dx-date">2023 &ndash; Present</span><span class="dx-role">PhD, Genetic Epidemiology</span><span class="dx-org">USC Keck School of Medicine</span></div>
+        <span class="dual-bar" style="grid-row:9 / 13"></span>
+        <div class="dual-edu" style="grid-row:9 / 13"><span class="dx-date">2021 &ndash; 2023</span><span class="dx-role">MPH, Biostatistics</span><span class="dx-org">UCLA Fielding School of Public Health</span></div>
+        <span class="dual-bar" style="grid-row:13 / 25"></span>
+        <div class="dual-edu" style="grid-row:13 / 25"><span class="dx-date">2015 &ndash; 2021</span><span class="dx-role">MD</span><span class="dx-org">SJTU Ottawa-Shanghai Joint School of Medicine</span></div>
+      </div>
+      <ol class="dual-mobile"><li class="mx is-current"><span class="dx-date">Aug &ndash; Sep 2026</span><span class="dx-role">Visiting Physician Observer, Medical Genetics</span><span class="dx-org">University of California, Los Angeles</span></li><li class="mx is-current"><span class="dx-date">Jul 2026 &ndash; Present</span><span class="dx-role">Clinical Extern, Family Medicine</span><span class="dx-org">Singh A. Boun, MD &amp; Nick Lee, MD &middot; Los Angeles and Perris, CA</span></li><li class="mx is-current"><span class="dx-date">May 2026</span><span class="dx-role">Visiting Physician Observer, Pediatric Hematology/Oncology</span><span class="dx-org">Children&rsquo;s Hospital Los Angeles</span></li><li class="mx"><span class="dx-date">Nov 2025 &ndash; May 2026</span><span class="dx-role">Graduate Course Instructor, PM 527</span><span class="dx-org">Epidemiology of Infectious Disease &middot; Keck School of Medicine of USC</span></li><li class="mx"><span class="dx-date">Spring 2025</span><span class="dx-role">Teaching Assistant, PM 528</span><span class="dx-org">Program Design and Evaluation &middot; Department of Population and Public Health Sciences, USC</span></li><li class="mx is-current"><span class="dx-date">2024 &ndash; Present</span><span class="dx-role">Lead Genomic Data Analysis Coordinator</span><span class="dx-org">CLIC Americas Analysis Center at USC</span></li><li class="mx edu"><span class="dx-tag">Education</span><span class="dx-date">2023 &ndash; Present</span><span class="dx-role">PhD, Genetic Epidemiology</span><span class="dx-org">USC Keck School of Medicine</span></li><li class="mx"><span class="dx-date">Jun &ndash; Aug 2022</span><span class="dx-role">Biostatistics Intern, Real-World Evidence</span><span class="dx-org">Bristol Myers Squibb &middot; Seattle, WA</span></li><li class="mx edu"><span class="dx-tag">Education</span><span class="dx-date">2021 &ndash; 2023</span><span class="dx-role">MPH, Biostatistics</span><span class="dx-org">UCLA Fielding School of Public Health</span></li><li class="mx"><span class="dx-date">2021 &ndash; 2022</span><span class="dx-role">Volunteer, Emergency Department</span><span class="dx-org">Kaiser Permanente West Los Angeles</span></li><li class="mx is-current"><span class="dx-date">2019 &ndash; 2021</span><span class="dx-role">Core Clinical Rotations</span><span class="dx-org">Shanghai Jiao Tong University School of Medicine</span></li><li class="mx"><span class="dx-date">2018 &ndash; 2020</span><span class="dx-role">Volunteer, Social Work and Community Services</span><span class="dx-org">Shanghai Children&rsquo;s Medical Center</span></li><li class="mx"><span class="dx-date">2016 &ndash; 2018</span><span class="dx-role">Volunteer Leader, Down Syndrome Program</span><span class="dx-org">Shanghai Disabled Persons&rsquo; Federation</span></li><li class="mx edu"><span class="dx-tag">Education</span><span class="dx-date">2015 &ndash; 2021</span><span class="dx-role">MD</span><span class="dx-org">SJTU Ottawa-Shanghai Joint School of Medicine</span></li></ol>
     </section>
 
     <!-- ========== EDUCATION ========== -->
@@ -317,6 +318,33 @@
 
 
     <!-- ========== HONORS ========== -->
+    <section id="teaching">
+      <h2>Teaching Experience</h2>
+
+
+      <div class="entry">
+        <span class="entry-date">2025 &ndash; 2026</span>
+        <span class="entry-title">PM 527 &mdash; Epidemiology of Infectious Disease</span>
+        <div class="entry-meta">Graduate Course Instructor &middot; Keck School of Medicine of USC
+          &middot; <a href="docs/pm527-syllabus.pdf" target="_blank" rel="noopener">Syllabus (PDF)</a></div>
+
+        <p class="entry-desc">Instructor of record for this 4-unit, 15-week graduate course from November 2025 to May 2026, teaching MPH/MS students who arrived from diverse scientific backgrounds. I set the learning objectives, built the syllabus and assessments, delivered the live sessions and assigned the final grades.</p>
+        <a class="entry-cta" href="teaching.html">Explore the PM 527 course <span class="arr" aria-hidden="true"></span></a>
+      </div>
+
+      <div class="entry">
+        <span class="entry-date">Spring 2025</span>
+        <span class="entry-title">PM 528 &mdash; Program Design and Evaluation</span>
+        <div class="entry-meta">Teaching Assistant &middot; Department of Population and Public Health Sciences, USC</div>
+      </div>
+
+      <div class="entry">
+        <span class="entry-date">2023 &ndash; 2024</span>
+        <span class="entry-title">PM 510 &mdash; Principles of Biostatistics &middot; PM 512 &mdash; Principles of Epidemiology</span>
+        <div class="entry-meta">Teaching Assistant &middot; Department of Population and Public Health Sciences, USC</div>
+      </div>
+    </section>
+
     <section id="professional-service-experience">
       <h2>Professional &amp; Service Experience</h2>
 
@@ -539,6 +567,8 @@
 
     </section>
 
+
+
     <section id="honors-awards">
       <h2>Honors &amp; Awards</h2>
 
@@ -569,9 +599,7 @@
           Winner of the Group Grand Prize, ranked 1st among 26 teams.
         </div>
 
-        <details class="grant-details">
-          <summary>Details</summary>
-          <ul class="detail-list">
+        <div class="award-details"><ul class="detail-list">
             <li>
               Interactive, team-based analysis of clinical scenarios for senior medical students.
             </li>
@@ -580,8 +608,7 @@
               diagnosis of pulmonary embolism, ECG interpretation, and gynecological
               examination.
             </li>
-          </ul>
-        </details>
+          </ul></div>
       </div>
       <div class="entry">
         <span class="entry-date">2017 – 2018</span>
@@ -592,9 +619,7 @@
           Antioxidant Function.&rdquo;
         </div>
 
-        <details class="grant-details">
-          <summary>Details</summary>
-          <ul class="detail-list">
+        <div class="award-details"><ul class="detail-list">
             <li>
               Awarded by the 11th SJTU School of Medicine Undergraduate Innovative Talents
               Training Program (award no. 20170305).
@@ -608,8 +633,7 @@
               extracted RNA and used RT-PCR to measure the resulting changes in transcription
               of antioxidant genes.
             </li>
-          </ul>
-        </details>
+          </ul></div>
       </div>
 
       <div class="entry">
@@ -623,9 +647,78 @@
       </div>
     </section>
 
-    </div><!-- /.rail-main -->
+    <section id="certificates">
+      <h2>Certificates</h2>
 
-    <footer>© 2026 Naying Zhou · Last updated September 2026</footer>
+
+      <div class="entry">
+        <span class="entry-date">Aug 2026</span>
+        <span class="entry-title">CEBP Reviewer Training Program</span>
+        <div class="entry-meta">American Association for Cancer Research (AACR)</div>
+      </div>
+
+      <div class="entry">
+        <span class="entry-date">Apr 2026</span>
+        <span class="entry-title">Mentored Teaching Fellows, 2026 Cohort</span>
+        <div class="entry-meta">USC Center for Excellence in Teaching</div>
+      </div>
+
+      <div class="entry">
+        <span class="entry-date">Apr 2025</span>
+        <span class="entry-title">Future Faculty Teaching Institute, Spring 2025</span>
+        <div class="entry-meta">USC Center for Excellence in Teaching</div>
+      </div>
+
+      <div class="entry">
+        <span class="entry-date">Apr 2025</span>
+        <span class="entry-title">Focus on Peer Review</span>
+        <div class="entry-meta">Springer Nature</div>
+      </div>
+
+      <div class="entry">
+        <span class="entry-date">2018 &ndash; 2020</span>
+        <span class="entry-title">Advanced Cardiovascular Life Support (ACLS)</span>
+        <div class="entry-meta">American Heart Association</div>
+      </div>
+    </section>
+
+    <!-- ========== MEMBERSHIPS ========== -->
+    <section id="professional-memberships">
+      <h2>Professional Memberships</h2>
+
+      <ul class="plain-list">
+        <li><span class="mem-year">2026 &ndash; Present</span> American Academy of Pediatrics (AAP)</li>
+        <li><span class="mem-year">2026 &ndash; Present</span> Association of Chinese American Physicians (ACAP)</li>
+        <li><span class="mem-year">2026 &ndash; Present</span> Society for Neuro-Oncology (SNO)</li>
+        <li><span class="mem-year">2025 &ndash; Present</span> American Association for Cancer Research (AACR)</li>
+        <li><span class="mem-year">2025 &ndash; Present</span> American Society of Human Genetics (ASHG)</li>
+        <li><span class="mem-year">2024 &ndash; Present</span> Brain Tumor Epidemiology Consortium (BTEC)</li>
+      </ul>
+    </section>
+
+
+
+    </div><!-- /.rail-main -->
   </div>
+  <footer class="site-footer">
+    <div class="rule-gold"></div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">Naying Zhou, MD, MPH</span>
+        <p>PhD candidate in Genetic Epidemiology at the Keck School of Medicine of USC, studying inherited susceptibility to childhood cancer.</p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="index.html">About</a></li><li><a href="research.html">Research</a></li>
+        <li><a href="experience.html">Experience</a></li><li><a href="teaching.html">Teaching</a></li></ul></div>
+      <div><h4>Research</h4><ul>
+        <li><a href="research.html#grant">Grant</a></li><li><a href="research.html#publications">Publications</a></li>
+        <li><a href="research.html#ongoing">Ongoing work</a></li><li><a href="clic-pipeline.html">CLIC pipeline</a></li></ul></div>
+      <div><h4>Connect</h4><ul>
+        <li><a href="mailto:naying.zhou@gmail.com">naying.zhou@gmail.com</a></li>
+        <li><a href="https://orcid.org/0009-0004-1785-3584" target="_blank" rel="noopener me">ORCID</a></li>
+        <li><a href="https://www.linkedin.com/in/nayingzhou" target="_blank" rel="noopener me">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-base"><span>&copy; 2026 Naying Zhou</span><span>Last updated September 2026</span></div>
+  </footer>
 </body>
 </html>
