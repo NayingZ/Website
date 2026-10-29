@@ -248,3 +248,6 @@
 /* card figures fill their frame edge to edge */
 .card-img{aspect-ratio:400/275;background:#f7f6f2}
 .card-img img{padding:0;object-fit:cover}
+
+/* equal rhythm between homepage sections (overrides legacy #research-map margin) */
+.hsec#research-map { margin-top: 0; }
